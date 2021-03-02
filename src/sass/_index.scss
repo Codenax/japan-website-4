@@ -1,0 +1,51 @@
+.news-section {
+  padding: 95px 0;
+  h1 {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  .card-area {
+    margin-bottom: 50px;
+    .img-area {
+      width: 100%;
+      max-width: 380px;
+      height: 248px;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .text-area {
+      margin-top: 23px;
+      padding: 0 15px;
+      .date {
+        font-size: 12px;
+        font-family: $roboto-medium;
+        color: $text-color-2;
+      }
+      p {
+        margin-top: 13px;
+      }
+    }
+  }
+  h5 {
+    text-align: right;
+    margin-right: 280px;
+    position: relative;
+    display: block;
+  }
+  h5:after {
+    content: "";
+    width: 259px;
+    height: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -27rem;
+    position: absolute;
+    background-color: $red-2;
+    z-index: 5;
+  }
+}
