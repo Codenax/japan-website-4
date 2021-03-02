@@ -10,23 +10,309 @@
   src: url("../../assets/fonts/NotoSansCJKjp-Light.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Bebas Neue Pro';
+  src: local("Bebas Neue Pro Expanded Bold"), local("Bebas-Neue-Pro-Expanded-Bold"), url("../../assets/fonts/BebasNeuePro-ExpandedBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url("../../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6, p, span, strong {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto Medium";
+  font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue Pro";
+}
+
+p {
+  font-family: "Roboto Medium";
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 58px;
+}
+
 h2 {
-  font-size: 4rem;
+  font-size: 54px;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 26px;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.container {
+  max-width: 1370px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-area {
+  max-width: 1232px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+header {
+  padding: 45px 0;
+  background-color: wheat;
+  background-color: transparent;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header .content-area .navbar-main {
+  padding: 0;
+  width: 1200px;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .content-area .navbar-main .logo {
+  left: 0;
+}
+
+header .content-area .navbar-main .logo img {
+  max-width: 260px;
+  height: auto;
+}
+
+header .content-area .navbar-main .navbar-nav-right {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 155px;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
+  width: 52px;
+  height: auto;
+}
+
+header .content-area .navbar-main .navbar-nav-right a {
+  font-size: 17px;
+  font-family: "Bebas Neue Pro";
+  color: #ffffff;
+  position: relative;
+}
+
+header .content-area .navbar-main .navbar-nav-right a:hover {
+  text-decoration: none;
+}
+
+header .content-area .navbar-main .navbar-nav-right a.active:after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #CA0B21;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.top-section {
+  height: 800px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top-section .carousel {
+  height: 800px;
+}
+
+.top-section .carousel .carousel-inner {
+  height: 800px;
+}
+
+.top-section .carousel .carousel-inner .carousel-item {
+  height: 800px;
+}
+
+.top-section .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+.top-section .carousel .carousel-inner .carousel-item .text-area {
+  width: 1232px;
+  padding: 0 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 250px;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+}
+
+.top-section .carousel .carousel-inner .carousel-item .text-area .content-inner h3 {
+  margin-bottom: 40px;
+}
+
+.top-section .carousel .carousel-inner .carousel-item .text-area .content-inner h2 {
+  margin-bottom: 40px;
+}
+
+.top-section .carousel .carousel-inner .carousel-item .text-area .content-inner h6 {
+  max-width: 600px;
+}
+
+.top-section .carousel .carousel-inner .carousel-item .text-area .content-inner p {
+  letter-spacing: 10px;
+}
+
+.top-section .carousel .carousel-indicators {
+  -webkit-box-pack: left !important;
+  -webkit-justify-content: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  width: 1232px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+}
+
+.top-section .carousel .carousel-indicators li {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  width: auto;
+  height: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-indent: 0px;
+  cursor: pointer;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 1;
+}
+
+.top-section .carousel .carousel-indicators li h6 {
+  z-index: 5;
+  color: #ffffff;
+  font-size: 19px;
+  text-align: center;
+  line-height: 8rem;
+}
+
+.top-section .carousel .carousel-indicators li .text-border {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: none;
+  -webkit-border-radius: 8rem;
+          border-radius: 8rem;
+}
+
+.top-section .carousel .carousel-indicators li.active .text-border {
+  background-color: #00000083;
+}
+
+.top-section .carousel .carousel-indicators li.active .text-border:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  top: 0;
+  border-color: transparent;
+  border-right: solid 2px #CA0B21;
+  z-index: 8;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-border-radius: 8rem;
+          border-radius: 8rem;
+  line-height: 8rem;
+}
+
+.top-section .carousel .carousel-indicators li.active .text-border:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: solid 2px #525252ce;
+  border-right: transparent;
+  z-index: 7;
+  -webkit-border-radius: 8rem;
+          border-radius: 8rem;
+  line-height: 8rem;
 }
