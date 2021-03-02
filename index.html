@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <!-- Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -22,6 +24,10 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCWQVJZ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- header section -->
   <header>
     <div class="container-fluid">
@@ -53,16 +59,24 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-          <div class="text-border"><h6>01</h6></div> 
+          <div class="text-border">
+            <h6>01</h6>
+          </div>
         </li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1">
-          <div class="text-border"><h6>02</h6></div> 
+          <div class="text-border">
+            <h6>02</h6>
+          </div>
         </li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2">
-          <div class="text-border"><h6>03</h6></div> 
+          <div class="text-border">
+            <h6>03</h6>
+          </div>
         </li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3">
-          <div class="text-border"><h6>04</h6></div> 
+          <div class="text-border">
+            <h6>04</h6>
+          </div>
         </li>
       </ol>
       <div class="carousel-inner">
@@ -74,11 +88,11 @@
               <h2>We are THE CHALLENGER NETWORK</h2>
               <h6>Independent units & diverse skills power our network. <br>
                 We are agile professionals committed to client success. <br>
-                More than anything, we are with you all the way in challenging the 
+                More than anything, we are with you all the way in challenging the
                 status quo.
-                </h6>
+              </h6>
             </div>
-            
+
           </div>
         </div>
         <div class="carousel-item ">
@@ -92,22 +106,74 @@
         </div>
 
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="scroll-down">
+        <div class="text">
+          <h6>SCROLL DOWN</h6>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <!-- top-section end-->
+  <!-- news-section start-->
+  <section class="news-section">
+    <div class="container">
+
+
+      <div class="content-area">
+        <h1>NEWS</h1>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card-area">
+              <div class="img-area">
+                <img src="assets/images/news-image/img.png" alt="">
+              </div>
+              <div class="text-area">
+                <span class="date">2019.07.01</span>
+                <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and Appointment
+                  of CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-area">
+              <div class="img-area">
+                <img src="assets/images/news-image/img-2.png" alt="">
+              </div>
+              <div class="text-area">
+                <span class="date">2019.07.01</span>
+                <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and Appointment
+                  of CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-area">
+              <div class="img-area">
+                <img src="assets/images/news-image/img-3.png" alt="">
+              </div>
+              <div class="text-area">
+                <span class="date">2019.07.01</span>
+                <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and Appointment
+                  of CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h5>READ MORE</h5>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- news-section end-->
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
@@ -118,8 +184,37 @@
   <script src="assets/js/custom.js"></script>
   <script>
     $('.carousel').carousel({
-      interval:28888000
+      interval: 28888000
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $(window).on('resize', function(){   
+        var vpWidth=$(window).width();
+    });
+
+    $(function () {
+      var ua = vpWidth = 1370;
+      if (window.innerWidth > vpWidth ) {
+        $("meta[name='viewport']").attr('content', 'width=1370');
+      }
+    
+      else {
+        $("meta[name='viewport']").attr('content', 'width=device-width,initial-scale=1');
+      }
+    });
+
+
   </script>
 </body>
 
