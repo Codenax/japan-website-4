@@ -9,7 +9,6 @@
     padding: 0 15px;
     .img-area {
       width: 100%;
-      width: 100%;
       height: auto;
       overflow: hidden;
       margin-left: auto;
@@ -60,6 +59,8 @@
   height: auto;
   position: relative;
   .content-area-news {
+    margin-left: auto;
+    margin-right: auto;
     h1 {
       color: $white;
       text-align: left;
@@ -270,6 +271,12 @@
       color: $white;
       margin-bottom: 65px;
     }
+    .led{
+      display: block;
+    }
+    .key{
+      display: none;
+    }
     .card-row {
       margin-left: auto;
       margin-right: auto;
@@ -303,7 +310,11 @@
 .contact {
   background-color: #fafafa;
   padding-top: 95px;
-
+  .botom-logo{
+  max-width: 826px;
+  margin-left: 0;
+  margin-right: auto;
+   }
   .content-area {
     h1 {
       color: $text-color;
@@ -320,6 +331,7 @@
     }
     p {
       margin-left: 1rem;
+      color: #656565;
     }
   }
   .logo-area {
@@ -354,6 +366,11 @@ footer {
   background-color: $bg-w;
   margin-top: 200px;
   .content-area {
+    h1{
+      text-align: left;
+      font-size: 72px;
+      margin-bottom: 96px;
+  }
     .nav-bar {
       display: flex;
       .search-news {
@@ -369,6 +386,7 @@ footer {
           }
           .form-control {
             border: none;
+            background-color: transparent;
             padding: 2.5rem 0.75rem;
             padding-right: 4rem;
             border-bottom: solid 5px $red-2;
@@ -436,10 +454,11 @@ footer {
       margin-left: 1rem;
       position: relative;
       user-select: none;
+      background-color: transparent;
     }
 
     .select_wrap .default_option {
-      background: #fff;
+      background-color: transparent;
       border-radius: 5px;
       position: relative;
       cursor: pointer;
@@ -448,6 +467,7 @@ footer {
     .select_wrap .default_option li {
       list-style: none;
       border: none;
+      background-color: transparent;
       p {
         list-style: none;
         font-size: 24px;
@@ -457,6 +477,7 @@ footer {
         font-weight: bold;
         color: $red-2;
         line-height: 6rem;
+        background-color: transparent;
       }
     }
 
@@ -466,7 +487,7 @@ footer {
       top: 55px;
       left: -5.7rem;
       width: 125%;
-      background: #fff;
+   //   background: #fff;
       border-radius: 0px;
       display: none;
       z-index: 99;
@@ -485,9 +506,11 @@ footer {
       }
       .option {
         display: flex;
+    
         align-items: center;
       }
       .option.all {
+      
         p {
           color: $red-2;
         }
@@ -540,12 +563,14 @@ footer {
 .news-page-section {
   margin-top: 230px;
   border-bottom: solid 1px #e6e6e6;
+
   .content-area {
     display: flex;
     .news {
       h1 {
         font-size: 72px;
         margin-left: 1.5rem;
+        text-transform: uppercase;
       }
     }
     .text-area {
