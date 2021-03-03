@@ -1037,3 +1037,126 @@ footer .content-area p {
   margin-top: 15px;
   width: 90%;
 }
+
+.news-page-section {
+  margin-top: 230px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
+.news-page-section .content-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-page-section .content-area .news h1 {
+  font-size: 72px;
+  margin-left: 1.5rem;
+}
+
+.news-page-section .content-area .text-area {
+  margin-left: 135px;
+  width: 60%;
+}
+
+.news-page-section .content-area .text-area .date {
+  font-size: 15px;
+  font-family: "Roboto Medium";
+  color: #656565;
+  display: inline-block;
+  margin-top: 70px;
+  padding: 0 15px;
+}
+
+.news-page-section .content-area .text-area .head {
+  position: relative;
+  padding: 0 15px;
+  margin-top: 22px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.news-page-section .content-area .text-area .head h3 {
+  width: 80%;
+  float: left;
+  display: block;
+}
+
+.news-page-section .content-area .text-area .head .pdf-icon {
+  float: right;
+}
+
+.news-page-section .content-area .text-area .head .pdf-icon img {
+  width: 80px;
+  height: auto;
+}
+
+.news-page-section .content-area .text-area .head::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  left: 0;
+  top: -80px;
+  background-color: #e6e6e6;
+  position: absolute;
+}
+
+.news-page-section .content-area .text-area .head::before {
+  content: "";
+  width: 12%;
+  height: 5px;
+  left: 0;
+  top: -80px;
+  background-color: #CA0B21;
+  position: absolute;
+  z-index: 5;
+}
+
+.news-page-section .content-area .text-area .text-body {
+  width: 100%;
+}
+
+.news-page-section .content-area .text-area .text-body img {
+  margin-top: 65px;
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+.news-page-section .content-area .text-area .text-body p {
+  padding: 0 15px;
+  font-size: 17px;
+  text-align: justify;
+  font-family: "Roboto Medium";
+  line-height: 3rem;
+}
+
+.news-page-section .content-area .text-area .news-list {
+  padding-left: 20px;
+  margin: 98px 0;
+  width: 100%;
+  position: relative;
+}
+
+.news-page-section .content-area .text-area .news-list h5 {
+  text-align: left;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.news-page-section .content-area .text-area .news-list::after {
+  content: "";
+  width: 85%;
+  height: 5px;
+  left: 120px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #CA0B21;
+  position: absolute;
+  z-index: 4;
+}
