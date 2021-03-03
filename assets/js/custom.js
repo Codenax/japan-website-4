@@ -1,3 +1,5 @@
+"use strict";
+
 // var width=$(window).width();
 // $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
 // var newWidth=$(window).width();
@@ -25,4 +27,11 @@
 // $(function() {
 //     alert(usesViewport()?'Uses viewport':'Doesn\'t use viewport');
 // });
-"use strict";
+$(".default_option").click(function () {
+  $(this).parent().toggleClass("active");
+});
+$(".select_ul li").click(function () {
+  var currentele = $(this).html();
+  $(".default_option li").html(currentele);
+  $(this).parents(".select_wrap").removeClass("active");
+});
