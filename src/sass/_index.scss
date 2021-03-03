@@ -52,9 +52,13 @@
 }
 
 .our-business {
-  background-color: $blue-drak;
+  background-image: url("../../assets/images/bag-img/bg-red-big.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
   padding: 130px 0;
   height: auto;
+  position: relative;
   .content-area-news {
     h1 {
       color: $white;
@@ -139,13 +143,9 @@
       }
       .carousel-inner {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 0;
         top: 230px;
-        background-repeat: no-repeat;
-        background: url("../../assets/images/slider/middle-slider/color-hover.png"),
-          $blue-drak;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+
         position: bottom;
         .innner-content-area {
           height: auto;
@@ -176,42 +176,56 @@
             }
           }
           .body-area {
-            display: flex;
+          display: block;
             max-width: 1680px;
             margin-top: 120px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; 
+           
             .img-area {
               width: 45%;
+              float: left;
+              margin-bottom: 90px;
               img {
                 width: 100%;
                 height: auto;
               }
             }
             .text-area {
-              width: 50%;
-              padding-left: 90px;
+             display: inline-block;
+             width: 50%;
+             padding-left: 80px;
               h2 {
                 color: $white;
                 margin-bottom: 40px;
-                margin-top: 45px;
+                margin-top: 30px;
               }
               p {
                 color: $white;
                 font-size: 19px;
+                margin-bottom: 90px;
               }
             }
           }
           .footer-area {
-            margin-top: 100px;
-            width: 95vw;
+            padding-top: 100px;
+            width: 100%;
             align-items: unset;
-            margin-left: auto;
-            margin-right: auto;
+          
+            background-repeat: no-repeat;
+            background: url("../../assets/images/slider/middle-slider/color-hover.png"),
+              $blue-drak;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: bottom;
 
-            display: flex;
-            justify-content: space-between;
-
+            .display-icon {
+              width: 95vw;
+              display: flex;
+              margin-left: auto;
+              margin-right: auto;
+              justify-content: space-between;
+            }
             .card-area {
               border-top: solid 1px $border-color;
               padding: 50px 16px;
@@ -239,7 +253,7 @@
 }
 
 .our-network {
-  padding-top: 8rem;
+  padding-top: 13rem;
   .container {
     img {
       width: 100%;
@@ -337,6 +351,7 @@ footer {
 }
 
 .news-page {
+  background-color: $bg-w;
   margin-top: 200px;
   .content-area {
     .nav-bar {
@@ -528,7 +543,6 @@ footer {
   .content-area {
     display: flex;
     .news {
-     
       h1 {
         font-size: 72px;
         margin-left: 1.5rem;
@@ -599,7 +613,7 @@ footer {
         }
       }
       .news-list {
-        padding-left:20px;
+        padding-left: 20px;
         margin: 98px 0;
         width: 100%;
         h5 {

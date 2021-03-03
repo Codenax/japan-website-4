@@ -85,6 +85,7 @@ h6 {
   max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .content-area {
@@ -94,21 +95,48 @@ h6 {
   padding: 0;
 }
 
+.bg-red-shap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+}
+
+.bg-red-shap img {
+  width: 552px;
+  height: auto;
+}
+
+.bg-red-big {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.bg-red-big img {
+  width: 100%;
+  height: auto;
+}
+
 header {
   padding: 45px 0;
-  background-color: wheat;
-  background-color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.452)), to(rgba(252, 252, 252, 0)));
+  background-image: -o-linear-gradient(top, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
+  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
   position: absolute;
   z-index: 9;
   width: 100%;
   top: 0;
   left: 0;
+  position: fixed;
+  z-index: 10;
 }
 
 header .content-area .navbar-main {
   padding: 0;
   width: 95vw;
-  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -200,6 +228,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   height: 800px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
 .top-section .top-slider {
@@ -442,9 +471,13 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .our-business {
-  background-color: #3a474f;
+  background-image: url("../../assets/images/bag-img/bg-red-big.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
   padding: 130px 0;
   height: auto;
+  position: relative;
 }
 
 .our-business .content-area-news h1 {
@@ -545,12 +578,8 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 
 .our-business .content-area-news .news-slide .carousel-inner {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
   top: 230px;
-  background-repeat: no-repeat;
-  background: url("../../assets/images/slider/middle-slider/color-hover.png"), #3a474f;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   position: bottom;
 }
 
@@ -595,10 +624,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   max-width: 1680px;
   margin-top: 120px;
   margin-left: auto;
@@ -607,6 +633,8 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area .img-area {
   width: 45%;
+  float: left;
+  margin-bottom: 90px;
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area .img-area img {
@@ -615,34 +643,45 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area .text-area {
+  display: inline-block;
   width: 50%;
-  padding-left: 90px;
+  padding-left: 80px;
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area .text-area h2 {
   color: #ffffff;
   margin-bottom: 40px;
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .body-area .text-area p {
   color: #ffffff;
   font-size: 19px;
+  margin-bottom: 90px;
 }
 
 .our-business .content-area-news .news-slide .carousel-inner .innner-content-area .footer-area {
-  margin-top: 100px;
-  width: 95vw;
+  padding-top: 100px;
+  width: 100%;
   -webkit-box-align: unset;
   -webkit-align-items: unset;
       -ms-flex-align: unset;
           align-items: unset;
-  margin-left: auto;
-  margin-right: auto;
+  background-repeat: no-repeat;
+  background: url("../../assets/images/slider/middle-slider/color-hover.png"), #3a474f;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom;
+}
+
+.our-business .content-area-news .news-slide .carousel-inner .innner-content-area .footer-area .display-icon {
+  width: 95vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -673,7 +712,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .our-network {
-  padding-top: 8rem;
+  padding-top: 13rem;
 }
 
 .our-network .container img {
@@ -774,6 +813,7 @@ footer .content-area p {
 }
 
 .news-page {
+  background-color: #FAFAFA;
   margin-top: 200px;
 }
 
