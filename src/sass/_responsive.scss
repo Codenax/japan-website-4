@@ -266,10 +266,10 @@
     background-color: $bg-w;
     margin-top: 200px;
     .content-area {
-        h1{
-            font-size: 72px;
-            margin-bottom: 104px;
-        }
+      h1 {
+        font-size: 72px;
+        margin-bottom: 104px;
+      }
       .nav-bar {
         display: flex;
         .search-news {
@@ -328,15 +328,14 @@
     .year {
       display: flex;
       position: relative;
-      .title{
-          font-size: 30px;
-          line-height: 8rem;
+      .title {
+        font-size: 30px;
+        line-height: 8rem;
       }
       i {
         position: absolute;
         right: -2px;
         font-size: 20px;
-
       }
       .select_wrap .default_option li {
         list-style: none;
@@ -359,7 +358,6 @@
 
       .select_wrap.active .default_option:before {
         top: 25px;
-    
       }
     }
     .year::after {
@@ -367,7 +365,6 @@
       width: 94%;
       height: 5px;
       bottom: 15px;
-
     }
 
     .news-card-area {
@@ -382,8 +379,8 @@
           height: auto;
           margin-bottom: 0;
         }
-        .text-area{
-            width: 49%;
+        .text-area {
+          width: 49%;
         }
         .date {
           font-size: 22px;
@@ -406,7 +403,7 @@
     border-bottom: solid 1px #e6e6e6;
 
     .content-area {
-      display:block;
+      display: block;
       .news {
         h1 {
           font-size: 72px;
@@ -455,7 +452,7 @@
           width: 12%;
           height: 5px;
           left: 15px;
-          
+
           top: -80px;
           background-color: $red-2;
           position: absolute;
@@ -503,7 +500,131 @@
       }
     }
   }
-  
 
+  .modal-veiw {
+    display: block;
+    .list-manu-area {
+      display: flex;
+      width: 95vw;
+      height: 130px;
+      padding: 40px 0;
+      align-items: center;
+      border: solid 1px #727c81;
+      border-left: 0;
+      border-right: 0;
+      justify-content: space-between;
+      img {
+        height: 100%;
+        width: auto;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: $bebas-pro-bold;
+        position: relative;
+      }
 
+      a::after {
+        content: "";
+        width: 80px;
+        height: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10rem;
+        position: absolute;
+        z-index: 6;
+        background-color: $white;
+      }
+    }
+  }
 }
+
+.modal-dialog {
+  max-width: 100% !important;
+
+  .modal-content {
+    background-color: transparent;
+  }
+  .modal-header {
+    background-color: transparent;
+    display: block;
+    height: 100px;
+    position: relative;
+    .close {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      color: $white;
+      font-size: 36px;
+      z-index: 10;
+      i {
+        color: $white;
+        opacity: 1;
+      }
+    }
+  }
+  .modal-body {
+    text-align: left;
+    padding: 54px 15px;
+    max-width: 100% !important;
+    background: $blue-drak;
+    .logo {
+      img {
+        width: 340px;
+        height: auto;
+        margin-bottom: 50px;
+      }
+    }
+    p {
+      font-size: 26px;
+      text-align: left;
+      line-height: 3.5rem;
+      color: $white;
+    }
+    .benner-img {
+      width: 100%;
+      height: auto;
+      margin: 75px 0;
+    }
+    h1 {
+      color: $white;
+      font-size: 54px;
+      margin-bottom: 60px;
+    }
+    .paragraph {
+      color: $white;
+      font-size: 26px;
+    }
+    .list-logo-area {
+      display: flex;
+      width: 100%;
+      height: auto;
+      padding: 52px 0;
+      align-items: center;
+      border: solid 1px #727c81;
+      border-left: 0;
+      border-right: 0;
+      justify-content: space-between;
+      img {
+        width: 110px;
+        height: auto;
+      }
+      .text {
+        h3 {
+          color: $white;
+          margin-bottom: 29px;
+        }
+        p {
+          color: $white;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -254,6 +254,59 @@ header {
 }
 
 
+/////------maga manu-------////
 
-// -----custome select box----///.wrapper .title{
+.mega-menu{
+position: absolute;
+left: -100%;
+width: 100%;
+max-height: 800px;
+height: 800px;
+margin-left: auto;
+margin-right: auto;
+z-index: 99999;
+}
+.mega-menu.show-mobile-menu{
+  left:100% ;
+}
+.waper{ 
+  width: 100%; 
+  max-height: 800px;
+  height: 800px;
+  background-color: $red-2;
+  position: relative;   
+}
+.navigration-icon{
+  cursor: pointer;
+}
+.pc_mega_menu{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+   h2{
+       font-size: 51px;
+       margin-bottom: 65px;
+       color: #fff;
+   }
+   p{
+       font-size: 30px;
+       color:#fff;
+       margin-bottom: 45px;
+   }
+
+   .new_contact{
+       font-size: 58px;
+       color: #fff;
+       margin-bottom: 0;
+       margin-top: 100px !important;
+   }
+   .new_email{
+       font-size: 30px;
+       margin-bottom: 0;
+       color:#fff;
+   }
+}
+/////------maga manu-------end////
 

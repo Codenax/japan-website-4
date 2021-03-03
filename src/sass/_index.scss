@@ -51,9 +51,9 @@
 }
 
 .our-business {
-  background-image: url("../../assets/images/bag-img/bg-red-big.png");
+  background: url("../../assets/images/bag-img/bg-red-big.png"),$blue-drak;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% auto; 
   background-position: top left;
   padding: 130px 0;
   height: auto;
@@ -559,7 +559,9 @@ footer {
     }
   }
 }
-
+.modal-veiw{
+  display: none;
+}
 .news-page-section {
   margin-top: 230px;
   border-bottom: solid 1px #e6e6e6;
