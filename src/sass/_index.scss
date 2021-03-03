@@ -52,9 +52,13 @@
 }
 
 .our-business {
-  background-color: $blue-drak;
+  background-image: url("../../assets/images/bag-img/bg-red-big.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
   padding: 130px 0;
   height: auto;
+  position: relative;
   .content-area-news {
     h1 {
       color: $white;
@@ -139,13 +143,9 @@
       }
       .carousel-inner {
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 0;
         top: 230px;
-        background-repeat: no-repeat;
-        background: url("../../assets/images/slider/middle-slider/color-hover.png"),
-          $blue-drak;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+
         position: bottom;
         .innner-content-area {
           height: auto;
@@ -176,42 +176,56 @@
             }
           }
           .body-area {
-            display: flex;
+          display: block;
             max-width: 1680px;
             margin-top: 120px;
             margin-left: auto;
-            margin-right: auto;
+            margin-right: auto; 
+           
             .img-area {
               width: 45%;
+              float: left;
+              margin-bottom: 90px;
               img {
                 width: 100%;
                 height: auto;
               }
             }
             .text-area {
-              width: 50%;
-              padding-left: 90px;
+             display: inline-block;
+             width: 50%;
+             padding-left: 80px;
               h2 {
                 color: $white;
                 margin-bottom: 40px;
-                margin-top: 45px;
+                margin-top: 30px;
               }
               p {
                 color: $white;
                 font-size: 19px;
+                margin-bottom: 90px;
               }
             }
           }
           .footer-area {
-            margin-top: 100px;
-            width: 95vw;
+            padding-top: 100px;
+            width: 100%;
             align-items: unset;
-            margin-left: auto;
-            margin-right: auto;
+          
+            background-repeat: no-repeat;
+            background: url("../../assets/images/slider/middle-slider/color-hover.png"),
+              $blue-drak;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: bottom;
 
-            display: flex;
-            justify-content: space-between;
-
+            .display-icon {
+              width: 95vw;
+              display: flex;
+              margin-left: auto;
+              margin-right: auto;
+              justify-content: space-between;
+            }
             .card-area {
               border-top: solid 1px $border-color;
               padding: 50px 16px;
@@ -239,7 +253,7 @@
 }
 
 .our-network {
-  padding-top: 8rem;
+  padding-top: 13rem;
   .container {
     img {
       width: 100%;
@@ -337,12 +351,12 @@ footer {
 }
 
 .news-page {
+  background-color: $bg-w;
   margin-top: 200px;
   .content-area {
     .nav-bar {
       display: flex;
       .search-news {
-
         .input-group {
           position: relative;
           input::placeholder {
@@ -503,21 +517,122 @@ footer {
     .sin-news {
       width: 30%;
       margin-bottom: 68px;
-      img{
+      img {
         width: 100%;
         height: auto;
         margin-bottom: 28px;
       }
-      .date{
-        font-size:12px;
+      .date {
+        font-size: 12px;
         color: #3a474f;
         font-family: $roboto-medium;
-        margin-left:15px; 
+        margin-left: 15px;
       }
-      p{
-       margin-left:15px; 
-       margin-top: 15px;
-       width: 90%;
+      p {
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 90%;
+      }
+    }
+  }
+}
+
+.news-page-section {
+  margin-top: 230px;
+  border-bottom: solid 1px #e6e6e6;
+  .content-area {
+    display: flex;
+    .news {
+      h1 {
+        font-size: 72px;
+        margin-left: 1.5rem;
+      }
+    }
+    .text-area {
+      margin-left: 135px;
+      width: 60%;
+      .date {
+        font-size: 15px;
+        font-family: $roboto-medium;
+        color: #656565;
+        display: inline-block;
+        margin-top: 70px;
+        padding: 0 15px;
+      }
+      .head {
+        position: relative;
+        padding: 0 15px;
+        margin-top: 22px;
+        width: 100%;
+        justify-content: space-between;
+        h3 {
+          width: 80%;
+          float: left;
+          display: block;
+        }
+        .pdf-icon {
+          float: right;
+          img {
+            width: 80px;
+            height: auto;
+          }
+        }
+      }
+      .head::after {
+        content: "";
+        width: 100%;
+        height: 5px;
+        left: 0;
+        top: -80px;
+        background-color: #e6e6e6;
+        position: absolute;
+      }
+      .head::before {
+        content: "";
+        width: 12%;
+        height: 5px;
+        left: 0;
+        top: -80px;
+        background-color: $red-2;
+        position: absolute;
+        z-index: 5;
+      }
+      .text-body {
+        width: 100%;
+        img {
+          margin-top: 65px;
+          width: 100%;
+          margin-bottom: 65px;
+        }
+        p {
+          padding: 0 15px;
+          font-size: 17px;
+          text-align: justify;
+          font-family: $roboto-medium;
+          line-height: 3rem;
+        }
+      }
+      .news-list {
+        padding-left: 20px;
+        margin: 98px 0;
+        width: 100%;
+        h5 {
+          text-align: left;
+          background-color: $white;
+          z-index: 5;
+        }
+        position: relative;
+      }
+      .news-list::after {
+        content: "";
+        width: 85%;
+        height: 5px;
+        left: 120px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $red-2;
+        position: absolute;
+        z-index: 4;
       }
     }
   }
