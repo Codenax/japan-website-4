@@ -140,9 +140,9 @@
           height: 100%;
           img {
             height: 100%;
-            width: 150%;
-            margin-left: -25%;
-            margin-right: -25%;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
           }
           .text-area {
             bottom: 200px;
@@ -673,7 +673,11 @@ display: none;
     text-align: left;
     padding: 54px 15px;
     max-width: 100% !important;
-    background: $blue-drak;
+    background: url(../../assets/images/bag-img/bg-red-big.png), $blue-drak;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top right;
+    z-index: 8;
     .logo {
       img {
         width: 340px;
@@ -682,7 +686,7 @@ display: none;
       }
     }
     p {
-      font-size: 26px;
+      font-size: 26px; 
       text-align: left;
       line-height: 3.5rem;
       color: $white;
@@ -701,6 +705,7 @@ display: none;
       color: $white;
       font-size: 26px;
       margin-bottom: 77px;
+  
     }
     .list-logo-area {
       display: flex;
@@ -720,10 +725,12 @@ display: none;
         h3 {
           color: $white;
           margin-bottom: 29px;
+          margin-left: 1rem;
         }
         p {
           color: $white;
           font-size: 24px;
+          margin-left: 1rem;
         }
       }
     }
