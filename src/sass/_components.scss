@@ -1,3 +1,6 @@
+
+
+
 .container {
   max-width: 100%;
   margin-left: auto;
@@ -293,14 +296,14 @@ header {
         width: 20px;
         height: 20px;
       }
-      a{
+      a {
         cursor: pointer;
         text-decoration: none;
       }
-      a:hover{
-        h6{
-          opacity: .8;
-          transition: opacity .3s;
+      a:hover {
+        h6 {
+          opacity: 0.8;
+          transition: opacity 0.3s;
         }
       }
       h6 {
@@ -309,7 +312,7 @@ header {
         animation: mymove 2s infinite;
         color: $white;
         z-index: 9999;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
       }
       h6:after {
         content: "";
@@ -358,29 +361,69 @@ header {
       justify-content: space-between;
       .logo {
         left: 0;
+
         img {
-          width: 37.9vw;
+          width: 19.29vw;
           height: auto;
+          opacity: 1;
+          transition: all 0.2s;
+        }
+        img:hover {
+          opacity: 0.6;
+          transition: all 0.2s;
         }
       }
       .navbar-nav-right {
         justify-content: space-between;
         width: 11.33vw;
         align-items: baseline;
+
         .navigration-icon {
+          position: relative;
+          cursor: pointer;
+        }
+        img {
+          width: 1.2vw;
+          height: auto;
+          opacity: 1;
+          transition: all 0.2s;
+        }
+        .navigration-icon:hover::after {
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+        .navigration-icon:hover {
           img {
-            width: 1.8vw;
-            height: auto;
+            opacity: 0.6;
+            transform: scale(1.4);
+            transition: all 0.2s;
           }
+        }
+
+        .navigration-icon::after {
+          content: "";
+          background-color: $white;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          opacity: 1;
+          bottom: -0.7vw;
+          position: absolute;
+          z-index: 8;
+          transition: opacity 0.2s;
         }
         a {
           font-size: 1.24vw;
           font-family: $bebas-pro-bold;
           color: $white;
           position: relative;
+          opacity: 1;
+          transition: all 0.2s;
         }
         a:hover {
           text-decoration: none;
+          opacity: 0.6;
+          transition: all 0.2s;
         }
         a:hover::after {
           content: "";
@@ -392,6 +435,7 @@ header {
           left: 0;
           bottom: -0.146vw;
           transition: 1s;
+          transition: height 0.2s;
         }
         a.active::after {
           content: "";
@@ -409,7 +453,7 @@ header {
   }
 
   .pc_mega_menu {
-    max-width: 850px;
+    max-width: 62.1vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -419,11 +463,22 @@ header {
       font-size: 3.72vw;
       margin-bottom: 4.75vw;
       color: #fff;
+      opacity: 1;
+      transition: all 0.2s;
     }
     p {
       font-size: 2.19vw;
       color: #fff;
       margin-bottom: 3.28vw;
+      opacity: 1;
+      transition: all 0.2s;
+    }
+    h2:hover,
+    p:hover {
+      text-decoration: underline;
+      text-underline-position: under;
+      opacity: 0.6;
+      transition: all 0.2s;
     }
 
     .new_contact {
@@ -431,22 +486,43 @@ header {
       color: #fff;
       margin-bottom: 0;
       margin-top: 7.3vw !important;
+      text-decoration: none;
+    }
+    .new_contact:hover {
+      text-decoration: none;
+      opacity: 1;
     }
     .new_email {
       font-size: 2.19vw;
       margin-bottom: 0;
       color: #fff;
     }
+    .top {
+      opacity: 1;
+      transition: all 0.2s;
+    }
+    .new_email:hover {
+      background-color: $white;
+      color: $red-2;
+      opacity: 1;
+    }
   }
 }
+/////<a href="http://">c
+////////---------global card hover-----////
+
+
+
+
 
 .mobile-menu {
   position: fixed;
   top: 0;
   display: block;
-  top: -200%;
+  top: -100vmax;
   z-index: 99;
   transition: 0.4s;
+  display: block;
 }
 
 .show-mobile-menu {
