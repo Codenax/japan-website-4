@@ -1981,7 +1981,7 @@ footer .content-area p {
   }
   .news-page-section .content-area .text-area .news-list::after {
     content: "";
-    width: 78%;
+    width: 73vw;
     height: 5px;
     left: 15px;
     top: 50%;
@@ -2148,6 +2148,12 @@ footer .content-area p {
 }
 
 @media screen and (max-width: 751px) {
+  .content-area {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3vw;
+  }
   h1, h2, h3, h4, h5, h6, p, span, strong {
     margin-bottom: 0;
   }
@@ -2194,6 +2200,7 @@ footer .content-area p {
   header .content-area .navbar-main .navbar-nav-right {
     max-width: 29.46vw;
     width: 29.46vw;
+    margin-right: 2rem;
   }
   header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
     width: 11.2vw;
@@ -2209,6 +2216,7 @@ footer .content-area p {
     height: auto;
   }
   .mobile-menu .header .content-area .navbar-main .navbar-nav-right {
+    margin-right: 2rem;
     width: 28.26vw;
   }
   .mobile-menu .header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
@@ -2551,7 +2559,7 @@ footer .content-area p {
   }
   .news-page .year i {
     position: absolute;
-    right: -2px;
+    right: .266vw;
     font-size: 2.66vw;
   }
   .news-page .year .select_wrap .default_option li {
@@ -2571,15 +2579,17 @@ footer .content-area p {
   }
   .news-page .year .select_wrap.active .select_ul {
     display: block;
+    top: 10.33vw;
+    left: -9.59vw;
   }
   .news-page .year .select_wrap.active .default_option:before {
     top: 3.33vw;
   }
   .news-page .year::after {
     content: "";
-    width: 94%;
+    width: 88%;
     height: 0.66vw;
-    bottom: 2vw;
+    bottom: 2.2vw;
   }
   .news-page .news-card-area {
     margin-top: 9.33vw;

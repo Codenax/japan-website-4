@@ -1,4 +1,11 @@
 @media screen and (max-width: 751px){
+    .content-area {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 3vw;
+      
+      }
     h1,h2,h3,h4,h5,h6,p,span,strong{
         margin-bottom: 0;
       }
@@ -63,6 +70,7 @@
             .navbar-nav-right {
              max-width: 29.46vw;
              width: 29.46vw;
+             margin-right: 2rem;
               .navigration-icon {
                 img {
                   width: 11.2vw;
@@ -89,7 +97,7 @@
                 }
               }
               .navbar-nav-right {
-               
+                margin-right: 2rem;
                 width: 28.26vw;
                 .navigration-icon {
                   img {
@@ -430,7 +438,7 @@
           }
           i {
             position: absolute;
-            right: -2px;
+            right: .266vw;
             font-size: 2.66vw;
           }
           .select_wrap .default_option li {
@@ -450,6 +458,10 @@
           }
           .select_wrap.active .select_ul {
             display: block;
+            top: 10.33vw;
+            left: -9.59vw;
+        
+
           }
     
           .select_wrap.active .default_option:before {
@@ -458,9 +470,9 @@
         }
         .year::after {
           content: "";
-          width: 94%;
+          width: 88%;
           height: 0.66vw;
-          bottom: 2vw;
+          bottom: 2.2vw;
         }
     
         .news-card-area {
