@@ -48,9 +48,9 @@
   }
 
   .mobile-menu {
-    width: 100%;
-    height: auto;
-   
+    width: 100vw;
+    height: 100vh;
+   background-color:$red-2;
 
     .header {
       padding: 35px 0;
@@ -83,7 +83,7 @@
 
     .pc_mega_menu {
       padding-bottom: 235px;
-      max-width: 95vw;
+      width: 100%;
       height: auto;
       margin-left: auto;
       margin-right: auto;
@@ -253,9 +253,10 @@
   }
 
   .leadership {
-    background-color: $red-2;
-    padding: 79px 0;
+  
     .content-area {
+      background-color: $red-2;
+      padding: 79px 0;
       h1 {
         color: $white;
         margin-bottom: 83px;
@@ -335,8 +336,10 @@
     }
   }
   footer {
-    padding: 22px 0;
+   
     .content-area {
+
+      padding: 22px 3.65vw;
       p {
         font-size: 22px;
         text-align: center;
@@ -586,11 +589,27 @@
     }
   }
 
+  .content-area-news{
+display: none;
+    
+  }
+
+  .our-business {
+   padding: 0;
+    height: auto;
+    position: relative;
+    .content-area-p-none{
+      padding-top: 50px;
+    }
+}
+
   .modal-veiw {
     display: block;
+    width: 100%;
+    overflow: hidden;
     .list-manu-area {
       display: flex;
-      width: 95vw;
+      width: 100%;
       height: 130px;
       padding: 40px 0;
       align-items: center;

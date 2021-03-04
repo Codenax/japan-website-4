@@ -51,32 +51,41 @@
 }
 
 .our-business {
-  background: url("../../assets/images/bag-img/bg-red-big.png"),$blue-drak;
-  background-repeat: no-repeat;
-  background-size: 100% auto; 
-  background-position: top left;
+
   padding: 130px 0;
   height: auto;
   position: relative;
-  .content-area-news {
-    margin-left: auto;
-    margin-right: auto;
+  .content-area-p-none{
+    background: url("../../assets/images/bag-img/bg-red-big.png"),$blue-drak;
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    background-position: top left;
     h1 {
       color: $white;
       text-align: left;
       margin-bottom: 70px;
-      width: 95vw;
-      margin-left: auto;
+      margin-left: 3.65vw;
       margin-right: auto;
       display: block;
     }
+  }
+  .content-area-news {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: url("../../assets/images/slider/middle-slider/color-hover.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    background-position: bottom center;
+ 
     .news-slide {
       height: auto !important;
       .carousel-indicators {
         z-index: 8;
-        width: 95vw;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 3.65vw;
         justify-content: space-between;
         top: 0%;
         border-bottom: 1px solid $border-color;
@@ -143,19 +152,25 @@
         }
       }
       .carousel-inner {
-        padding-top: 50px;
+        padding-top: 275px;
         padding-bottom: 0;
         top: 230px;
 
-        position: bottom;
+        position: initial;
         .innner-content-area {
-          height: auto;
+          
+          position: relative;
+          display: block;
+          width: 100%;
+          .content-head{
+            position: relative;
+          }
           .head {
             display: flex;
             height: 100px;
-            width: 95vw;
+            width: 100%;
             align-items: center;
-            margin-left: auto;
+            margin-left: 3.65vw;
             margin-right: auto;
             .logo-area {
               text-align: right;
@@ -177,11 +192,12 @@
             }
           }
           .body-area {
-          display: block;
+           display: block;
             max-width: 1680px;
             margin-top: 120px;
             margin-left: auto;
             margin-right: auto; 
+            position: relative;
            
             .img-area {
               width: 45%;
@@ -209,19 +225,14 @@
             }
           }
           .footer-area {
-            padding-top: 100px;
-            width: 100%;
-            align-items: unset;
+            
+         
+         
+          display: block;
           
-            background-repeat: no-repeat;
-            background: url("../../assets/images/slider/middle-slider/color-hover.png"),
-              $blue-drak;
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: bottom;
 
             .display-icon {
-              width: 95vw;
+              width: 100%;
               display: flex;
               margin-left: auto;
               margin-right: auto;
@@ -254,7 +265,7 @@
 }
 
 .our-network {
-  padding-top: 13rem;
+  padding-top: 0;
   .container {
     img {
       width: 100%;
@@ -264,9 +275,10 @@
 }
 
 .leadership {
-  background-color: $red-2;
-  padding: 130px 0;
+
   .content-area {
+    background-color: $red-2;
+    padding: 130px 3.65vw;
     h1 {
       color: $white;
       margin-bottom: 65px;
@@ -306,7 +318,11 @@
     }
   }
 }
-
+.our-network{
+  img{
+    width: 100%;
+  }
+}
 .contact {
   background-color: #fafafa;
   padding-top: 95px;
@@ -318,7 +334,7 @@
   .content-area {
     h1 {
       color: $text-color;
-      margin-left: 1rem;
+    
     }
     a {
       margin-top: 40px;
@@ -327,10 +343,8 @@
       color: $text-color;
       font-size: 30px;
       font-weight: bold;
-      margin-left: 1rem;
     }
     p {
-      margin-left: 1rem;
       color: #656565;
     }
   }
@@ -351,13 +365,15 @@
   }
 }
 footer {
-  padding: 20px 0;
-  background-color: $blue-drak;
+ 
   .content-area {
+    padding: 22px 3.65vw;
+    background-color: $blue-drak;
     p {
       font-weight: bold;
       color: $white;
       font-size: 12px;
+      
     }
   }
 }
@@ -584,7 +600,7 @@ footer {
     .news {
       h1 {
         font-size: 72px;
-        margin-left: 1.5rem;
+        margin-left: 0rem;
         text-transform: uppercase;
       }
     }
