@@ -5,10 +5,11 @@
     text-align: left;
   }
   .card-area {
+    cursor: pointer;
     margin-bottom: 50px;
     padding: 0 15px;
     .img-area {
-      width: 100%;
+      width: 378px;
       height: auto;
       overflow: hidden;
       margin-left: auto;
@@ -16,6 +17,7 @@
       img {
         width: 100%;
         height: auto;
+        transition: width 0.2s !important;
       }
     }
     .text-area {
@@ -31,10 +33,27 @@
       }
     }
   }
+
+  a:hover {
+    .card-hover-news {
+      img {
+        transform: scale(1.2) !important;
+        opacity: 1;
+        transition: all 0.2s !important;
+      }
+      p { 
+        opacity: 0.7;
+      }
+    }
+  }
+
   h5 {
     text-align: right;
     margin-right: 280px;
     position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
     display: block;
   }
   h5:after {
@@ -47,18 +66,37 @@
     position: absolute;
     background-color: $red-2;
     z-index: 5;
+    transition: all 0.2s;
+  }
+  h5:hover {
+    opacity: 0.6;
+    transition: all 0.2s;
+  }
+  h5:hover:after {
+    background-color: $text-color-2;
+    transition: all 0.2s;
+  }
+  h5:hover:before {
+    content: "";
+    width: 105px;
+    height: 6px;
+    bottom: -4px;
+    right: 0;
+    position: absolute;
+    background-color: $red-2;
+    z-index: 5;
+    transition: all 0.2s;
   }
 }
 
 .our-business {
-
   padding: 130px 0;
   height: auto;
   position: relative;
-  .content-area-p-none{
-    background: url("../../assets/images/bag-img/bg-red-big.png"),$blue-drak;
+  .content-area-p-none {
+    background: url("../../assets/images/bag-img/bg-red-big.png"), $blue-drak;
     background-repeat: no-repeat;
-    background-size: 100% auto; 
+    background-size: 100% auto;
     background-position: top left;
     h1 {
       color: $white;
@@ -75,9 +113,9 @@
     width: 100%;
     background: url("../../assets/images/slider/middle-slider/color-hover.png");
     background-repeat: no-repeat;
-    background-size: 100% auto; 
+    background-size: 100% auto;
     background-position: bottom center;
- 
+
     .news-slide {
       height: auto !important;
       .carousel-indicators {
@@ -91,7 +129,7 @@
         border-bottom: 1px solid $border-color;
         height: 150px;
         li {
-          width: 13.69vw;
+          width: 160px;
           height: 112px;
           background-color: transparent;
           opacity: 1;
@@ -99,13 +137,13 @@
           padding-bottom: 2rem;
           position: relative;
           .logo-area {
-            width: 13.69vw;
+            width: 160px;
             height: 112px;
             position: relative;
             z-index: 1111;
 
             img {
-              width: 9.52vw;
+              width: 160px;
               position: absolute;
               bottom: 0;
               left: 50%;
@@ -133,12 +171,19 @@
             position: absolute;
             z-index: 99999999;
           }
+          .logo-area:hover{
+            img{
+              opacity: .6;
+              transition: all .2s;
+            }
+          }
           .logo-area:hover::after {
             width: 100%;
             transition: 0.5s;
           }
         }
         .active {
+      
           .logo-area::after {
             content: "";
             width: 100%;
@@ -158,11 +203,10 @@
 
         position: initial;
         .innner-content-area {
-          
           position: relative;
           display: block;
           width: 100%;
-          .content-head{
+          .content-head {
             position: relative;
           }
           .head {
@@ -192,13 +236,13 @@
             }
           }
           .body-area {
-           display: block;
+            display: block;
             max-width: 1680px;
             margin-top: 120px;
             margin-left: auto;
-            margin-right: auto; 
+            margin-right: auto;
             position: relative;
-           
+
             .img-area {
               width: 45%;
               float: left;
@@ -209,9 +253,9 @@
               }
             }
             .text-area {
-             display: inline-block;
-             width: 50%;
-             padding-left: 80px;
+              display: inline-block;
+              width: 50%;
+              padding-left: 80px;
               h2 {
                 color: $white;
                 margin-bottom: 40px;
@@ -225,11 +269,7 @@
             }
           }
           .footer-area {
-            
-         
-         
-          display: block;
-          
+            display: block;
 
             .display-icon {
               width: 100%;
@@ -275,7 +315,6 @@
 }
 
 .leadership {
-
   .content-area {
     background-color: $red-2;
     padding: 130px 3.65vw;
@@ -283,10 +322,10 @@
       color: $white;
       margin-bottom: 65px;
     }
-    .led{
+    .led {
       display: block;
     }
-    .key{
+    .key {
       display: none;
     }
     .card-row {
@@ -318,23 +357,22 @@
     }
   }
 }
-.our-network{
-  img{
+.our-network {
+  img {
     width: 100%;
   }
 }
 .contact {
   background-color: #fafafa;
   padding-top: 95px;
-  .botom-logo{
-  max-width: 826px;
-  margin-left: 0;
-  margin-right: auto;
-   }
+  .botom-logo {
+    max-width: 826px;
+    margin-left: 0;
+    margin-right: auto;
+  }
   .content-area {
     h1 {
       color: $text-color;
-    
     }
     a {
       margin-top: 40px;
@@ -343,6 +381,12 @@
       color: $text-color;
       font-size: 30px;
       font-weight: bold;
+    }
+    a:hover{
+      background-color:$red-2;
+color: $white;
+text-decoration: underline;
+transition: all .2s;
     }
     p {
       color: #656565;
@@ -360,12 +404,18 @@
       img {
         width: auto;
         height: 100%;
+  cursor: pointer;
+
+      }
+      img:hover{
+        opacity: .6;
+        transform: scale(1.01);
+        transition: all 0.2s;
       }
     }
   }
 }
 footer {
- 
   .content-area {
     padding: 22px 3.65vw;
     background-color: $blue-drak;
@@ -373,29 +423,25 @@ footer {
       font-weight: bold;
       color: $white;
       font-size: 12px;
-      
     }
   }
 }
 
-
-
-.news-all-page-section{
+.news-all-page-section {
   position: relative;
   background-color: $bg-w;
   margin-top: 0;
- // margin-top: -200px;
-  
+  // margin-top: -200px;
 }
 .news-page {
   background-color: $bg-w;
   padding-top: 200px;
   .content-area {
-    h1{
+    h1 {
       text-align: left;
       font-size: 72px;
       margin-bottom: 96px;
-  }
+    }
     .nav-bar {
       display: flex;
       .search-news {
@@ -462,7 +508,7 @@ footer {
       top: 50%;
       transform: translateY(-50%);
       color: $text-color;
-      z-index: 999;
+      z-index: 9;
     }
     .title {
       font-size: 24px;
@@ -491,7 +537,7 @@ footer {
     .select_wrap .default_option li {
       list-style: none;
       border: none;
- 
+
       p {
         list-style: none;
         font-size: 24px;
@@ -501,7 +547,6 @@ footer {
         font-weight: bold;
         color: $red-2;
         line-height: 6rem;
-      
       }
     }
 
@@ -511,7 +556,7 @@ footer {
       top: 55px;
       left: -5.7rem;
       width: 125%;
-     background: #fff;
+      background: #fff;
       border-radius: 0px;
       display: none;
       z-index: 99;
@@ -530,11 +575,10 @@ footer {
       }
       .option {
         display: flex;
-    
+
         align-items: center;
       }
       .option.all {
-      
         p {
           color: $red-2;
         }
@@ -561,11 +605,24 @@ footer {
   .news-card-area {
     margin-top: 70px;
     display: flex;
+    a:hover {
+      .card-hover-news {
+        img {
+          transform: scale(1.01) !important;
+          opacity: 1;
+          transition: all 0.2s !important;
+        }
+        p { 
+          opacity: 0.7;
+          text-decoration: underline;
+        }
+      }
+    }
     .sin-news {
-      width: 30%;
+      width: 100%;
       margin-bottom: 68px;
       img {
-        width: 100%;
+        width: 377px;
         height: auto;
         margin-bottom: 28px;
       }
@@ -583,11 +640,11 @@ footer {
     }
   }
 }
-.modal-veiw{
+.modal-veiw {
   display: none;
 }
 
-.news-single-page-section{
+.news-single-page-section {
   margin-top: 0px;
   border-bottom: solid 1px #e6e6e6;
 }

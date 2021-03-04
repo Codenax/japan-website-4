@@ -693,7 +693,6 @@
         text-align: left;
         padding: 7.19vw 2vw;
         max-width: 100% !important;
-        background: $blue-drak;
         .logo {
           img {
             width: 45.33vw;
@@ -740,10 +739,12 @@
             h3 {
               color: $white;
               margin-bottom: 3.86vw;
+              margin-left: 1.33vw;
             }
             p {
               color: $white;
               font-size: 3.19vw;
+              margin-left: 1.33vw;
             }
           }
         }
