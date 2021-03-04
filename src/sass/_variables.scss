@@ -1,13 +1,17 @@
 $NanoLight: NotoSansCJKjp;
 $white: #ffffff;
 $dark: #000000;
-$primary: #99cf16;
-$secondary: #81b507;
-$primary-dark: #5b7c0e;
-$primary-dark-h: #80af13;
-$primary-light-white: #99cf1696;
-$grey-light-white: #0000008f;
-$grey-light: #999999;
-$grey-light-2: #a2a2a2;
-$dark-blue: #0b2936;
-//Gradient variable
+
+ 
+
+$blue-drak:#3a474f;
+$text-color:#222222;
+$text-color-2:#656565;
+$red-2:#CA0B21;
+$p-color:#d3d8da;
+$border-color:#727c81;
+$bg-w:#FAFAFA;
+//Gradient variable 3A474F 25333C
+$gra-red:linear-gradient(to bottom, #7b1722, #8a1623, #981423, #a71223, #b60f23, #bd0e22, #c30c22, #ca0b21, #ca0b21, #ca0b21, #ca0b21, #ca0b21);
+$gra-blue: linear-gradient(to top, #25333c, #25333c, #25333c, #25333c, #25333c, #27353e, #28363f, #2a3841, #2e3c44, #323f48, #36434b, #3a474f);
+$gra-red-round:radial-gradient(circle, #e7273e, #dc2840, #d12941, #c52a42, #ba2b42);
