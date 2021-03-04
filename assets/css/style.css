@@ -82,7 +82,7 @@ h6 {
 }
 
 .container {
-  max-width: 1000vw;
+  max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -184,6 +184,20 @@ header .content-area .navbar-main .navbar-nav-right a {
 
 header .content-area .navbar-main .navbar-nav-right a:hover {
   text-decoration: none;
+}
+
+header .content-area .navbar-main .navbar-nav-right a:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 header .content-area .navbar-main .navbar-nav-right a.active:after {
@@ -394,7 +408,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .top-section .top-slider .scroll-down h6:after {
-  content: '';
+  content: "";
   width: 44px;
   height: 1px;
   background-color: #ffffff;
@@ -406,66 +420,156 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   right: -11rem;
 }
 
-.mega-menu {
-  position: absolute;
-  left: -100%;
+.mobile-menu {
+  background-color: #CA0B21;
+  z-index: 9;
   width: 100%;
-  max-height: 800px;
   height: 800px;
+}
+
+.mobile-menu .header {
+  padding: 45px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(53, 53, 53, 0.452)), to(rgba(252, 252, 252, 0)));
+  background-image: -o-linear-gradient(top, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
+  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
+  width: 100%;
+  z-index: 10;
+}
+
+.mobile-menu .content-area .navbar-main {
+  padding: 0;
+  width: 95vw;
   margin-left: auto;
   margin-right: auto;
-  z-index: 99999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.mega-menu.show-mobile-menu {
-  left: 100%;
+.mobile-menu .content-area .navbar-main .logo {
+  left: 0;
 }
 
-.waper {
-  width: 100%;
-  max-height: 800px;
-  height: 800px;
-  background-color: #CA0B21;
+.mobile-menu .content-area .navbar-main .logo img {
+  max-width: 260px;
+  height: auto;
+}
+
+.mobile-menu .content-area .navbar-main .navbar-nav-right {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 155px;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon img {
+  width: 25px;
+  height: auto;
+}
+
+.mobile-menu .content-area .navbar-main .navbar-nav-right a {
+  font-size: 1.7rem;
+  font-family: "Bebas Neue Pro";
+  color: #ffffff;
   position: relative;
 }
 
-.navigration-icon {
-  cursor: pointer;
+.mobile-menu .content-area .navbar-main .navbar-nav-right a:hover {
+  text-decoration: none;
 }
 
-.pc_mega_menu {
+.mobile-menu .content-area .navbar-main .navbar-nav-right a:hover::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 840px;
+  z-index: 5;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
-.pc_mega_menu h2 {
+.mobile-menu .content-area .navbar-main .navbar-nav-right a.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #CA0B21;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: -2px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.mobile-menu .pc_mega_menu {
+  max-width: 850px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: auto;
+}
+
+.mobile-menu .pc_mega_menu h2 {
   font-size: 51px;
   margin-bottom: 65px;
   color: #fff;
 }
 
-.pc_mega_menu p {
+.mobile-menu .pc_mega_menu p {
   font-size: 30px;
   color: #fff;
   margin-bottom: 45px;
 }
 
-.pc_mega_menu .new_contact {
+.mobile-menu .pc_mega_menu .new_contact {
   font-size: 58px;
   color: #fff;
   margin-bottom: 0;
   margin-top: 100px !important;
 }
 
-.pc_mega_menu .new_email {
+.mobile-menu .pc_mega_menu .new_email {
   font-size: 30px;
   margin-bottom: 0;
   color: #fff;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  display: block;
+  left: -100%;
+  z-index: 999999;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.show-mobile-menu {
+  left: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navigration-icon {
+  cursor: pointer;
 }
 
 .news-section {
@@ -893,9 +997,15 @@ footer .content-area p {
   font-size: 12px;
 }
 
+.news-all-page-section {
+  position: relative;
+  background-color: #FAFAFA;
+  margin-top: 0;
+}
+
 .news-page {
   background-color: #FAFAFA;
-  margin-top: 200px;
+  padding-top: 200px;
 }
 
 .news-page .content-area h1 {
@@ -1048,7 +1158,6 @@ footer .content-area p {
 }
 
 .news-page .year .select_wrap .default_option {
-  background-color: transparent;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   position: relative;
@@ -1058,7 +1167,6 @@ footer .content-area p {
 .news-page .year .select_wrap .default_option li {
   list-style: none;
   border: none;
-  background-color: transparent;
 }
 
 .news-page .year .select_wrap .default_option li p {
@@ -1070,7 +1178,6 @@ footer .content-area p {
   font-weight: bold;
   color: #CA0B21;
   line-height: 6rem;
-  background-color: transparent;
 }
 
 .news-page .year .select_wrap .select_ul {
@@ -1080,6 +1187,7 @@ footer .content-area p {
   top: 55px;
   left: -5.7rem;
   width: 125%;
+  background: #fff;
   -webkit-border-radius: 0px;
           border-radius: 0px;
   display: none;
@@ -1172,8 +1280,13 @@ footer .content-area p {
   display: none;
 }
 
+.news-single-page-section {
+  margin-top: 0px;
+  border-bottom: solid 1px #e6e6e6;
+}
+
 .news-page-section {
-  margin-top: 230px;
+  padding-top: 230px;
   border-bottom: solid 1px #e6e6e6;
 }
 
@@ -1296,7 +1409,7 @@ footer .content-area p {
   z-index: 4;
 }
 
-@media screen and (max-width: 751px) {
+@media screen and (max-width: 1023px) {
   .news-slide {
     display: none;
   }
@@ -1325,13 +1438,81 @@ footer .content-area p {
     height: auto;
   }
   header .content-area .navbar-main .navbar-nav-right {
-    width: 221px;
+    max-width: 221px;
   }
   header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
     width: 84px;
   }
   header .content-area .navbar-main .navbar-nav-right a {
     font-size: 30px;
+  }
+  .mobile-menu {
+    width: 100%;
+    height: auto;
+  }
+  .mobile-menu .header {
+    padding: 35px 0;
+  }
+  .mobile-menu .header .content-area .navbar-main .logo {
+    left: 0;
+  }
+  .mobile-menu .header .content-area .navbar-main .logo img {
+    max-width: 280px;
+    height: auto;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right {
+    width: 221px;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
+    width: 55px;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right a {
+    font-size: 30px;
+  }
+  .mobile-menu .pc_mega_menu {
+    padding-bottom: 235px;
+    max-width: 95vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+    padding-left: 65px;
+  }
+  .mobile-menu .pc_mega_menu h2 {
+    font-size: 58px;
+    margin-bottom: 65px;
+    color: #fff;
+  }
+  .mobile-menu .pc_mega_menu p {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 55px;
+  }
+  .mobile-menu .pc_mega_menu .contact-m {
+    border-top: solid 1px #c85865;
+    border-bottom: solid 1px #c85865;
+    background-color: transparent;
+    padding: 40px 0;
+    padding-bottom: 80px;
+  }
+  .mobile-menu .pc_mega_menu .new_contact {
+    font-size: 58px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0 !important;
+    line-height: 10rem;
+  }
+  .mobile-menu .pc_mega_menu .news-h {
+    border-top: solid 1px #c85865;
+    padding-top: 55px;
+  }
+  .mobile-menu .pc_mega_menu .new_email {
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 1px;
   }
   .top-section {
     height: 1000px;
@@ -1532,6 +1713,9 @@ footer .content-area p {
     font-size: 22px;
     text-align: center;
   }
+  .news-all-page-section {
+    margin-top: -200px;
+  }
   .news-page {
     background-color: #FAFAFA;
     margin-top: 200px;
@@ -1704,7 +1888,7 @@ footer .content-area p {
     font-size: 24px;
   }
   .news-page-section {
-    margin-top: 230px;
+    padding-top: 230px;
     border-bottom: solid 1px #e6e6e6;
   }
   .news-page-section .content-area {
@@ -1924,6 +2108,7 @@ footer .content-area p {
 .modal-dialog .modal-body .paragraph {
   color: #ffffff;
   font-size: 26px;
+  margin-bottom: 77px;
 }
 
 .modal-dialog .modal-body .list-logo-area {
