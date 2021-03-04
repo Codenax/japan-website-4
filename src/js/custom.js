@@ -35,14 +35,14 @@
 
 
 
-$('.btn-menu').click(function () {
+$('.navigration-icon').click(function () {
   $(this).toggleClass("click");
-  $('.mobile-manu').toggleClass("show-mobile-menu");
+  $('.mobile-menu').toggleClass("show-mobile-menu");
 });
-$('.close-btn').click(function () {
-  $(this).toggleClass("click");
-  $('.mobile-manu').toggleClass("show-mobile-menu");
-}); 
+// $('.close-btn').click(function () {
+//   $(this).toggleClass("click");
+//   $('.mobile-manu').toggleClass("show-mobile-menu");
+// }); 
 
 
 

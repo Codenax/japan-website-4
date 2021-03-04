@@ -11,25 +11,25 @@
   padding: 0;
 }
 
-.bg-red-shap{
+.bg-red-shap {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 7;
-  
-  img{
+
+  img {
     width: 552px;
     height: auto;
   }
 }
-.bg-red-big{
+.bg-red-big {
   position: absolute;
   right: 0;
   top: 0;
-  z-index:0;
+  z-index: 0;
   width: 100%;
-  
-  img{
+
+  img {
     width: 100%;
     height: auto;
   }
@@ -37,19 +37,23 @@
 
 header {
   padding: 45px 0;
-  background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(53, 53, 53, 0.452),
+    rgba(252, 252, 252, 0)
+  );
   position: absolute;
   z-index: 9;
   width: 100%;
   top: 0;
-  left: 0; 
+  left: 0;
   position: fixed;
   z-index: 10;
   .content-area {
     .navbar-main {
       padding: 0;
       width: 95vw;
-     
+
       margin-left: auto;
       margin-right: auto;
       display: flex;
@@ -80,6 +84,17 @@ header {
         a:hover {
           text-decoration: none;
         }
+        a:hover::after {
+          content: "";
+          width: 100%;
+          height: 3px;
+          background-color: $white;
+          position: absolute;
+          z-index: 5;
+          left: 0;
+          bottom: -2px;
+          transition: 1s;
+        }
         a.active:after {
           content: "";
           width: 100%;
@@ -96,9 +111,15 @@ header {
   }
 }
 @keyframes mymove {
-  0%   {left: 0px;}
-  50%  {left: 15px;}
-  100% {left: 0px;}
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 .top-section {
   height: 800px;
@@ -112,9 +133,8 @@ header {
       .carousel-item {
         height: 800px;
         img {
-         height: 100%;
-         width: 100%;
-         
+          height: 100%;
+          width: 100%;
         }
         .text-area {
           width: 95vw;
@@ -125,26 +145,23 @@ header {
           text-align: left;
           color: $white;
           position: absolute;
-          .content-inner { 
+          .content-inner {
             h3 {
               margin-bottom: 40px;
               color: $white;
             }
-        
+
             h2 {
               margin-bottom: 40px;
               color: $white;
-
             }
             h6 {
               max-width: 600px;
               color: $white;
-           
             }
             p {
               letter-spacing: 10px;
               color: $white;
-            
             }
           }
         }
@@ -210,7 +227,7 @@ header {
         }
       }
     }
-  
+
     .scroll-down {
       width: 95vw;
       left: 50%;
@@ -221,7 +238,7 @@ header {
       color: $white;
       position: absolute;
       z-index: 8;
-  
+
       .text {
         transform: rotate(90deg);
         white-space: nowrap;
@@ -231,16 +248,15 @@ header {
         margin-right: 0;
         width: 20px;
         height: 20px;
-        
       }
       h6 {
         font-size: 14px;
         position: relative;
         animation: mymove 2s infinite;
-         color: $white;
+        color: $white;
       }
-      h6:after{
-        content: '';
+      h6:after {
+        content: "";
         width: 44px;
         height: 1px;
         background-color: $white;
@@ -253,34 +269,32 @@ header {
   }
 }
 
-
-
 // --------mobail-menu------///
 
-
-
 // --------mobail-menu------///
-.mobile-menu{
-  .header{
-    padding: 45px 0;
-    background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
-    width: 100%;
-    z-index: 10;
-  }
+.mobile-menu {
   background-color: $red-2;
-  position: relative;
   z-index: 9;
   width: 100%;
   height: 800px;
+  .header {
+    padding: 45px 0;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(53, 53, 53, 0.452),
+      rgba(252, 252, 252, 0)
+    );
+    width: 100%;
+    z-index: 10;
+  }
+
   // top: 0;
-  // left: 0; 
+  // left: 0;
   // position: fixed;
-  z-index: 10; 
   .content-area {
     .navbar-main {
       padding: 0;
       width: 95vw;
-     
       margin-left: auto;
       margin-right: auto;
       display: flex;
@@ -298,7 +312,7 @@ header {
         align-items: baseline;
         .navigration-icon {
           img {
-            width: 52px;
+            width: 25px;
             height: auto;
           }
         }
@@ -311,10 +325,21 @@ header {
         a:hover {
           text-decoration: none;
         }
-        a.active:after {
+        a:hover::after {
           content: "";
           width: 100%;
-          height: 3px;
+          height: 4px;
+          background-color: $white;
+          position: absolute;
+          z-index: 5;
+          left: 0;
+          bottom: -2px;
+          transition: 1s;
+        }
+        a.active::after {
+          content: "";
+          width: 100%;
+          height: 4px;
           background-color: $red-2;
           position: absolute;
           z-index: 5;
@@ -325,63 +350,54 @@ header {
       }
     }
   }
+
+  .pc_mega_menu {
+    max-width: 850px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+    h2 {
+      font-size: 51px;
+      margin-bottom: 65px;
+      color: #fff;
+    }
+    p {
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 45px;
+    }
+
+    .new_contact {
+      font-size: 58px;
+      color: #fff;
+      margin-bottom: 0;
+      margin-top: 100px !important;
+    }
+    .new_email {
+      font-size: 30px;
+      margin-bottom: 0;
+      color: #fff;
+    }
+  }
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+ display: block;
+  left: -100%;
+  z-index: 999999;
+  transition: 0.4s;
+}
 
+.show-mobile-menu {
+  left: 0;
+  transition: 0.4s;
+}
 
-/////------maga manu-------////
-
-// .mega-menu{
-// position: absolute;
-// left: -100%;
-// width: 100%;
-// max-height: 800px;
-// height: 800px;
-
-// z-index: 99999;
-// }
-// .mega-menu.show-mobile-menu{
-//   left:100% ;
-  
-// }
-// .waper{ 
-//   width: 100%; 
-//   max-height: 800px;
-//   height: 800px;
-//   background-color: $red-2;
-//   position: relative;   
-// }
-// .navigration-icon{
-//   cursor: pointer;
-// }
-// .pc_mega_menu{
-//   position: absolute;
-//   top:50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 840px;
-//    h2{
-//        font-size: 51px;
-//        margin-bottom: 65px;
-//        color: #fff;
-//    }
-//    p{
-//        font-size: 30px;
-//        color:#fff;
-//        margin-bottom: 45px;
-//    }
-
-//    .new_contact{
-//        font-size: 58px;
-//        color: #fff;
-//        margin-bottom: 0;
-//        margin-top: 100px !important;
-//    }
-//    .new_email{
-//        font-size: 30px;
-//        margin-bottom: 0;
-//        color:#fff;
-//    }
-// }
-/////------maga manu-------end////
-
+// -----.navigration-icon----//////
+.navigration-icon {
+  cursor: pointer;
+}

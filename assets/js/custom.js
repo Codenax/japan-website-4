@@ -27,14 +27,14 @@
 // $(function() {
 //     alert(usesViewport()?'Uses viewport':'Doesn\'t use viewport');
 // });
-$('.btn-menu').click(function () {
+$('.navigration-icon').click(function () {
   $(this).toggleClass("click");
-  $('.mobile-manu').toggleClass("show-mobile-menu");
-});
-$('.close-btn').click(function () {
-  $(this).toggleClass("click");
-  $('.mobile-manu').toggleClass("show-mobile-menu");
-});
+  $('.mobile-menu').toggleClass("show-mobile-menu");
+}); // $('.close-btn').click(function () {
+//   $(this).toggleClass("click");
+//   $('.mobile-manu').toggleClass("show-mobile-menu");
+// }); 
+
 $(".default_option").click(function () {
   $(this).parent().toggleClass("active");
 });
