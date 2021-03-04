@@ -198,7 +198,7 @@
   .news-section {
     padding: 95px 0;
     h1 {
-      margin-bottom: 47;
+      margin-bottom: 47px;
       font-size: 58px;
     }
     .card-area {
@@ -573,7 +573,7 @@
         }
         .news-list::after {
           content: "";
-          width: 78%;
+          width:73vw;
           height: 5px;
           left: 15px;
           top: 50%;
@@ -710,18 +710,4 @@
     }
   }
 
-
-  // .mobile-menu{
-  //   position: fixed; 
-  //   height: 1422px;
-  //   top: -1422px;
-  //   z-index: 999999;
-  //   display: block;
-  //   transition: top .4s;
-  // }
-  // .show-mobile-menu{
-  //   top: 0;
-  //   transition: top .4s;
-  
-  // }
 }

@@ -1576,7 +1576,7 @@ footer .content-area p {
     padding: 95px 0;
   }
   .news-section h1 {
-    margin-bottom: 47;
+    margin-bottom: 47px;
     font-size: 58px;
   }
   .news-section .card-area {
@@ -1981,7 +1981,7 @@ footer .content-area p {
   }
   .news-page-section .content-area .text-area .news-list::after {
     content: "";
-    width: 78%;
+    width: 73vw;
     height: 5px;
     left: 15px;
     top: 50%;
@@ -2145,4 +2145,740 @@ footer .content-area p {
 .modal-dialog .modal-body .list-logo-area .text p {
   color: #ffffff;
   font-size: 24px;
+}
+
+@media screen and (max-width: 751px) {
+  .content-area {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3vw;
+  }
+  h1, h2, h3, h4, h5, h6, p, span, strong {
+    margin-bottom: 0;
+  }
+  a {
+    font-size: 1.73vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 7.73vw;
+  }
+  h2 {
+    font-size: 7.19vw;
+  }
+  h3 {
+    font-size: 3.99vw;
+  }
+  h4 {
+    font-size: 3.46vw;
+  }
+  h5 {
+    font-size: 3.1vw;
+  }
+  h6 {
+    font-size: 2.93vw;
+  }
+  .news-slide {
+    display: none;
+  }
+  .bg-red-shap img {
+    width: 44.26vw;
+  }
+  header {
+    padding: 4.66vw 0;
+  }
+  header .content-area .navbar-main .logo {
+    left: 0;
+  }
+  header .content-area .navbar-main .logo img {
+    max-width: 37.33vw;
+    height: auto;
+  }
+  header .content-area .navbar-main .navbar-nav-right {
+    max-width: 29.46vw;
+    width: 29.46vw;
+    margin-right: 2rem;
+  }
+  header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
+    width: 11.2vw;
+  }
+  header .content-area .navbar-main .navbar-nav-right a {
+    font-size: 3.99vw;
+  }
+  .mobile-menu .header {
+    padding: 4.66vw 0;
+  }
+  .mobile-menu .header .content-area .navbar-main .logo img {
+    max-width: 37.33vw;
+    height: auto;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right {
+    margin-right: 2rem;
+    width: 28.26vw;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
+    width: 7.33vw;
+  }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right a {
+    font-size: 3.99vw;
+  }
+  .mobile-menu .pc_mega_menu {
+    padding-bottom: 31.33vw;
+    max-width: 95vw;
+    margin-top: 20vw;
+    padding-left: 7.46vw;
+  }
+  .mobile-menu .pc_mega_menu h2 {
+    font-size: 7.733vw;
+    margin-bottom: 7.46vw;
+  }
+  .mobile-menu .pc_mega_menu p {
+    font-size: 5.33vw;
+    margin-bottom: 7.33vw;
+  }
+  .mobile-menu .pc_mega_menu .contact-m {
+    border-top: solid 1px #c85865;
+    border-bottom: solid 1px #c85865;
+    background-color: transparent;
+    padding: 5.33vw 0;
+    padding-bottom: 10.66vw;
+  }
+  .mobile-menu .pc_mega_menu .new_contact {
+    font-size: 7.73vw;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0 !important;
+    line-height: 13.33vw;
+  }
+  .mobile-menu .pc_mega_menu .news-h {
+    padding-top: 7.33vw;
+  }
+  .mobile-menu .pc_mega_menu .new_email {
+    font-size: 3.99vw;
+    line-height: 1px;
+  }
+  .top-section {
+    height: 133.33vw;
+  }
+  .top-section .top-slider {
+    height: 100%;
+  }
+  .top-section .top-slider .carousel-inner {
+    height: 100%;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item {
+    height: 100%;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item img {
+    height: 100%;
+    width: 150%;
+    margin-left: -25%;
+    margin-right: -25%;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item .text-area {
+    bottom: 26.66vw;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item .text-area .content-inner h3 {
+    display: none;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item .text-area .content-inner h2 {
+    margin-bottom: 5.33vw;
+    font-size: 7.73vw;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item .text-area .content-inner h6 {
+    max-width: 84%;
+    font-size: 3.46vw;
+  }
+  .top-section .top-slider .carousel-inner .carousel-item .text-area .content-inner p {
+    letter-spacing: 1.33vw;
+  }
+  .top-section .top-slider .carousel-indicators {
+    margin-bottom: 2.93vw;
+  }
+  .top-section .top-slider .carousel-indicators li h6 {
+    font-size: 3.73vw;
+    line-height: 16vw;
+  }
+  .top-section .top-slider .carousel-indicators li .text-border {
+    width: 16.66vw;
+    height: 16.66vw;
+  }
+  .top-section .top-slider .carousel-indicators li.active .text-border:after {
+    width: 16.66vw;
+    height: 16.66vw;
+    -webkit-border-radius: 10.66vw;
+            border-radius: 10.66vw;
+    line-height: 10.66vw;
+  }
+  .top-section .top-slider .scroll-down {
+    display: none;
+  }
+  .news-section {
+    padding: 12.66vw 0;
+  }
+  .news-section h1 {
+    margin-bottom: 6.26vw;
+    font-size: 7.73vw;
+  }
+  .news-section .card-area {
+    margin-bottom: 6.66vw;
+    padding: 0 0px;
+  }
+  .news-section .card-area .img-area {
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .news-section .card-area .img-area img {
+    width: 100%;
+    height: auto;
+  }
+  .news-section .card-area .text-area {
+    margin-top: 1.33vw;
+    padding: 0 0px;
+    width: 50%;
+  }
+  .news-section .card-area .text-area .date {
+    font-size: 2.93vw;
+    font-family: "Roboto Medium";
+    color: #656565;
+  }
+  .news-section .card-area .text-area p {
+    margin-top: 0px;
+    font-size: 3.19vw;
+  }
+  .news-section h5 {
+    text-align: right;
+    margin-right: 0px;
+    font-size: 3.99vw;
+  }
+  .news-section h5:after {
+    content: "";
+    width: 70.66vw;
+    height: .079vw;
+    right: 18.66vw;
+  }
+  .our-network {
+    padding-top: 0rem;
+  }
+  .leadership {
+    background-color: #CA0B21;
+    padding: 10.53vw 0;
+  }
+  .leadership .content-area h1 {
+    color: #ffffff;
+    margin-bottom: 11.06vw;
+    font-size: 7.73vw;
+  }
+  .leadership .content-area .led {
+    display: none;
+  }
+  .leadership .content-area .key {
+    display: block;
+  }
+  .leadership .content-area .card-row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .leadership .content-area .card-row .card-area {
+    width: 25%;
+    padding: 8.66vw 8.66vw;
+    padding-top: 6.66vw;
+  }
+  .leadership .content-area .card-row .card-area .imag-area img {
+    width: 80%;
+  }
+  .leadership .content-area .card-row .card-area h6 {
+    margin-top: 4.39vw;
+    margin-bottom: 2.66vw;
+    font-size: 3.46vw;
+  }
+  .leadership .content-area .card-row .card-area p {
+    font-size: 2.93vw;
+  }
+  .contact {
+    background-color: #fafafa;
+    padding-top: 12.66vw;
+  }
+  .contact .content-area h1 {
+    margin-left: 0;
+    font-size: 7.73vw;
+    margin-bottom: 6.33vw;
+  }
+  .contact .content-area a {
+    font-size: 5.33vw;
+    margin-left: 0;
+  }
+  .contact .content-area p {
+    margin-left: 0;
+    margin-top: 6.66vw;
+    font-size: 2.93vw;
+    margin-bottom: 12.93vw;
+    line-height: 3.99vw;
+  }
+  .contact .botom-logo {
+    max-width: 100%;
+  }
+  .contact .logo-area {
+    margin-top: 0;
+    padding-top: 11.33vw;
+    padding-bottom: 5.99vw;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  .contact .logo-area .logo {
+    margin-right: 0;
+    height: 9.33vw;
+    margin-bottom: 3.99vw;
+  }
+  .contact .logo-area .logo img {
+    width: auto;
+    height: 100%;
+  }
+  footer {
+    padding: 2.93vw 0;
+  }
+  footer .content-area p {
+    font-size: 2.93vw;
+    text-align: center;
+  }
+  .news-all-page-section {
+    margin-top: -26.66vw;
+  }
+  .news-page {
+    background-color: #FAFAFA;
+    margin-top: 26.66vw;
+  }
+  .news-page .content-area h1 {
+    font-size: 9.599vw;
+    margin-bottom: 13.86vw;
+  }
+  .news-page .content-area .nav-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group {
+    position: relative;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group input::-webkit-input-placeholder {
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 2.66vw;
+    border: none;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group input::-moz-placeholder {
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 2.66vw;
+    border: none;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group input:-ms-input-placeholder {
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 2.66vw;
+    border: none;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group input::-ms-input-placeholder {
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 2.66vw;
+    border: none;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group input::placeholder {
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 2.66vw;
+    border: none;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group .form-control {
+    border: none;
+    padding: 4.66vw 0.75rem;
+    padding-right: 5.33vw;
+    border-bottom: solid 0.66vw #CA0B21;
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    line-height: 5.33vw;
+    font-weight: bold;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group .form-control:focus {
+    color: #222222;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: solid 0.66vw #CA0B21;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group .input-group-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .news-page .content-area .nav-bar .search-news .input-group .input-group-btn .btn-default i {
+    font-size: 2.66vw;
+    color: #222222;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group .input-group-btn:focus {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .news-page .year {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+  }
+  .news-page .year .title {
+    font-size: 3.99vw;
+    line-height: 10.66vw;
+  }
+  .news-page .year i {
+    position: absolute;
+    right: .266vw;
+    font-size: 2.66vw;
+  }
+  .news-page .year .select_wrap .default_option li {
+    list-style: none;
+    border: none;
+    background-color: transparent;
+  }
+  .news-page .year .select_wrap .default_option li p {
+    list-style: none;
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    border: none;
+    font-weight: bold;
+    color: #CA0B21;
+    line-height: 10.66vw;
+    background-color: transparent;
+  }
+  .news-page .year .select_wrap.active .select_ul {
+    display: block;
+    top: 10.33vw;
+    left: -9.59vw;
+  }
+  .news-page .year .select_wrap.active .default_option:before {
+    top: 3.33vw;
+  }
+  .news-page .year::after {
+    content: "";
+    width: 88%;
+    height: 0.66vw;
+    bottom: 2.2vw;
+  }
+  .news-page .news-card-area {
+    margin-top: 9.33vw;
+    display: block;
+  }
+  .news-page .news-card-area .sin-news {
+    width: 100%;
+    margin-bottom: 6.66vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .news-page .news-card-area .sin-news img {
+    width: 47%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .news-page .news-card-area .sin-news .text-area {
+    width: 49%;
+  }
+  .news-page .news-card-area .sin-news .date {
+    font-size: 2.93vw;
+    color: #3a474f;
+    font-family: "Roboto Medium";
+    margin-left: 2vw;
+  }
+  .news-page .news-card-area .sin-news p {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+    font-size: 3.19vw;
+  }
+  .news-page-section {
+    padding-top: 23.99vw;
+    border-bottom: solid 1px #e6e6e6;
+  }
+  .news-page-section .content-area {
+    display: block;
+  }
+  .news-page-section .content-area .news h1 {
+    font-size: 9.599vw;
+    margin-left: 2vw;
+  }
+  .news-page-section .content-area .text-area {
+    margin-left: 0;
+    width: 100%;
+  }
+  .news-page-section .content-area .text-area .date {
+    font-size: 2.93vw;
+    font-family: "Roboto Medium";
+    color: #656565;
+    display: inline-block;
+    margin-top: 9.33vw;
+    padding: 0 2vw;
+  }
+  .news-page-section .content-area .text-area .head {
+    position: relative;
+    padding: 0 2vw;
+    margin-top: 2.93vw;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .news-page-section .content-area .text-area .head h3 {
+    width: 100%;
+    font-size: 5.33vw;
+    float: left;
+    display: block;
+  }
+  .news-page-section .content-area .text-area .head .pdf-icon {
+    display: none;
+  }
+  .news-page-section .content-area .text-area .head::after {
+    content: "";
+    width: 90%;
+    height: 0.66vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -10.66vw;
+    background-color: #e6e6e6;
+    position: absolute;
+  }
+  .news-page-section .content-area .text-area .head::before {
+    content: "";
+    width: 12%;
+    height: 0.66vw;
+    left: 2vw;
+    top: -10.66vw;
+    background-color: #CA0B21;
+    position: absolute;
+    z-index: 5;
+  }
+  .news-page-section .content-area .text-area .text-body {
+    width: 100%;
+  }
+  .news-page-section .content-area .text-area .text-body img {
+    margin-top: 8.66vw;
+    width: 100%;
+    margin-bottom: 8.66vw;
+  }
+  .news-page-section .content-area .text-area .text-body p {
+    padding: 0 2vw;
+    font-size: 3.46vw;
+    text-align: justify;
+    font-family: "Roboto Medium";
+    line-height: 5.33vw;
+  }
+  .news-page-section .content-area .text-area .news-list {
+    padding-left: 2.66vw;
+    margin: 13.06vw 0;
+    width: 100%;
+    position: relative;
+  }
+  .news-page-section .content-area .text-area .news-list h5 {
+    text-align: left;
+    background-color: #ffffff;
+    z-index: 5;
+    font-size: 3.99vw;
+    text-align: right;
+  }
+  .news-page-section .content-area .text-area .news-list::after {
+    content: "";
+    width: 78%;
+    height: 0.66vw;
+    left: 2vw;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #CA0B21;
+    position: absolute;
+    z-index: 4;
+  }
+  .modal-veiw {
+    display: block;
+  }
+  .modal-veiw .list-manu-area {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 95vw;
+    height: 13.99vw;
+    padding: 5.33vw 0;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: solid 1px #727c81;
+    border-left: 0;
+    border-right: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .modal-veiw .list-manu-area img {
+    height: 100%;
+    width: auto;
+  }
+  .modal-veiw .list-manu-area a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 3.99vw;
+    font-family: "Bebas Neue Pro";
+    position: relative;
+  }
+  .modal-veiw .list-manu-area a::after {
+    content: "";
+    width: 10.66vw;
+    height: 0.66vw;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -13.33vw;
+    position: absolute;
+    z-index: 6;
+    background-color: #ffffff;
+  }
+}
+
+.modal-dialog {
+  max-width: 100% !important;
+}
+
+.modal-dialog .modal-content {
+  background-color: transparent;
+}
+
+.modal-dialog .modal-header {
+  background-color: transparent;
+  display: block;
+  height: 13.33vw;
+  position: relative;
+}
+
+.modal-dialog .modal-header .close {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  font-size: 4.79vw;
+  z-index: 10;
+}
+
+.modal-dialog .modal-header .close i {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.modal-dialog .modal-body {
+  text-align: left;
+  padding: 7.19vw 2vw;
+  max-width: 100% !important;
+  background: #3a474f;
+}
+
+.modal-dialog .modal-body .logo img {
+  width: 45.33vw;
+  height: auto;
+  margin-bottom: 6.66vw;
+}
+
+.modal-dialog .modal-body p {
+  font-size: 3.46vw;
+  text-align: left;
+  line-height: 4.66vw;
+  color: #ffffff;
+}
+
+.modal-dialog .modal-body .benner-img {
+  width: 100%;
+  height: auto;
+  margin: 9.99vw 0;
+}
+
+.modal-dialog .modal-body h1 {
+  color: #ffffff;
+  font-size: 7.19vw;
+  margin-bottom: 7.99vw;
+}
+
+.modal-dialog .modal-body .paragraph {
+  color: #ffffff;
+  font-size: 3.46vw;
+  margin-bottom: 10.26vw;
+}
+
+.modal-dialog .modal-body .list-logo-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 6.93vw 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #727c81;
+  border-left: 0;
+  border-right: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-dialog .modal-body .list-logo-area img {
+  width: 14.66vw;
+  height: auto;
+}
+
+.modal-dialog .modal-body .list-logo-area .text h3 {
+  color: #ffffff;
+  margin-bottom: 3.86vw;
+}
+
+.modal-dialog .modal-body .list-logo-area .text p {
+  color: #ffffff;
+  font-size: 3.19vw;
 }
