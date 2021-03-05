@@ -1693,7 +1693,7 @@ footer .content-area p {
   z-index: 4;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
   .news-slide {
     display: none;
   }
@@ -3205,7 +3205,7 @@ footer .content-area p {
   margin-left: 1.33vw;
 }
 
-@media screen and (max-width: 1680px) and (min-width: 1025px) {
+@media screen and (max-width: 1680px) and (min-width: 992px) {
   .container {
     max-width: 100%;
     margin-left: auto;
@@ -3802,6 +3802,7 @@ footer .content-area p {
     background-position: top left;
   }
   .our-business .content-area-p-none h1 {
+    padding-top: 120px;
     color: #ffffff;
     text-align: left;
     margin-bottom: 5.11vw;
