@@ -1,4 +1,4 @@
-@media screen and (max-width: 751px){
+@media screen and (max-width: 991px){
     .content-area {
         width:100%;
         margin-left: auto;
@@ -163,10 +163,16 @@
             .carousel-item {
               height: 100%;
               img {
-                height: 100%;
-                width: 150%;
-                margin-left: -25%;
-                margin-right: -25%;
+                 
+                  height: 100%;
+                  width: auto;
+                  left: 50%;
+                  top: 0;
+                  transform: translateX(-50%);
+                  margin-top: auto;
+                  margin-bottom: auto;
+                  position: absolute;
+              
               }
               .text-area {
                 bottom: 26.66vw;
@@ -200,17 +206,14 @@
               }
               h6::after {
                 content: "";
-                width: 19%;
+           
                 height: .399vw;
                 background-color: $white;
                 position: absolute;
                 z-index: 5;
-      
-                left: 50%;
-                transform: translateX(-50%);
                 opacity: 1;
-                bottom: 3.4vw;
-                transition: opacity 0.3s;
+                bottom: 5.4vw;
+
               }
               .text-border {
                 width: 16.66vw;
@@ -268,17 +271,20 @@
             }
           }
         }
-        h5 {
-          text-align: right;
-          margin-right: 0px;
-          font-size: 3.99vw;
-        }
-        h5:after {
-          content: "";
-          width: 70.66vw;
-          height: .079vw;
-          right: 18.66vw;
-        }
+        .read-more{
+          width: 100%;
+          h5:after {
+            content: "";
+            width: 74.66vw;
+            height: 0.799vw;
+            right: 14.66vw;
+          }
+
+          h5:before {
+            height: .799vw;
+            bottom: -.53vw;
+          }
+         }
       }
     
       .our-network {
@@ -354,13 +360,13 @@
         .logo-area {
           margin-top: 0;
           padding-top: 11.33vw;
-          padding-bottom: 5.99vw;
+          padding-bottom: 2.99vw;
           background-color: $white;
           text-align: center;
           .logo {
             margin-right: 0;
             height: 9.33vw;
-            margin-bottom: 3.99vw;
+            margin-bottom: 7.99vw;
     
             img {
               width: auto;
@@ -370,7 +376,7 @@
         }
       }
       footer {
-        padding: 2.93vw 0;
+        padding: 0 0;
         .content-area {
           p {
             font-size: 2.93vw;
