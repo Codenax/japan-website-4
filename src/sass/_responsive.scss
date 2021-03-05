@@ -235,17 +235,61 @@
         }
       }
     }
-    h5 {
+
+    .read-more{
+      width: 100%;
       text-align: right;
-      margin-right: 0px;
-      font-size: 30px;
-    }
-    h5:after {
-      content: "";
-      width: 530px;
-      height: 6px;
-      right: 14rem;
-    }
+      h5 {
+     
+        text-align: right;
+  
+        margin-right: 0;
+        position: relative;
+        display: block;
+        cursor: pointer;
+        transition: all 0.2s;
+       
+        display: inline-block;
+      }
+      h5:after {
+        content: "";
+        width: 560px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 11rem;
+        position: absolute;
+        background-color: $red-2;
+        z-index: 5;
+        transition: all 0.2s;
+      }
+      h5:hover {
+        opacity: 0.6;
+        transition: all 0.2s;
+      }
+      h5:hover:after {
+        background-color: $text-color-2;
+        transition: all 0.2s;
+      }
+   
+      h5:before {
+        content: "";
+        width: 0%;
+        height: 6px;
+        bottom: -4px;
+        left: 0;
+        position: absolute;
+        background-color: $red-2;
+        z-index: 5;
+        opacity: 0;
+        transition: all 0.2s;
+      }
+      h5:hover:before{
+        width: 100%;
+        opacity: 1;
+        transition: all 0.2s;
+      }
+     }
   }
 
   .our-network {

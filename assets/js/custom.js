@@ -4,7 +4,15 @@
 // $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
 // var newWidth=$(window).width();
 // var viewportMetaTagIsUsed=width!=newWidth;
-// alert(viewportMetaTagIsUsed?'using meta viewport':'not using meta viewport');
+// // alert(viewportMetaTagIsUsed?'using meta viewport':'not using meta viewport');
+// $(function(){
+//   var ua = vpWidth =1680;
+//   if(window.innerWidth < vpWidth) {
+//       $("meta[name='viewport']").attr('content', 'width=1680');
+//   } else {
+//       $("meta[name='viewport']").attr('content', 'width=device-width,initial-scale=1');
+//   }
+// });
 // function usesViewport() {
 //     var meta=$('meta[name=viewport]');
 //     var content=meta.attr('content');

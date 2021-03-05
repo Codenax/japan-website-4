@@ -1,5 +1,5 @@
 .news-section {
-  padding: 95px 0;
+  padding: 90px 0;
   h1 {
     margin-bottom: 50px;
     text-align: left;
@@ -17,7 +17,8 @@
       img {
         width: 100%;
         height: auto;
-        transition: width 0.2s !important;
+        transform: scale(1) !important;
+        transition: all 0.2s !important;
       }
     }
     .text-area {
@@ -34,6 +35,20 @@
     }
   }
 
+  a {
+    .card-hover-news {
+      img {
+        transform: scale(1) !important;
+        opacity: 1;
+        transition: all 0.2s !important;
+      }
+      p {
+        opacity: 1;
+        text-decoration: none;
+        transition: all 0.2s;
+      }
+    }
+  }
   a:hover {
     .card-hover-news {
       img {
@@ -41,52 +56,67 @@
         opacity: 1;
         transition: all 0.2s !important;
       }
-      p { 
+      p {
         opacity: 0.7;
+        text-decoration: underline;
+        transition: all 0.2s;
       }
     }
   }
 
-  h5 {
+  .read-more{
+    width: 100%;
     text-align: right;
-    margin-right: 280px;
-    position: relative;
-    display: block;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: block;
-  }
-  h5:after {
-    content: "";
-    width: 259px;
-    height: 6px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -27rem;
-    position: absolute;
-    background-color: $red-2;
-    z-index: 5;
-    transition: all 0.2s;
-  }
-  h5:hover {
-    opacity: 0.6;
-    transition: all 0.2s;
-  }
-  h5:hover:after {
-    background-color: $text-color-2;
-    transition: all 0.2s;
-  }
-  h5:hover:before {
-    content: "";
-    width: 105px;
-    height: 6px;
-    bottom: -4px;
-    right: 0;
-    position: absolute;
-    background-color: $red-2;
-    z-index: 5;
-    transition: all 0.2s;
-  }
+    h5 {
+   
+      text-align: right;
+      margin-right: 278px;
+      position: relative;
+      display: block;
+      cursor: pointer;
+      transition: all 0.2s;
+     
+      display: inline-block;
+    }
+    h5:after {
+      content: "";
+      width: 259px;
+      height: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -27rem;
+      position: absolute;
+      background-color: $red-2;
+      z-index: 5;
+      transition: all 0.2s;
+    }
+    h5:hover {
+      opacity: 0.6;
+      transition: all 0.2s;
+    }
+    h5:hover:after {
+      background-color: $text-color-2;
+      transition: all 0.2s;
+    }
+ 
+    h5:before {
+      content: "";
+      width: 0%;
+      height: 6px;
+      bottom: -4px;
+      left: 0;
+      position: absolute;
+      background-color: $red-2;
+      z-index: 5;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+    h5:hover:before{
+      width: 100%;
+      opacity: 1;
+      transition: all 0.2s;
+    }
+   }
 }
 
 .our-business {
@@ -171,10 +201,10 @@
             position: absolute;
             z-index: 99999999;
           }
-          .logo-area:hover{
-            img{
-              opacity: .6;
-              transition: all .2s;
+          .logo-area:hover {
+            img {
+              opacity: 0.6;
+              transition: all 0.2s;
             }
           }
           .logo-area:hover::after {
@@ -183,7 +213,6 @@
           }
         }
         .active {
-      
           .logo-area::after {
             content: "";
             width: 100%;
@@ -260,6 +289,9 @@
                 color: $white;
                 margin-bottom: 40px;
                 margin-top: 30px;
+                img{
+                  width: 535px;
+                }
               }
               p {
                 color: $white;
@@ -270,33 +302,52 @@
           }
           .footer-area {
             display: block;
+            padding-bottom: 80px;
 
             .display-icon {
               width: 100%;
+              padding: 0 65px;
               display: flex;
               margin-left: auto;
               margin-right: auto;
               justify-content: space-between;
+              .card-area {
+                border-top: solid 1px $border-color;
+                padding: 50px 16px;
+                text-align: center;
+                width: 31%;
+                height: auto;
+                img {
+                  width: auto;
+                  height: 135px;
+                  color: $white;
+                }
+                h6 {
+                  color: $white;
+                  margin: 22px 0;
+                }
+                p {
+                  font-family: $roboto-regular;
+                  color: $p-color;
+                }
+              }
             }
+           .icon-4{
             .card-area {
               border-top: solid 1px $border-color;
               padding: 50px 16px;
-              text-align: center;
-              width: 32%;
+           
+              width: 23%;
               height: auto;
               img {
-                width: 60%;
-                height: auto;
-                color: $white;
+     
+                height: 105px;
+              
               }
-              h6 {
-                color: $white;
-                margin: 22px 0;
-              }
-              p {
-                color: $p-color;
-              }
+          
             }
+           }
+          
           }
         }
       }
@@ -382,11 +433,11 @@
       font-size: 30px;
       font-weight: bold;
     }
-    a:hover{
-      background-color:$red-2;
-color: $white;
-text-decoration: underline;
-transition: all .2s;
+    a:hover {
+      background-color: $red-2;
+      color: $white;
+      text-decoration: underline;
+      transition: all 0.2s;
     }
     p {
       color: #656565;
@@ -404,11 +455,10 @@ transition: all .2s;
       img {
         width: auto;
         height: 100%;
-  cursor: pointer;
-
+        cursor: pointer;
       }
-      img:hover{
-        opacity: .6;
+      img:hover {
+        opacity: 0.6;
         transform: scale(1.01);
         transition: all 0.2s;
       }
@@ -612,7 +662,7 @@ footer {
           opacity: 1;
           transition: all 0.2s !important;
         }
-        p { 
+        p {
           opacity: 0.7;
           text-decoration: underline;
         }
