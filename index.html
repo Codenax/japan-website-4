@@ -36,7 +36,7 @@
             </a>
           </div>
           <div class="navbar-nav-right d-flex">
-            <div class="navigration-icon">
+            <div id="navigration-icon" class="navigration-icon">
               <img src="assets/images/icon/menu.png" alt="">
             </div>
             <a href="#" class="language active">EN</a>
@@ -52,12 +52,12 @@
 
   <!-- maga-menu-end -->
   <!-- top-section start-->
-  <section class="top-section">
+  <section id="top" class="top-section">
     <div class="content-area-p-none">
       <div class="bg-red-shap">
         <img src="assets/images/bag-img/bg-red.png" alt="">
       </div>
-      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel" data-interval="false">
+      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel" data-interval="true">
         <div class="content-area">
           <ol class="carousel-indicators">
             <li data-target="#top-slider" data-slide-to="0" class="active">
@@ -152,10 +152,29 @@
         </div>
       </div>
     </div>
+
+    <div class="cokiss-popup">
+      <div class="content-area">
+        <div class="body-area">
+          <a  class="close-button close-b"><img src="assets/images/icon/close.png" alt=""></a>
+          <div class="pra">
+            <p> This website uses cookies for the purpose of website optimization. By clicking the “accept” button, you
+              consent to the use of cookies. Please note that if you delete or refuse to accept cookies, you may not be
+              able to use some of the services offered on this website such as the inquiries form. If you do not agree to
+              use cookies, please click the “reject” button. For more information, please refer to our Cookies Policy.
+            </p>
+          </div>
+          <div class="butoon-area">
+          
+            <a  class="close-b">Reject</a>
+            <a  class="close-b">Accept</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- top-section end-->
-
 
   <div class="mobile-menu">
     <div class="header">
@@ -167,7 +186,7 @@
             </a>
           </div>
           <div class="navbar-nav-right d-flex">
-            <div class="navigration-icon  btn-menu">
+            <div id="navigration-icon" class="navigration-icon  btn-menu">
               <img src="assets/images/icon/x.png" alt="">
             </div>
             <a href="#" class="language active">EN</a>
@@ -182,27 +201,31 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <a href="#">
+            <a href="index.html#top" class="close-btn">
               <h2 class="top">TOP</h2>
             </a>
-            <a href="#">
+            <br>
+            <a class="close-btn" href="index.html#our-business">
               <p>OUR BUSINESS BRANDS</p>
             </a>
-            <a href="#">
+            <br>
+            <a class="close-btn" href="index.html#our-network">
               <p>OUR NETWORK</p>
             </a>
-            <a href="#">
+            <br>
+            <a class="close-btn" href="index.html#leadership">
               <p>KEY PEOPLE</p>
             </a>
+
           </div>
           <div class="col-lg-6">
 
-            <a href="">
+            <a class="close-btn" href="index.html#news-section">
               <h2 class="news-h">NEWS</h2>
             </a>
             <div class="contact-m">
               <h2 class="new_contact">CONTACT</h2>
-              <a href="#">
+              <a class="close-btn" href="index.html#contact">
                 <p class="new_email">info@adk-globalnetwork.com</p>
               </a>
             </div>
@@ -220,8 +243,8 @@
       <div class="content-area">
         <h1>NEWS</h1>
         <div class="row">
-         <div class="col-lg-4">
-            <a href="http://"> 
+          <div class="col-lg-4">
+            <a href="news_single_page.html">
               <div class="card-area   card-hover-news">
                 <div class="img-area">
                   <img src="assets/images/news-image/img.png" alt="">
@@ -234,9 +257,9 @@
                 </div>
               </div>
             </a>
-          </div>  
+          </div>
           <div class="col-lg-4">
-            <a href="http://"> 
+            <a href="news_single_page.html">
               <div class="card-area   card-hover-news">
                 <div class="img-area">
                   <img src="assets/images/news-image/img-2.png" alt="">
@@ -249,9 +272,9 @@
                 </div>
               </div>
             </a>
-          </div>  
+          </div>
           <div class="col-lg-4">
-            <a href="http://"> 
+            <a href="news_single_page.html">
               <div class="card-area   card-hover-news">
                 <div class="img-area">
                   <img src="assets/images/news-image/img-3.png" alt="">
@@ -264,22 +287,23 @@
                 </div>
               </div>
             </a>
-          </div>  
+          </div>
         </div>
         <div class="read-more">
-          <h5>READ MORE</h5>
+          <a href="news.html">
+            <h5>READ MORE</h5>
+          </a>
         </div>
-        
+
       </div>
     </div>
   </section>
   <!-- news-section end-->
   <!-- our business start -->
-  <section class="our-business">
+  <section id="our-business" class="our-business">
     <!-- <div class="bg-red-big">
         <img src="assets/images/bag-img/bg-red-big.png" alt="">
       </div> -->
-
     <div class="content-area-p-none">
       <h1>OUR BUSINESS BRANDS </h1>
       <div class="content-area-news">
@@ -563,7 +587,7 @@
                     </div>
                   </div>
                   <div class="display-icon icon-4">
-                   
+
                     <div class="card-area">
                       <img src="assets/images/slider/middle-slider/04/6.png" alt="">
                       <h6>D2C</h6>
@@ -675,11 +699,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
   </section>
 
 
@@ -694,9 +713,10 @@
       <div class="modal-content">
         <div class="modal-header">
 
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times" aria-hidden="true"></i>
-          </button>
+          <a href="" class="close"><i class="fas fa-times" aria-hidden="true" data-dismiss="modal"
+              aria-label="Close"></i></a>
+
+
         </div>
         <div class="modal-body">
           <div class="logo">
@@ -974,14 +994,14 @@
   <!-- our business end-->
 
   <!-- our-network start -->
-  <section class="our-network">
+  <section id="our-network" class="our-network">
     <div class="content-area">
       <img src="assets/images/our-network.png" alt="">
     </div>
   </section>
   <!-- our-network end -->
   <!-- LEADERSHIP start -->
-  <section class="leadership">
+  <section id="leadership" class="leadership">
     <div class="content-area">
       <h1 class="led">LEADERSHIP</h1>
       <h1 class="key">KEY P0EPLE</h1>
@@ -1025,14 +1045,14 @@
   <!-- LEADERSHIP end -->
 
   <!-- contact start -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="content-area">
       <h1>CONTACT</h1>
       <a href="http://">info@adk-globalnetwork.com
       </a>
       <p>If you have any inquiry regarding career or other inquiry regarding for ADK Group companies, please
         contact us
-        from ADK Holding website.</p>
+        from <a class="website-link" href="https://www.adk.jp/en/">ADK Holding website</a>.</p>
     </div>
     <div class="logo-area">
       <div class="content-area ">
@@ -1078,6 +1098,10 @@
       interval: 3000
     })
 
+
+    $('.close-btn').click(function () {
+      $('.mobile-menu').removeClass("show-mobile-menu");
+    });
 
 
 
