@@ -105,7 +105,7 @@ h6 {
 }
 
 .bg-red-shap {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: 4;
@@ -3885,10 +3885,10 @@ footer .content-area p {
     height: 4.65vw;
     bottom: -2.82vw;
   }
-  .mobile-menu .news-h {
+  .mobile-menu .pc_mega_menu .news-h {
     padding-top: 7.33vw;
   }
-  .mobile-menu .new_email {
+  .mobile-menu .pc_mega_menu .new_email {
     font-size: 3.99vw;
     line-height: 1px;
   }
@@ -4240,7 +4240,7 @@ footer .content-area p {
   .news-page .year .select-selected::before {
     content: "";
     width: 100%;
-    height: .666vw;
+    height: 0.666vw;
     background-color: #CA0B21;
     position: absolute;
     left: 0;
@@ -4261,7 +4261,7 @@ footer .content-area p {
   }
   .news-page .year .select-items div {
     border-bottom: 1px solid #e6e6e6;
-    padding: .666vw;
+    padding: 0.666vw;
     padding-left: 1.99vw;
   }
   .news-page .year .select-selected::after {
@@ -4666,7 +4666,7 @@ footer .content-area p {
     position: relative;
   }
   .bg-red-shap {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }

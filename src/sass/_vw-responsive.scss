@@ -144,8 +144,6 @@
       .new_email::before {
         height: 4.65vw;
         bottom: -2.82vw;
-    }
-    
       }
       .news-h {
         padding-top: 7.33vw;
@@ -155,7 +153,8 @@
         line-height: 1px;
       }
     }
-  
+   
+  }
 
   .top-section {
     height: 133.33vw;
@@ -457,7 +456,7 @@
       padding-left: 3.33vw;
 
       .title {
-      top: 2.399vw;
+        top: 2.399vw;
         position: absolute;
         font-size: 3.99vw;
         left: 3.999vw;
@@ -487,7 +486,7 @@
       .select-selected::before {
         content: "";
         width: 100%;
-        height:.666vw;
+        height: 0.666vw;
         background-color: $red-2;
         position: absolute;
         left: 0;
@@ -511,7 +510,7 @@
       }
       .select-items div {
         border-bottom: 1px solid #e6e6e6;
-        padding: .666vw;
+        padding: 0.666vw;
         padding-left: 1.99vw;
       }
       /* Style the arrow inside the select element: */
@@ -761,89 +760,89 @@
     }
   }
   .modal {
-    background-color:#000000d3;
+    background-color: #000000d3;
   }
-.modal-dialog {
-  max-width: 100% !important;
-
-  .modal-header {
-    display: block;
-    height: 13.33vw;
-    position: relative;
-    .close {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      color: $white;
-      font-size: 4.79vw;
-      z-index: 10;
-      i {
-        color: $white;
-        opacity: 1;
-        z-index: 99;
-      }
-    }
-  }
-  .modal-body {
-    text-align: left;
-    padding: 7.19vw 2vw;
+  .modal-dialog {
     max-width: 100% !important;
-    .logo {
-      img {
-        width: 45.33vw;
-        height: auto;
-        margin-bottom: 6.66vw;
-      }
-    }
-    p {
-      font-size: 3.46vw;
-      text-align: left;
-      line-height: 4.66vw;
-      color: $white;
-    }
-    .benner-img {
-      width: 100%;
-      height: auto;
-      margin: 9.99vw 0;
-    }
-    h1 {
-      color: $white;
-      font-size: 7.19vw;
-      margin-bottom: 7.99vw;
-    }
-    .paragraph {
-      color: $white;
-      font-size: 3.46vw;
-      margin-bottom: 10.26vw;
-    }
-    .list-logo-area {
-      display: flex;
-      width: 100%;
-      height: auto;
-      padding: 6.93vw 0;
-      align-items: center;
-      border: solid 1px #727c81;
-      border-left: 0;
-      border-right: 0;
-      justify-content: space-between;
-      img {
-        width: 14.66vw;
-        height: auto;
-      }
-      .text {
-        h3 {
+
+    .modal-header {
+      display: block;
+      height: 13.33vw;
+      position: relative;
+      .close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: $white;
+        font-size: 4.79vw;
+        z-index: 10;
+        i {
           color: $white;
-          margin-bottom: 3.86vw;
-          margin-left: 2.33vw;
+          opacity: 1;
+          z-index: 99;
         }
-        p {
-          color: $white;
-          font-size: 3.19vw;
-          margin-left: 2.33vw;
+      }
+    }
+    .modal-body {
+      text-align: left;
+      padding: 7.19vw 2vw;
+      max-width: 100% !important;
+      .logo {
+        img {
+          width: 45.33vw;
+          height: auto;
+          margin-bottom: 6.66vw;
+        }
+      }
+      p {
+        font-size: 3.46vw;
+        text-align: left;
+        line-height: 4.66vw;
+        color: $white;
+      }
+      .benner-img {
+        width: 100%;
+        height: auto;
+        margin: 9.99vw 0;
+      }
+      h1 {
+        color: $white;
+        font-size: 7.19vw;
+        margin-bottom: 7.99vw;
+      }
+      .paragraph {
+        color: $white;
+        font-size: 3.46vw;
+        margin-bottom: 10.26vw;
+      }
+      .list-logo-area {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 6.93vw 0;
+        align-items: center;
+        border: solid 1px #727c81;
+        border-left: 0;
+        border-right: 0;
+        justify-content: space-between;
+        img {
+          width: 14.66vw;
+          height: auto;
+        }
+        .text {
+          h3 {
+            color: $white;
+            margin-bottom: 3.86vw;
+            margin-left: 2.33vw;
+          }
+          p {
+            color: $white;
+            font-size: 3.19vw;
+            margin-left: 2.33vw;
+          }
         }
       }
     }
   }
-}
 }

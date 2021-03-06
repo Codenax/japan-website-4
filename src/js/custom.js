@@ -40,7 +40,9 @@
 // });
 
 
-
+$('.close-btn').click(function () {
+  $('.mobile-menu').removeClass("show-mobile-menu");
+}); 
 
 
 
@@ -48,10 +50,7 @@ $('.navigration-icon').click(function () {
   $(this).toggleClass("click");
   $('.mobile-menu').toggleClass("show-mobile-menu");
 });
-// $('.close-btn').click(function () {
-//   $(this).toggleClass("click");
-//   $('.mobile-manu').toggleClass("show-mobile-menu");
-// }); 
+
 
 
 
