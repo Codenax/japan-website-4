@@ -831,14 +831,16 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 
 .cokiss-popup {
   display: none;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 23px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .cokiss-popup .content-area {
-  position: absolute;
-  width: 100%;
   z-index: 100;
-  bottom: 23px;
 }
 
 .cokiss-popup .content-area .body-area {
@@ -3750,6 +3752,103 @@ footer .content-area p {
     z-index: 6;
     background-color: #ffffff;
   }
+  .cokiss-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -250px;
+    z-index: 100;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cokiss-popup .content-area .body-area {
+    display: block;
+    background-color: #41454aea;
+    padding: 40px 36px;
+    width: 655px;
+    height: 600px;
+    position: relative;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cokiss-popup .content-area .body-area a.close-button {
+    position: absolute;
+    top: -105px;
+    right: 0;
+    width: 80px;
+    height: 80px;
+  }
+  .cokiss-popup .content-area .body-area a.close-button img {
+    width: 100%;
+    height: 100%;
+  }
+  .cokiss-popup .content-area .body-area .pra {
+    width: 100%;
+  }
+  .cokiss-popup .content-area .body-area .pra p {
+    line-height: 4.2rem;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: justify;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area {
+    width: 100%;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a {
+    display: inline-block;
+    width: 320px;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: "Bebas Neue Pro";
+    color: white;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a:first-child {
+    width: 225px;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::before {
+    content: '';
+    background-color: #727c81;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::after {
+    content: '';
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a:hover::after {
+    width: 100%;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 .modal-dialog {
@@ -4726,6 +4825,103 @@ footer .content-area p {
     font-size: 3.19vw;
     margin-left: 2.33vw;
   }
+  .cokiss-popup {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -250px;
+    z-index: 100;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cokiss-popup .content-area .body-area {
+    display: block;
+    background-color: #41454aea;
+    padding: 5.33vw 4.799vw;
+    width: 87.33vw;
+    height: 79.99vw;
+    position: relative;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cokiss-popup .content-area .body-area a.close-button {
+    position: absolute;
+    top: -13.99vw;
+    right: 0;
+    width: 10.66vw;
+    height: 10.66vw;
+  }
+  .cokiss-popup .content-area .body-area a.close-button img {
+    width: 100%;
+    height: 100%;
+  }
+  .cokiss-popup .content-area .body-area .pra {
+    width: 100%;
+  }
+  .cokiss-popup .content-area .body-area .pra p {
+    line-height: 5.599vw;
+    font-size: 3.199vw;
+    color: #ffffff;
+    text-align: justify;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area {
+    width: 100%;
+    margin-top: 13.33vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a {
+    display: inline-block;
+    width: 42.66vw;
+    text-align: center;
+    position: relative;
+    font-size: 5.33vw;
+    font-family: "Bebas Neue Pro";
+    color: white;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a:first-child {
+    width: 29.999vw;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::before {
+    content: '';
+    background-color: #727c81;
+    width: 100%;
+    height: .266vw;
+    position: absolute;
+    left: 0;
+    bottom: -5.53vw;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::after {
+    content: '';
+    background-color: #ffffff;
+    width: 0%;
+    height: .266vw;
+    position: absolute;
+    left: 0;
+    bottom: -5.53vw;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a:hover::after {
+    width: 100%;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+  }
 }
 
 @media screen and (max-width: 1680px) and (min-width: 992px) {
@@ -5197,12 +5393,12 @@ footer .content-area p {
   }
   .mobile-menu .pc_mega_menu h2:after,
   .mobile-menu .pc_mega_menu p:after {
-    height: .365vw;
-    bottom: -.365vw;
+    height: 0.365vw;
+    bottom: -0.365vw;
   }
   .mobile-menu .pc_mega_menu .new_email::before {
     height: 3.65vw;
-    bottom: -.365vw;
+    bottom: -0.365vw;
   }
   .mobile-menu .pc_mega_menu .new_contact {
     font-size: 4.23vw;
@@ -5646,7 +5842,7 @@ footer .content-area p {
   }
   .contact .content-area a.website-link:hover {
     color: #CA0B21;
-    opacity: .6;
+    opacity: 0.6;
   }
   .contact .content-area p {
     color: #656565;
@@ -5751,12 +5947,12 @@ footer .content-area p {
   .news-page .content-area .nav-bar .search-news .input-group .form-control {
     border: none;
     background-color: transparent;
-    padding: 1.82vw  0.75rem;
+    padding: 1.82vw 0.75rem;
     padding-right: 0.29vw;
     border-bottom: solid 0.365vw #CA0B21;
     font-size: 1.75vw;
     font-family: "Bebas Neue Pro";
-    line-height: .01461vw;
+    line-height: 0.01461vw;
     font-weight: bold;
     color: #222222;
   }
@@ -5799,7 +5995,7 @@ footer .content-area p {
     /* Hide the items when the select box is closed: */
   }
   .news-page .year .title {
-    top: .657vw;
+    top: 0.657vw;
     position: absolute;
     font-size: 1.75vw;
     left: 2.19vw;
@@ -5828,13 +6024,13 @@ footer .content-area p {
     /*hide original SELECT element: */
   }
   .news-page .year .select-selected::before {
-    content: '';
+    content: "";
     width: 100%;
-    height: .365vw;
+    height: 0.365vw;
     background-color: #CA0B21;
     position: absolute;
     left: 0;
-    bottom: -.730vw;
+    bottom: -0.73vw;
   }
   .news-page .year .select-items div,
   .news-page .year .select-selected {
@@ -5846,11 +6042,11 @@ footer .content-area p {
     font-family: "Bebas Neue Pro";
     font-size: 1.754vw;
     padding-left: 5.84vw;
-    top: -.292vw;
+    top: -0.292vw;
   }
   .news-page .year .select-items div {
     border-bottom: 1px solid #e6e6e6;
-    padding: .365vw;
+    padding: 0.365vw;
     padding-left: 1.096vw;
   }
   .news-page .year .select-selected::after {
@@ -5860,28 +6056,28 @@ footer .content-area p {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: .730vw;
+    right: 0.73vw;
     width: 1.096vw;
     height: auto;
-    -webkit-transition: rotate .2s;
-    -o-transition: rotate .2s;
-    transition: rotate .2s;
+    -webkit-transition: rotate 0.2s;
+    -o-transition: rotate 0.2s;
+    transition: rotate 0.2s;
     z-index: 7;
   }
   .news-page .year .select-arrow-active {
     font-size: 1.754vw;
     color: #CA0B21;
     padding-left: 5.84vw;
-    top: -.2923vw;
+    top: -0.2923vw;
   }
   .news-page .year .select-selected.select-arrow-active:after {
     top: 0%;
     -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);
             transform: rotate(-180deg);
-    -webkit-transition: rotate .2s;
-    -o-transition: rotate .2s;
-    transition: rotate .2s;
+    -webkit-transition: rotate 0.2s;
+    -o-transition: rotate 0.2s;
+    transition: rotate 0.2s;
   }
   .news-page .year .select-items {
     position: absolute;
@@ -6053,6 +6249,92 @@ footer .content-area p {
     background-color: #CA0B21;
     position: absolute;
     z-index: 4;
+  }
+  .cokiss-popup {
+    display: none;
+    position: absolute;
+    bottom: 1.68vw;
+    z-index: 100;
+  }
+  .cokiss-popup .content-area .body-area {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #41454aea;
+    padding: 2.04vw 4.02vw;
+    padding-right: 1.82vw;
+    position: relative;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cokiss-popup .content-area .body-area a {
+    cursor: pointer;
+  }
+  .cokiss-popup .content-area .body-area a.close-button {
+    position: absolute;
+    top: -2.923vw;
+    right: 0;
+    width: 2.923vw;
+    height: 2.923vw;
+  }
+  .cokiss-popup .content-area .body-area .pra {
+    width: 73.099vw;
+  }
+  .cokiss-popup .content-area .body-area .pra p {
+    line-height: 2.19vw;
+    font-size: 0.95vw;
+    color: #ffffff;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area {
+    width: 17.54vw;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a {
+    display: inline-block;
+    width: 7.309vw;
+    text-align: center;
+    position: relative;
+    margin-left: 0.73vw;
+    font-family: "Bebas Neue Pro";
+    font-size: 1.38vw;
+    color: white;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::before {
+    content: "";
+    background-color: #727c81;
+    width: 100%;
+    height: 0.1461vw;
+    position: absolute;
+    left: 0;
+    bottom: -1.0964vw;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a::after {
+    content: "";
+    background-color: #ffffff;
+    width: 0%;
+    height: 0.14vw;
+    position: absolute;
+    left: 0;
+    bottom: -1.09vw;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cokiss-popup .content-area .body-area .butoon-area a:hover::after {
+    width: 100%;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
   }
 }
 

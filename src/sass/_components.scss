@@ -599,12 +599,13 @@ header {
 //---popup----///@at-root
 .cokiss-popup{
   display:none; 
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 23px;
+  transform: translateX(-50%);
  .content-area{
-   position: absolute;
-   width: 100%;
    z-index: 100;
-   bottom: 23px;
+  
    .body-area{
     
      display: flex;

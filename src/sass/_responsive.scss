@@ -818,6 +818,95 @@ display: none;
       }
     }
   }
+
+  .cokiss-popup{
+    display:none; 
+    position: absolute;
+    left: 50%;
+    bottom: -250px;
+    z-index: 100;
+    transform: translateX(-50%);
+   .content-area{
+  
+  
+     .body-area{
+      
+       display: block;
+       background-color: #41454aea;
+       padding: 40px 36px;
+       width: 655px;
+       height: 600px;
+       position: relative;
+       justify-content: space-between;
+       align-items: center;
+       a.close-button{
+         position: absolute;
+         top: -105px;
+         right: 0;
+         width: 80px;
+         height: 80px;
+         img{
+           width: 100%;
+           height: 100%;
+         }
+       }
+       .pra{
+         width: 100%;
+         p{
+          line-height: 4.2rem;
+           font-size: 24px;
+           color: $white;
+           text-align: justify;
+         }
+       }
+       .butoon-area{
+         width:100%;
+         margin-top: 100px;
+         display: flex;
+         justify-content: space-between;
+         a{
+           display: inline-block;
+           width: 320px;
+           text-align: center;
+           position: relative;
+           font-size: 40px;
+           font-family: $bebas-pro-bold;
+           
+           color: white;
+           
+         }
+         a:first-child{
+          width: 225px;
+
+         }
+         a::before{
+           content: '';
+           background-color: $border-color;
+           width: 100%;
+           height: 2px;
+           position: absolute;
+           left: 0;
+           bottom: -40px;
+         }
+         a::after{
+          content: '';
+          background-color: $white;
+          width:0%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: -40px;
+          transition: all .2s;
+        }
+        a:hover::after{
+          width: 100%;
+          transition: all .2s;
+        }
+       }
+     }
+   } 
+  }
+  
 }
 
 .modal-dialog {
@@ -916,31 +1005,3 @@ display: none;
 
 
 
-/////-----hover-efect-------------///
-
-// a .card-hover-news {
-//   img {
-//     transform: scale(1) !important;
-//     opacity: 1;
-//     transition: all 0.2s !important;
-//   }
-//   p{
-//     text-decoration: none;
-//     opacity: 1;
-//     transition: all 0.2s !important;
-//   }
-// }
-
-// a:hover {
-//   .card-hover-news{
-//     img {
-//       transform: scale(1.2) !important;
-//       opacity: 1;
-//       transition: all 0.2s !important;
-//     }
-//     p{
-//       text-decoration: underline;
-//       opacity: .7;
-//     }
-//   }
-// }
