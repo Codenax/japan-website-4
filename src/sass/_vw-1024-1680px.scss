@@ -882,8 +882,18 @@
         color: $text-color;
         font-size: 2.19vw;
         font-weight: bold;
-      }
-
+      } 
+a.website-link{
+  font-size: 1.096vw;
+  color: $red-2;
+}
+a.website-link::before{
+content: none;
+}
+a.website-link:hover{
+ color: $red-2;;
+opacity: .6;
+}
       p {
         color: #656565;
       }

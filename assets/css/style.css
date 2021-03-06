@@ -829,6 +829,111 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   cursor: pointer;
 }
 
+.cokiss-popup {
+  display: none;
+  position: relative;
+}
+
+.cokiss-popup .content-area {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 23px;
+}
+
+.cokiss-popup .content-area .body-area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #41454a;
+  padding: 28px 55px;
+  padding-right: 25px;
+  position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cokiss-popup .content-area .body-area a.close-button {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.cokiss-popup .content-area .body-area .pra {
+  width: 1000px;
+}
+
+.cokiss-popup .content-area .body-area .pra p {
+  line-height: 3rem;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.cokiss-popup .content-area .body-area .butoon-area {
+  width: 240px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cokiss-popup .content-area .body-area .butoon-area a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  position: relative;
+  margin-left: 10px;
+  font-family: "Bebas Neue Pro";
+  font-size: 19px;
+  color: white;
+}
+
+.cokiss-popup .content-area .body-area .butoon-area a::before {
+  content: '';
+  background-color: #727c81;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+.cokiss-popup .content-area .body-area .butoon-area a::after {
+  content: '';
+  background-color: #ffffff;
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.cokiss-popup .content-area .body-area .butoon-area a:hover::after {
+  width: 100%;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.show-popup {
+  display: block !important;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
 .news-section {
   padding: 90px 0;
 }
@@ -4070,6 +4175,17 @@ footer .content-area p {
     margin-bottom: 12.93vw;
     line-height: 3.99vw;
   }
+  .contact .content-area a.website-link {
+    font-size: 2.93vw;
+    color: #CA0B21;
+  }
+  .contact .content-area a.website-link::before {
+    content: none;
+  }
+  .contact .content-area a.website-link:hover {
+    color: #CA0B21;
+    opacity: .6;
+  }
   .contact .botom-logo {
     max-width: 100%;
   }
@@ -5520,6 +5636,17 @@ footer .content-area p {
     color: #222222;
     font-size: 2.19vw;
     font-weight: bold;
+  }
+  .contact .content-area a.website-link {
+    font-size: 1.096vw;
+    color: #CA0B21;
+  }
+  .contact .content-area a.website-link::before {
+    content: none;
+  }
+  .contact .content-area a.website-link:hover {
+    color: #CA0B21;
+    opacity: .6;
   }
   .contact .content-area p {
     color: #656565;

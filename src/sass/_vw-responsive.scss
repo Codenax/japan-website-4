@@ -145,6 +145,7 @@
         height: 4.65vw;
         bottom: -2.82vw;
       }
+
       .news-h {
         padding-top: 7.33vw;
       }
@@ -350,6 +351,17 @@
         font-size: 2.93vw;
         margin-bottom: 12.93vw;
         line-height: 3.99vw;
+      }
+      a.website-link{
+        font-size: 2.93vw;
+        color: $red-2;
+      }
+      a.website-link::before{
+      content: none;
+      }
+      a.website-link:hover{
+       color: $red-2;;
+      opacity: .6;
       }
     }
     .botom-logo {
