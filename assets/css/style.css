@@ -937,7 +937,10 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .news-section {
-  padding: 90px 0;
+  background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: 100% 248%;
+  background-position: top right;
 }
 
 .news-section h1 {
@@ -1096,13 +1099,10 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   padding: 130px 0;
   height: auto;
   position: relative;
-}
-
-.our-business .content-area-p-none {
   background: url("../../assets/images/bag-img/bg-red-big.png"), #3a474f;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: top left;
+  background-position: top center;
 }
 
 .our-business .content-area-p-none h1 {
@@ -1377,8 +1377,14 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   height: auto;
 }
 
+.leadership {
+  background: url("../../assets/images/bag-img/bg-red-white.png"), #CA0B21;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
 .leadership .content-area {
-  background-color: #CA0B21;
   padding: 130px 3.65vw;
 }
 
@@ -1423,6 +1429,10 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 .leadership .content-area .card-row .card-area p {
   font-size: 13px;
   color: #f49ba5;
+}
+
+.our-network {
+  background-color: #FAFAFA;
 }
 
 .our-network img {
@@ -1527,7 +1537,10 @@ footer .content-area p {
 }
 
 .news-page {
-  background-color: #FAFAFA;
+  background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
   padding-top: 200px;
 }
 
@@ -1853,6 +1866,10 @@ footer .content-area p {
 .news-single-page-section {
   margin-top: 0px;
   border-bottom: solid 1px #e6e6e6;
+  background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
 }
 
 .news-page-section {
@@ -2203,12 +2220,6 @@ footer .content-area p {
     padding: 130px 0;
     height: auto;
     position: relative;
-  }
-  .our-business .content-area-p-none {
-    background: url("../../assets/images/bag-img/bg-red-big.png"), #3a474f;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top left;
   }
   .our-business .content-area-p-none h1 {
     color: #ffffff;
@@ -3197,7 +3208,6 @@ footer .content-area p {
     padding-top: 0rem;
   }
   .leadership .content-area {
-    background-color: #CA0B21;
     padding: 79px 0;
   }
   .leadership .content-area h1 {
@@ -4220,7 +4230,6 @@ footer .content-area p {
     padding-top: 0rem;
   }
   .leadership .content-area {
-    background-color: #CA0B21;
     padding: 10.53vw 3.65vw;
   }
   .leadership .content-area h1 {
@@ -4315,7 +4324,6 @@ footer .content-area p {
     margin-top: -26.66vw;
   }
   .news-page {
-    background-color: #FAFAFA;
     margin-top: 26.66vw;
   }
   .news-page .content-area h1 {
@@ -5550,12 +5558,6 @@ footer .content-area p {
     height: auto;
     position: relative;
   }
-  .our-business .content-area-p-none {
-    background: url("../../assets/images/bag-img/bg-red-big.png"), #3a474f;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top left;
-  }
   .our-business .content-area-p-none h1 {
     padding-top: 120px;
     color: #ffffff;
@@ -5772,7 +5774,6 @@ footer .content-area p {
     height: auto;
   }
   .leadership .content-area {
-    background-color: #CA0B21;
     padding: 9.5vw 3.65vw;
   }
   .leadership .content-area h1 {
@@ -5882,11 +5883,9 @@ footer .content-area p {
   }
   .news-all-page-section {
     position: relative;
-    background-color: #FAFAFA;
     margin-top: 0;
   }
   .news-page {
-    background-color: #FAFAFA;
     padding-top: 14.61vw;
   }
   .news-page .content-area h1 {

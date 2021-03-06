@@ -1,6 +1,12 @@
 .news-section {
-  padding: 90px 0;
-  h1 {
+    background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+    background-repeat: no-repeat;
+    background-size: 100% 248%;
+    background-position: top right;
+    
+
+
+  h1 { 
     margin-bottom: 50px;
     text-align: left;
   }
@@ -10,7 +16,7 @@
     padding: 0 15px;
     .img-area {
       width: 378px;
-      height: auto;
+      height: auto; 
       overflow: hidden;
       margin-left: auto;
       margin-right: auto;
@@ -123,11 +129,14 @@
   padding: 130px 0;
   height: auto;
   position: relative;
+ background: url("../../assets/images/bag-img/bg-red-big.png"), $blue-drak;
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  background-position: top center;
+
   .content-area-p-none {
-    background: url("../../assets/images/bag-img/bg-red-big.png"), $blue-drak;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top left;
+
+    
     h1 {
       color: $white;
       text-align: left;
@@ -366,8 +375,12 @@
 }
 
 .leadership {
+  background: url("../../assets/images/bag-img/bg-red-white.png"), $red-2;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
   .content-area {
-    background-color: $red-2;
+  
     padding: 130px 3.65vw;
     h1 {
       color: $white;
@@ -409,6 +422,7 @@
   }
 }
 .our-network {
+  background-color: $bg-w;
   img {
     width: 100%;
   }
@@ -500,7 +514,11 @@ footer {
   // margin-top: -200px;
 }
 .news-page {
-  background-color: $bg-w;
+  background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+
   padding-top: 200px;
   .content-area {
     h1 {
@@ -759,6 +777,10 @@ footer {
 .news-single-page-section {
   margin-top: 0px;
   border-bottom: solid 1px #e6e6e6;
+  background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
 }
 .news-page-section {
   padding-top: 200px;
