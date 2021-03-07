@@ -583,10 +583,6 @@
     height: auto;
     position: relative;
     .content-area-p-none {
-      background: url("../../assets/images/bag-img/bg-red-big.png"), $blue-drak;
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      background-position: top left;
       h1 {
         padding-top: 120px;
         color: $white;
@@ -811,7 +807,6 @@
 
   .leadership {
     .content-area {
-      background-color: $red-2;
       padding: 9.5vw 3.65vw;
       h1 {
         color: $white;
@@ -879,14 +874,18 @@
       }
       a.website-link {
         font-size: 1.096vw;
-        color: $red-2;
       }
-      a.website-link::before {
-        content: none;
+ 
+   
+      a.website-link{
+        color:#656565;
       }
-      a.website-link:hover {
-        color: $red-2;
-        opacity: 0.6;
+      a.website-link::before{
+      content: none; 
+      }
+      a.website-link:hover{
+        color:#656565;
+      opacity: .6;
       }
       p {
         color: #656565;
@@ -928,13 +927,14 @@
 
   .news-all-page-section {
     position: relative;
-    background-color: $bg-w;
+
     margin-top: 0;
     // margin-top: -14.61vw;
   }
   .news-page {
-    background-color: $bg-w;
+
     padding-top: 14.61vw;
+    padding-bottom: 4vw;
     .content-area {
       h1 {
         text-align: left;

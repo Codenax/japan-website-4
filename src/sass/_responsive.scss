@@ -299,7 +299,6 @@
   .leadership {
   
     .content-area {
-      background-color: $red-2;
       padding: 79px 0;
       h1 {
         color: $white;
@@ -776,6 +775,15 @@ display: none;
     position: relative;
     .content-area-p-none{
       padding-top: 50px;
+    }
+    .over-ally-shap{
+      position: relative;
+      background: none;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: bottom center;
+      padding-bottom: 12vw;
+      padding-top: 6vw;
     }
 }
 

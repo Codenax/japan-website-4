@@ -237,6 +237,11 @@
 
   .news-section {
     padding: 12.66vw 0;
+    background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+    background-repeat: no-repeat;
+    background-size: 252% auto;
+    background-position: top left;
+    
     h1 {
       margin-bottom: 6.26vw;
       font-size: 7.73vw;
@@ -289,11 +294,17 @@
 
   .our-network {
     padding-top: 0rem;
+    
+    padding-bottom: 13vw;
+
   }
 
   .leadership {
-    .content-area {
-      background-color: $red-2;
+    background: url("../../assets/images/bag-img/bg-red-white.png"), $red-2;
+  background-repeat: no-repeat;
+  background-size: 140% 153%;
+  background-position: center 99%;
+    .content-area { 
 
       padding: 10.53vw 3.65vw;
       h1 {
@@ -354,13 +365,13 @@
       }
       a.website-link{
         font-size: 2.93vw;
-        color: $red-2;
+        color:#656565;
       }
       a.website-link::before{
       content: none;
       }
       a.website-link:hover{
-       color: $red-2;;
+        color:#656565;
       opacity: .6;
       }
     }
@@ -397,10 +408,15 @@
 
   .news-all-page-section {
     margin-top: -26.66vw;
+  
   }
   .news-page {
-    background-color: $bg-w;
     margin-top: 26.66vw;
+    background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    background-position: 50% 154%;
+    padding-bottom: 8vw;
     .content-area {
       h1 {
         font-size: 9.599vw;
@@ -615,6 +631,15 @@
         }
       }
     }
+  }
+
+  .news-single-page-section {
+    margin-top: 0px;
+    border-bottom: solid 1px #e6e6e6;
+    background: url("../../assets/images/bag-img/bg-white.png"), $bg-w;
+    background-repeat: no-repeat;
+    background-size: 131% 43%;
+    background-position: 2% 17%;
   }
 
   .news-page-section {
@@ -946,5 +971,21 @@
      }
    } 
   }
-  
+  .mo-hide{
+    display: none !important;
+  } 
+  .mo-show{
+    display: block !important;
+  }
+ 
+header .content-area .navbar-main .logo img {
+  width: 38.33vw;
+  height: auto;
+  margin-top: 1.8vw;
 }
+.mobile-menu .header .content-area .navbar-main .logo img {
+  width: 40.33vw;
+  margin-top: 2vw;
+  height: auto;
+}
+} 
