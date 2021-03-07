@@ -365,13 +365,13 @@
       }
       a.website-link{
         font-size: 2.93vw;
-        color: $red-2;
+        color:#656565;
       }
       a.website-link::before{
       content: none;
       }
       a.website-link:hover{
-       color: $red-2;;
+        color:#656565;
       opacity: .6;
       }
     }
@@ -977,4 +977,15 @@
   .mo-show{
     display: block !important;
   }
+ 
+header .content-area .navbar-main .logo img {
+  width: 38.33vw;
+  height: auto;
+  margin-top: 1.8vw;
 }
+.mobile-menu .header .content-area .navbar-main .logo img {
+  width: 40.33vw;
+  margin-top: 2vw;
+  height: auto;
+}
+} 

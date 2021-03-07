@@ -1150,7 +1150,6 @@
       }
       a.website-link {
         font-size: 17px;
-        color: $red-2;
       }
       p {
         color: #656565;
@@ -1159,10 +1158,21 @@
         content: none;
       }
       a.website-link:hover {
-        color: $red-2;
+
         opacity: 0.6;
         background-color: transparent;
       }
+      a.website-link{
+        color:#656565;
+      }
+      a.website-link::before{
+      content: none;
+      }
+      a.website-link:hover{
+        color:#656565;
+      opacity: .6;
+      }
+      
     }
     .logo-area {
       margin-top: 95px;

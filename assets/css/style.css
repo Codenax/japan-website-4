@@ -3334,7 +3334,6 @@ footer .content-area p {
   }
   .contact .content-area a.website-link {
     font-size: 17px;
-    color: #CA0B21;
   }
   .contact .content-area p {
     color: #656565;
@@ -3343,9 +3342,18 @@ footer .content-area p {
     content: none;
   }
   .contact .content-area a.website-link:hover {
-    color: #CA0B21;
     opacity: 0.6;
     background-color: transparent;
+  }
+  .contact .content-area a.website-link {
+    color: #656565;
+  }
+  .contact .content-area a.website-link::before {
+    content: none;
+  }
+  .contact .content-area a.website-link:hover {
+    color: #656565;
+    opacity: .6;
   }
   .contact .logo-area {
     margin-top: 95px;
@@ -5144,13 +5152,13 @@ footer .content-area p {
   }
   .contact .content-area a.website-link {
     font-size: 2.93vw;
-    color: #CA0B21;
+    color: #656565;
   }
   .contact .content-area a.website-link::before {
     content: none;
   }
   .contact .content-area a.website-link:hover {
-    color: #CA0B21;
+    color: #656565;
     opacity: .6;
   }
   .contact .botom-logo {
@@ -5807,6 +5815,16 @@ footer .content-area p {
   }
   .mo-show {
     display: block !important;
+  }
+  header .content-area .navbar-main .logo img {
+    width: 38.33vw;
+    height: auto;
+    margin-top: 1.8vw;
+  }
+  .mobile-menu .header .content-area .navbar-main .logo img {
+    width: 40.33vw;
+    margin-top: 2vw;
+    height: auto;
   }
 }
 
@@ -6714,14 +6732,16 @@ footer .content-area p {
   }
   .contact .content-area a.website-link {
     font-size: 1.096vw;
-    color: #CA0B21;
+  }
+  .contact .content-area a.website-link {
+    color: #656565;
   }
   .contact .content-area a.website-link::before {
     content: none;
   }
   .contact .content-area a.website-link:hover {
-    color: #CA0B21;
-    opacity: 0.6;
+    color: #656565;
+    opacity: .6;
   }
   .contact .content-area p {
     color: #656565;

@@ -874,14 +874,18 @@
       }
       a.website-link {
         font-size: 1.096vw;
-        color: $red-2;
       }
-      a.website-link::before {
-        content: none;
+ 
+   
+      a.website-link{
+        color:#656565;
       }
-      a.website-link:hover {
-        color: $red-2;
-        opacity: 0.6;
+      a.website-link::before{
+      content: none; 
+      }
+      a.website-link:hover{
+        color:#656565;
+      opacity: .6;
       }
       p {
         color: #656565;
