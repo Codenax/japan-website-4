@@ -540,6 +540,13 @@ footer {
             font-weight: bold;
             color: $text-color;
           }
+          input:focus::placeholder{ 
+            color: transparent;
+
+          }
+          input:focus ~ .input-group-btn{ 
+            display: none;
+          }
           .form-control {
             border: none;
             background-color: transparent;

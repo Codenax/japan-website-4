@@ -1607,6 +1607,30 @@ footer .content-area p {
   color: #222222;
 }
 
+.news-page .content-area .nav-bar .search-news .input-group input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.news-page .content-area .nav-bar .search-news .input-group input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.news-page .content-area .nav-bar .search-news .input-group input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.news-page .content-area .nav-bar .search-news .input-group input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.news-page .content-area .nav-bar .search-news .input-group input:focus::placeholder {
+  color: transparent;
+}
+
+.news-page .content-area .nav-bar .search-news .input-group input:focus ~ .input-group-btn {
+  display: none;
+}
+
 .news-page .content-area .nav-bar .search-news .input-group .form-control {
   border: none;
   background-color: transparent;
