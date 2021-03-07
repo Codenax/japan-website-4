@@ -126,14 +126,20 @@
 }
 
 .our-business {
-  padding: 130px 0;
+ 
   height: auto;
   position: relative;
  background: url("../../assets/images/bag-img/bg-red-big.png"), $blue-drak;
   background-repeat: no-repeat;
   background-size:100% auto;
   background-position: top center;
-
+.over-ally-shap{
+  position: relative;
+  background: url("../../assets/images/slider/middle-slider/color-hover.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+}
   .content-area-p-none {
 
     
@@ -150,10 +156,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background: url("../../assets/images/slider/middle-slider/color-hover.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: bottom center;
+
 
     .news-slide {
       height: auto !important;
