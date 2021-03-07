@@ -2070,6 +2070,14 @@ footer .content-area p {
   transition: all .2s;
 }
 
+.mo-hide {
+  display: block !important;
+}
+
+.mo-show {
+  display: none !important;
+}
+
 @media screen and (min-width: 1681px) {
   a {
     text-decoration: none !important;
@@ -4257,6 +4265,7 @@ footer .content-area p {
   }
   .our-network {
     padding-top: 0rem;
+    padding-bottom: 13vw;
   }
   .leadership {
     background: url("../../assets/images/bag-img/bg-red-white.png"), #CA0B21;
@@ -4977,6 +4986,12 @@ footer .content-area p {
     -webkit-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s;
+  }
+  .mo-hide {
+    display: none !important;
+  }
+  .mo-show {
+    display: block !important;
   }
 }
 
