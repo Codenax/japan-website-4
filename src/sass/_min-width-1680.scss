@@ -32,15 +32,15 @@
   }
 
   h4 {
-    font-size:31px;
+    font-size: 31px;
   }
 
   h5 {
-    font-size:28;
+    font-size: 28px;
   }
 
   h6 {
-    font-size:25px;
+    font-size: 25px;
   }
 
   .container {
@@ -189,8 +189,8 @@
     height: 800px;
     box-sizing: border-box;
     position: relative;
-    .content-area-p-none{
-    max-width: 100%;
+    .content-area-p-none {
+      max-width: 100%;
     }
     .top-slider {
       height: 800px;
@@ -202,12 +202,12 @@
         .carousel-item {
           height: 800px;
           img {
-            height:auto;
+            height: auto;
             width: 100%;
-           margin-top: 0;
-           margin-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
           }
-          .content-area { 
+          .content-area {
             width: 1680px;
             margin-left: auto;
             margin-right: auto;
@@ -217,7 +217,7 @@
             height: 295px;
             left: 50%;
             transform: translateX(-50%);
-         }
+          }
           .text-area {
             padding: 0 15px;
             left: 4rem;
@@ -858,7 +858,7 @@
     padding: 130px 0;
     padding-bottom: 0;
     height: auto;
- 
+
     .content-area-p-none {
       h1 {
         color: $white;
@@ -873,7 +873,6 @@
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-  
 
       .news-slide {
         height: auto !important;
@@ -1073,12 +1072,11 @@
   }
 
   .leadership {
-    background: url(../../assets/images/bag-img/bg-red-white.png), #CA0B21;
+    background: url(../../assets/images/bag-img/bg-red-white.png), #ca0b21;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: 0% center;
     .content-area {
-   
       padding: 130px 50px;
       h1 {
         color: $white;
@@ -1150,11 +1148,20 @@
         text-decoration: underline;
         transition: all 0.2s;
       }
-      a.website-link{
+      a.website-link {
         font-size: 17px;
+        color: $red-2;
       }
       p {
         color: #656565;
+      }
+      a.website-link::before {
+        content: none;
+      }
+      a.website-link:hover {
+        color: $red-2;
+        opacity: 0.6;
+        background-color: transparent;
       }
     }
     .logo-area {
@@ -1212,9 +1219,9 @@
           .input-group {
             position: relative;
             input::placeholder {
-              font-size: 24px;
+              font-size: 31px;
               font-family: $bebas-pro-bold;
-              line-height: 2rem;
+              line-height: 3rem;
               border: none;
               font-weight: bold;
               color: $text-color;
@@ -1225,9 +1232,9 @@
               padding: 2.5rem 0.75rem;
               padding-right: 4rem;
               border-bottom: solid 5px $red-2;
-              font-size: 24px;
+              font-size: 31px;
               font-family: $bebas-pro-bold;
-              line-height: 2rem;
+              line-height: 3rem;
               font-weight: bold;
               color: $text-color;
             }
@@ -1263,107 +1270,123 @@
       }
     }
     .year {
-      display: flex;
       position: relative;
-      i {
+      padding: 0px 27px;
+      padding-left: 25px;
+
+      .title {
+        top: 9px;
         position: absolute;
-        right: -23px;
-        font-size: 18px;
+        font-size: 24px;
+        left: 30px;
+      }
+      .custom-select {
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        font-size: 2rem;
+        font-weight: 400;
+
+        color: #495057;
+        vertical-align: middle;
+        background: none;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        font-family: Arial;
+        appearance: none;
+      }
+      .custom-select {
+        select {
+          display: none; /*hide original SELECT element: */
+        }
+      }
+      .select-selected::before {
+        content: "";
+        width: 100%;
+        height: 5px;
+        background-color: $red-2;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+      }
+      .select-items div,
+      .select-selected {
+        padding-left: 6rem;
+        line-height: 4rem;
+        // border: 1px solid transparent;
+        // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        // background-color:transparent;
+        color: $red-2;
+        position: relative;
+        font-family: $bebas-pro-bold;
+        font-size: 31px;
+        padding-left: 8rem;
+        top: -1px;
+      }
+      .select-items div {
+        border-bottom: 1px solid #e6e6e6;
+
+        padding: 5px;
+        padding-left: 15px;
+      }
+      /* Style the arrow inside the select element: */
+      .select-selected::after {
+        position: absolute;
+        content: url("../../assets/images/icon/caret-down-solid.svg");
         top: 50%;
         transform: translateY(-50%);
-        color: $text-color;
-        z-index: 9;
+        right: 10px;
+        width: 15px;
+        height: auto;
+
+        transition: rotate 0.2s;
+
+        z-index: 7;
       }
-      .title {
-        font-size: 24px;
-        font-family: $bebas-pro-bold;
-        line-height: 2rem;
-        border: none;
-        font-weight: bold;
-        color: $text-color;
-        line-height: 6rem;
+      .select-arrow-active {
+        font-size: 31px;
+        color: $red-2;
+        padding-left: 8rem;
+        top: -1px;
       }
-      .select_wrap {
-        width: 80%;
-        margin: 0 0;
-        margin-left: 1rem;
-        position: relative;
-        user-select: none;
-        background-color: transparent;
+      /* Point the arrow upwards when the select box is open (active): */
+      .select-selected.select-arrow-active:after {
+        top: 0%;
+        transform: rotate(-180deg);
+        transition: rotate 0.2s;
       }
 
-      .select_wrap .default_option {
-        border-radius: 5px;
-        position: relative;
-        cursor: pointer;
-      }
+      /* style the items (options), including the selected item: */
 
-      .select_wrap .default_option li {
-        list-style: none;
-        border: none;
-
-        p {
-          list-style: none;
-          font-size: 24px;
-          font-family: $bebas-pro-bold;
-          line-height: 2rem;
-          border: none;
-          font-weight: bold;
-          color: $red-2;
-          line-height: 6rem;
-        }
-      }
-
-      .select_wrap .select_ul {
-        box-shadow: 0px 0px 13px -5px rgba(0, 0, 0, 0.4);
+      /* Style items (options): */
+      .select-items {
         position: absolute;
-        top: 55px;
-        left: -5.7rem;
-        width: 125%;
-        background: #fff;
-        border-radius: 0px;
+        background-color: transparent;
+        color: $text-color !important;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 77;
+        font-family: $bebas-pro-bold;
+        font-size: 24px;
+        box-shadow: $box-shadwo;
+        background-color: $white;
+      }
+
+      /* Hide the items when the select box is closed: */
+      .select-hide {
         display: none;
-        z-index: 99;
-        li {
-          padding: 18px 20px;
-          cursor: pointer;
-          list-style: none;
-          border-bottom: 1px solid #e6e6e6;
-        }
-
-        li:last-child {
-          border-bottom: 0;
-        }
-        li:hover {
-          background: #e7e7e7;
-        }
-        .option {
-          display: flex;
-
-          align-items: center;
-        }
-        .option.all {
-          p {
-            color: $red-2;
-          }
-        }
-      }
-      .select_wrap.active .select_ul {
-        display: block;
       }
 
-      .select_wrap.active .default_option:before {
-        top: 25px;
-        transform: rotate(-225deg);
+      .select-items div.same-as-selected {
+        color: $red-2;
       }
-    }
-    .year::after {
-      content: "";
-      width: 94%;
-      height: 5px;
-      background-color: $red-2;
-      bottom: 15px;
-      position: absolute;
+      .select-items div {
+        color: $text-color;
+      }
     }
 
     .news-card-area {
@@ -1472,7 +1495,7 @@
           top: -80px;
           background-color: $red-2;
           position: absolute;
-          z-index: 5;
+          z-index: 7;
         }
         .text-body {
           width: 100%;
@@ -1514,4 +1537,21 @@
       }
     }
   }
+  .news-page .news-card-area .card-area .img-area {
+    width: 100%;
+
+  }
+  .news-page .news-card-area .card-area .text-area .date {
+    font-size: 15px;
+
+}
+.news-page-section .content-area .text-area .news-list {
+  padding-left: 10px;
+
+}
+.news-page-section .content-area .text-area .date {
+
+  margin-top: 40px;
+
+}
 }
