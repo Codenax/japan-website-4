@@ -1541,6 +1541,7 @@ footer .content-area p {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: top center;
+  border-bottom: solid 1px #e6e6e6;
   padding-top: 200px;
 }
 
@@ -4179,6 +4180,10 @@ footer .content-area p {
   }
   .news-section {
     padding: 12.66vw 0;
+    background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+    background-repeat: no-repeat;
+    background-size: 252% auto;
+    background-position: top left;
   }
   .news-section h1 {
     margin-bottom: 6.26vw;
@@ -4228,6 +4233,12 @@ footer .content-area p {
   }
   .our-network {
     padding-top: 0rem;
+  }
+  .leadership {
+    background: url("../../assets/images/bag-img/bg-red-white.png"), #CA0B21;
+    background-repeat: no-repeat;
+    background-size: 140% 153%;
+    background-position: center 99%;
   }
   .leadership .content-area {
     padding: 10.53vw 3.65vw;
@@ -4325,6 +4336,11 @@ footer .content-area p {
   }
   .news-page {
     margin-top: 26.66vw;
+    background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    background-position: 50% 154%;
+    padding-bottom: 8vw;
   }
   .news-page .content-area h1 {
     font-size: 9.599vw;
@@ -4573,6 +4589,14 @@ footer .content-area p {
   .news-page .news-card-area .card-area .text-area p {
     margin-top: 0px;
     font-size: 3.19vw;
+  }
+  .news-single-page-section {
+    margin-top: 0px;
+    border-bottom: solid 1px #e6e6e6;
+    background: url("../../assets/images/bag-img/bg-white.png"), #FAFAFA;
+    background-repeat: no-repeat;
+    background-size: 131% 43%;
+    background-position: 2% 17%;
   }
   .news-page-section {
     padding-top: 23.99vw;
@@ -5887,6 +5911,7 @@ footer .content-area p {
   }
   .news-page {
     padding-top: 14.61vw;
+    padding-bottom: 4vw;
   }
   .news-page .content-area h1 {
     text-align: left;
