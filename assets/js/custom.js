@@ -27,52 +27,22 @@ function showPopup() {
 
 $('.close-b').click(function () {
   $('.cokiss-popup').removeClass("show-popup");
-}); // $(function(){
-//   var ua = vpWidth =1680;
-//   if(window.innerWidth < vpWidth) {
-//       $("meta[name='viewport']").attr('content', 'width=1680');
-//   } else {
-//       $("meta[name='viewport']").attr('content', 'width=device-width,initial-scale=1');
-//   }
+}); // $('.close-btn').click(function () {
+//   $('.mobile-menu').removeClass("show-mobile-menu");
+// }); 
+// $('.navigration-icon').click(function () {
+//   $(this).toggleClass("click");
+//   $('.mobile-menu').toggleClass("show-mobile-menu");
 // });
-// function usesViewport() {
-//     var meta=$('meta[name=viewport]');
-//     var content=meta.attr('content');
-//     if (!meta.length) {
-//         meta=$('<meta name="viewport" content="width=device-width, initial-scale=1" />').appendTo('head');
-//         console.log(meta.parent());
-//     }
-//     $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
-//     var width1=$(window).width();
-//     $('meta[name=viewport]').attr('content','width=device-width, initial-scale=0.1');
-//     var width2=$(window).width();
-//     if (content) {
-//         $('meta[name=viewport]').attr('content',content);
-//     } else {
-//         meta.remove();
-//     }
-//     var result=width1!=width2;
-//     return result;
-// }
-// $(function() {
-//     alert(usesViewport()?'Uses viewport':'Doesn\'t use viewport');
-// });
+// $(".default_option").click(function(){
+//   $(this).parent().toggleClass("active");
+// })
+// $(".select_ul li").click(function(){
+//   var currentele = $(this).html();
+//   $(".default_option li").html(currentele);
+//   $(this).parents(".select_wrap").removeClass("active");
+// })
 
-$('.close-btn').click(function () {
-  $('.mobile-menu').removeClass("show-mobile-menu");
-});
-$('.navigration-icon').click(function () {
-  $(this).toggleClass("click");
-  $('.mobile-menu').toggleClass("show-mobile-menu");
-});
-$(".default_option").click(function () {
-  $(this).parent().toggleClass("active");
-});
-$(".select_ul li").click(function () {
-  var currentele = $(this).html();
-  $(".default_option li").html(currentele);
-  $(this).parents(".select_wrap").removeClass("active");
-});
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 
@@ -170,4 +140,46 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 
 
-document.addEventListener("click", closeAllSelect);
+document.addEventListener("click", closeAllSelect); // -----////////---animation
+
+AOS.init({
+  duration: 1500,
+  once: true,
+  easing: false
+}); // -----////////---animation
+
+$(function () {
+  $(window).scroll(function () {
+    $(".wipein").each(function () {
+      console.log($(this));
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (scroll > imgPos - windowHeight + windowHeight / 5) {
+        $(this).addClass("show");
+      }
+    });
+  });
+}); ///----scoll---of---////
+
+var showDialog = function showDialog() {
+  document.getElementById('mobile-menu').classList.add('show-mobile-menu');
+  var scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  var body = document.body;
+  body.style.height = '100vh';
+  body.style.overflowY = 'hidden';
+};
+
+var closeDialog = function closeDialog() {
+  var body = document.body;
+  body.style.position = '';
+  body.style.top = '';
+  body.style.height = '';
+  body.style.overflowY = '';
+  document.getElementById('mobile-menu').classList.remove('show-mobile-menu');
+};
+
+window.addEventListener('scroll', function () {
+  document.documentElement.style.setProperty('--scroll-y', "".concat(window.scrollY, "px"));
+});

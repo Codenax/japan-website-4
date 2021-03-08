@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- bootstrap-4 css -->
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
+    <!-- scroll animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- style css -->
 
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -26,29 +28,87 @@
 <body>
   <!-- header section -->
   <header>
-    <div class="container">
-        <div class="content-area">
-          <nav class="navbar-main">
-            <div class="logo">
-              <a href="#">
-                <img src="assets/images/logo/main-logo.png" alt="">
-              </a>
-            </div>
-            <div class="navbar-nav-right d-flex">
-              <div class="navigration-icon btn-menu">
-                <img src="assets/images/icon/menu.png" alt="">
-              </div>
-              <a href="#" class="language active">EN</a>
-              <a href="#" class="language ">JP</a>
-            </div>
-          </nav>
-  
-      </div>
-
+    <div class="content-area">
+      <nav class="navbar-main">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo/main-logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-nav-right d-flex">
+          <div id="navigration-icon" onClick='showDialog()' class="navigration-icon">
+            <img src="assets/images/icon/menu.png" alt="">
+          </div>
+          <a href="#" class="language active">EN</a>
+          <a href="#" class="language ">JP</a>
+        </div>
+      </nav>
     </div>
   </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="header">
+      <div class="content-area">
+        <nav class="navbar-main">
+          <div class="logo">
+            <a href="#">
+              <img src="assets/images/logo/main-logo.png" alt="">
+            </a>
+          </div>
+          <div class="navbar-nav-right d-flex">
+            <div id="navigration-icon" onClick='closeDialog()' class="navigration-icon  btn-menu">
+              <img src="assets/images/icon/x.png" alt="">
+            </div>
+            <a href="#" class="language active">EN</a>
+            <a href="#" class="language ">JP</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="pc_mega_menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="leftside-area">
+              <a href="index.html#top" onClick='closeDialog()'>
+                <h2 class="top">TOP</h2>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-business">
+                <p>OUR BUSINESS BRANDS</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-network">
+                <p>OUR NETWORK</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#leadership">
+                <p>KEY PEOPLE</p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <a onClick='closeDialog()' href="index.html#news-section">
+              <h2 class="news-h">NEWS</h2>
+            </a>
+            <div class="contact-m">
+              <h2 class="new_contact">CONTACT</h2> 
+              <a onClick='closeDialog()' href="index.html#contact">
+                <p class="new_email">info@adk-globalnetwork.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- maga-menu-end -->
   <!-- header section end-->
-  
+
   <div class="mobile-menu">
     <div class="header">
       <div class="content-area">
@@ -74,21 +134,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <a href="index.html#top" class="close-btn">
-              <h2 class="top">TOP</h2>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#our-business">
-              <p>OUR BUSINESS BRANDS</p>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#our-network">
-              <p>OUR NETWORK</p>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#leadership">
-              <p>KEY PEOPLE</p>
-            </a>
+            <div class="leftside-area">
+              <a href="index.html#top" class="close-btn">
+                <h2 class="top">TOP</h2>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#our-business">
+                <p>OUR BUSINESS BRANDS</p>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#our-network">
+                <p>OUR NETWORK</p>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#leadership">
+                <p>KEY PEOPLE</p>
+              </a>
+
+            </div>
 
           </div>
           <div class="col-lg-6">
@@ -118,7 +181,7 @@
       <div class="content-area">
 
         <div class="news">
-          <h1>news</h1>
+          <h1 class="wipein show">news</h1>
         </div>
         <div class="text-area">
           <span class="date">
@@ -133,8 +196,8 @@
             </a>
           </div>
           <div class="text-body">
-            <img src="assets/images/news-image/img-2.png" alt="">
-            <p> ADK Group has announced that Richard Yu, Regional Chief Creative Officer for ADK Greater China, has
+            <img src="assets/images/news-image/img-2.png" data-aos="fade-up" alt="">
+            <p data-aos="fade-up"> ADK Group has announced that Richard Yu, Regional Chief Creative Officer for ADK Greater China, has
               been appointed to the Advisory Board for the WARC Rankings 2020.
               <br>
               <br>
@@ -152,39 +215,46 @@
             <br>
             <br>
             <p>Biography: Richard Yu
-            Regional Chief Creative Officer, ADK Greater China
-            Jointed ADK Taiwan in 2012 and has created many successfully popular campaigns, leading the agency to recognition from local and international award shows including Cannes Gold Lions and Silver Lions, Spikes Asia Grand Prix, D&AD pencils and more.
-            【The WARC Rankings Advisory Board members 2020】
-            Adrian Mills, Partner – Creative, Brand & Advertising, Deloitte Digital Australia
-            Alexander Schill, Global Chief Creative Officer and Partner, Serviceplan Group
-            Andrew Robertson, President and CEO, BBDO Worldwide
-            Ari Weiss, Chief Creative Officer, DDB Worldwide
-            Avril Canavan, Worldwide Chief Marketing & Communications Officer, PHD
-            Berta de Pablos-Barbier, Chief Growth Officer, Mars Wrigley
-            Bruno Bertelli, Global Chief Creative Officer, Publicis Worldwide
-            Chrissie Hanson, Chief Strategy Officer, OMD Worldwide
-            Dick Van Motman, Former Global CEO Creative & Content, Dentsu Aegis Network / Founder, Plain Vanilla Ventures
-            Greg Brooks, Global Chief Marketing & Culture Officer, Mindshare
-            Joanne Brenner, Global Head of Marketing, Mediacom
-            John Patroulis, Worldwide Chief Creative Officer, Grey Group
-            Jose Miguel Sokoloff, Global President, MullenLowe Group Creative Council & Chief Creative Officer, MullenLowe Group UK
-            Kestrel Lee, Executive Creative Director, China, Freeman
-            Lauren Lafranz, Managing Director, Global Creative Operations, VMLY&R
-            Liz Taylor, Global Chief Creative Officer, Leo Burnett Worldwide & Chief Creative Officer, Publicis Communications, North America
-            Malcolm Poynton, Global Chief Creative Officer, Cheil Worldwide
-            Piyush Pandey, Chief Creative Officer Worldwide & Executive Chairman India, Ogilvy
-            Richard Yu, Regional Chief Creative Officer, Greater China, ADK
-            Rob Reilly, Global Creative Chairman, McCann Worldgroup
-            Sir Martin Sorrell, Executive Chairman, S4 Capital
-            Tom DiSapia, Chief Strategy Officer, UM EMEA
-            Vicki Holgate, Effective Creative Excellence Director, Diageo</p>
+              Regional Chief Creative Officer, ADK Greater China
+              Jointed ADK Taiwan in 2012 and has created many successfully popular campaigns, leading the agency to
+              recognition from local and international award shows including Cannes Gold Lions and Silver Lions, Spikes
+              Asia Grand Prix, D&AD pencils and more.
+              【The WARC Rankings Advisory Board members 2020】
+              Adrian Mills, Partner – Creative, Brand & Advertising, Deloitte Digital Australia
+              Alexander Schill, Global Chief Creative Officer and Partner, Serviceplan Group
+              Andrew Robertson, President and CEO, BBDO Worldwide
+              Ari Weiss, Chief Creative Officer, DDB Worldwide
+              Avril Canavan, Worldwide Chief Marketing & Communications Officer, PHD
+              Berta de Pablos-Barbier, Chief Growth Officer, Mars Wrigley
+              Bruno Bertelli, Global Chief Creative Officer, Publicis Worldwide
+              Chrissie Hanson, Chief Strategy Officer, OMD Worldwide
+              Dick Van Motman, Former Global CEO Creative & Content, Dentsu Aegis Network / Founder, Plain Vanilla
+              Ventures
+              Greg Brooks, Global Chief Marketing & Culture Officer, Mindshare
+              Joanne Brenner, Global Head of Marketing, Mediacom
+              John Patroulis, Worldwide Chief Creative Officer, Grey Group
+              Jose Miguel Sokoloff, Global President, MullenLowe Group Creative Council & Chief Creative Officer,
+              MullenLowe Group UK
+              Kestrel Lee, Executive Creative Director, China, Freeman
+              Lauren Lafranz, Managing Director, Global Creative Operations, VMLY&R
+              Liz Taylor, Global Chief Creative Officer, Leo Burnett Worldwide & Chief Creative Officer, Publicis
+              Communications, North America
+              Malcolm Poynton, Global Chief Creative Officer, Cheil Worldwide
+              Piyush Pandey, Chief Creative Officer Worldwide & Executive Chairman India, Ogilvy
+              Richard Yu, Regional Chief Creative Officer, Greater China, ADK
+              Rob Reilly, Global Creative Chairman, McCann Worldgroup
+              Sir Martin Sorrell, Executive Chairman, S4 Capital
+              Tom DiSapia, Chief Strategy Officer, UM EMEA
+              Vicki Holgate, Effective Creative Excellence Director, Diageo</p>
 
 
 
           </div>
-          <a href="news.html"><div class="news-list">
-            <h5>NEWS LIST</h5>
-          </div></a>
+          <a href="news.html">
+            <div class="news-list">
+              <h5>NEWS LIST</h5>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -197,7 +267,7 @@
   <!-- contact start -->
   <section class="contact">
     <div class="content-area">
-      <h1>CONTACT</h1>
+      <h1 class="wipein">CONTACT</h1> <br>
       <a href="https://www.adk.jp/en/">info@adk-globalnetwork.com
       </a>
       <p>If you have any inquiry regarding career or other inquiry regarding for ADK Group companies, please
@@ -240,15 +310,15 @@
   <script src="assets/js/popper.min.js"></script>
 
   <script src="assets/bootstrap/js/bootstrap.js"></script>
+  <!-- scroll animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom.js  -->
   <script src="assets/js/custom.js"></script>
-
-
   <script>
-  
-  $('.close-btn').click(function () {
+    $('.close-btn').click(function () {
       $('.mobile-menu').removeClass("show-mobile-menu");
     });
+
 
 
 

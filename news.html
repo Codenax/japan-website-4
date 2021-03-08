@@ -17,6 +17,8 @@
   <!--Font icon-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- bootstrap-4 css -->
+    <!-- scroll animation css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
   <!-- style css -->
 
@@ -26,7 +28,26 @@
 <body>
   <!-- header section -->
   <header>
-    <div class="container">
+    <div class="content-area">
+      <nav class="navbar-main">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo/main-logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-nav-right d-flex">
+          <div id="navigration-icon" onClick='showDialog()' class="navigration-icon">
+            <img src="assets/images/icon/menu.png" alt="">
+          </div>
+          <a href="#" class="language active">EN</a>
+          <a href="#" class="language ">JP</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="header">
       <div class="content-area">
         <nav class="navbar-main">
           <div class="logo">
@@ -35,20 +56,59 @@
             </a>
           </div>
           <div class="navbar-nav-right d-flex">
-            <div class="navigration-icon btn-menu">
-              <img src="assets/images/icon/menu.png" alt="">
+            <div id="navigration-icon" onClick='closeDialog()' class="navigration-icon  btn-menu">
+              <img src="assets/images/icon/x.png" alt="">
             </div>
             <a href="#" class="language active">EN</a>
             <a href="#" class="language ">JP</a>
           </div>
         </nav>
-
       </div>
-
     </div>
-  </header>
+
+
+    <div class="pc_mega_menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="leftside-area">
+              <a href="index.html#top" onClick='closeDialog()'>
+                <h2 class="top">TOP</h2>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-business">
+                <p>OUR BUSINESS BRANDS</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-network">
+                <p>OUR NETWORK</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#leadership">
+                <p>KEY PEOPLE</p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <a onClick='closeDialog()' href="index.html#news-section">
+              <h2 class="news-h">NEWS</h2>
+            </a>
+            <div class="contact-m">
+              <h2 class="new_contact">CONTACT</h2> 
+              <a onClick='closeDialog()' href="index.html#contact">
+                <p class="new_email">info@adk-globalnetwork.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- maga-menu-end -->
   <!-- header section end-->
-  
+
   <div class="mobile-menu">
     <div class="header">
       <div class="content-area">
@@ -74,22 +134,23 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <a href="index.html#top" class="close-btn">
-              <h2 class="top">TOP</h2>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#our-business">
-              <p>OUR BUSINESS BRANDS</p>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#our-network">
-              <p>OUR NETWORK</p>
-            </a>
-            <br>
-            <a class="close-btn" href="index.html#leadership">
-              <p>KEY PEOPLE</p>
-            </a>
-
+            <div class="leftside-area">
+              <a href="index.html#top" class="close-btn">
+                <h2 class="top">TOP</h2>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#our-business">
+                <p>OUR BUSINESS BRANDS</p>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#our-network">
+                <p>OUR NETWORK</p>
+              </a>
+              <br>
+              <a class="close-btn" href="index.html#leadership">
+                <p>KEY PEOPLE</p>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6">
 
@@ -115,8 +176,9 @@
     </div>
     <div class="news-page">
       <div class="content-area">
-        <h1>NEWS</h1>
-        <div class="nav-bar row">
+        <h1 class="wipein show"> NEWS</h1>
+
+        <div class="nav-bar ">
           <div class="search-news col-6 col-lg-4">
             <form>
               <div class="input-group">
@@ -133,7 +195,7 @@
             <div class="title">
               <h4>YEAR</h4>
             </div>
-            <div class="custom-select"> 
+            <div class="custom-select">
               <select>
 
                 <option value="0">All</option>
@@ -146,55 +208,13 @@
 
           </div>
         </div>
-        <div class="news-card-area row ">
+
+
+        <div class="news-card-area">
+
           <div class="row">
-            <div class="col-lg-4">
-               <a href="news_single_page.html"> 
-                 <div class="card-area   card-hover-news">
-                   <div class="img-area">
-                     <img src="assets/images/news-image/img.png" alt="">
-                   </div>
-                   <div class="text-area">
-                     <span class="date">2019.07.01</span>
-                     <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
-                       Appointment
-                       of CEO</p>
-                   </div>
-                 </div>
-               </a>
-             </div>  
-             <div class="col-lg-4">
-               <a href="news_single_page.html"> 
-                 <div class="card-area   card-hover-news">
-                   <div class="img-area">
-                     <img src="assets/images/news-image/img-2.png" alt="">
-                   </div>
-                   <div class="text-area">
-                     <span class="date">2019.07.01</span>
-                     <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
-                       Appointment
-                       of CEO</p>
-                   </div>
-                 </div>
-               </a>
-             </div>  
-             <div class="col-lg-4">
-               <a href="news_single_page.html"> 
-                 <div class="card-area   card-hover-news">
-                   <div class="img-area">
-                     <img src="assets/images/news-image/img-3.png" alt="">
-                   </div>
-                   <div class="text-area">
-                     <span class="date">2019.07.01</span>
-                     <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
-                       Appointment
-                       of CEO</p>
-                   </div>
-                 </div>
-               </a>
-             </div>  
-             <div class="col-lg-4">
-              <a href="news_single_page.html"> 
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
                 <div class="card-area   card-hover-news">
                   <div class="img-area">
                     <img src="assets/images/news-image/img.png" alt="">
@@ -207,9 +227,9 @@
                   </div>
                 </div>
               </a>
-            </div>  
-            <div class="col-lg-4">
-              <a href="news_single_page.html"> 
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
                 <div class="card-area   card-hover-news">
                   <div class="img-area">
                     <img src="assets/images/news-image/img-2.png" alt="">
@@ -222,9 +242,9 @@
                   </div>
                 </div>
               </a>
-            </div>  
-            <div class="col-lg-4">
-              <a href="news_single_page.html"> 
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
                 <div class="card-area   card-hover-news">
                   <div class="img-area">
                     <img src="assets/images/news-image/img-3.png" alt="">
@@ -237,8 +257,55 @@
                   </div>
                 </div>
               </a>
-            </div>  
-           </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
+                <div class="card-area   card-hover-news">
+                  <div class="img-area">
+                    <img src="assets/images/news-image/img.png" alt="">
+                  </div>
+                  <div class="text-area">
+                    <span class="date">2019.07.01</span>
+                    <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
+                      Appointment
+                      of CEO</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
+                <div class="card-area   card-hover-news">
+                  <div class="img-area">
+                    <img src="assets/images/news-image/img-2.png" alt="">
+                  </div>
+                  <div class="text-area">
+                    <span class="date">2019.07.01</span>
+                    <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
+                      Appointment
+                      of CEO</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <a href="news_single_page.html">
+                <div class="card-area   card-hover-news">
+                  <div class="img-area">
+                    <img src="assets/images/news-image/img-3.png" alt="">
+                  </div>
+                  <div class="text-area">
+                    <span class="date">2019.07.01</span>
+                    <p>ADK Connect Singapore starts with New Name, Establishment for Consolidated Subsidiary and
+                      Appointment
+                      of CEO</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
 
         </div>
 
@@ -250,7 +317,8 @@
 
   <section class="contact">
     <div class="content-area">
-      <h1>CONTACT</h1>
+      <h1 class="wipein" >CONTACT</h1>
+      <br>
       <a href="https://www.adk.jp/en/">info@adk-globalnetwork.com
       </a>
       <p>If you have any inquiry regarding career or other inquiry regarding for ADK Group companies, please
@@ -293,14 +361,16 @@
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <!-- scroll animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- custom.js  -->
   <script src="assets/js/custom.js"></script>
+
+
   <script>
- 
- $('.close-btn').click(function () {
+    $('.close-btn').click(function () {
       $('.mobile-menu').removeClass("show-mobile-menu");
     });
-
 
 
 

@@ -9,6 +9,8 @@
   h1 { 
     margin-bottom: 50px;
     text-align: left;
+    display: inline-block;
+    color: $text-color !important;
   }
   .card-area {
     cursor: pointer;
@@ -149,7 +151,7 @@
       margin-bottom: 70px;
       margin-left: 3.65vw;
       margin-right: auto;
-      display: block;
+      display: inline-block;
     }
   }
   .content-area-news {
@@ -388,6 +390,7 @@
     h1 {
       color: $white;
       margin-bottom: 65px;
+      display: block;
     }
     .led {
       display: block;
@@ -440,7 +443,9 @@
   }
   .content-area {
     h1 {
-      color: $text-color;
+      color: $text-color !important;
+      display: inline-block;
+   
     }
     a {
       margin-top: 40px;
@@ -499,9 +504,10 @@
   }
 }
 footer {
+  background-color: $blue-drak;
   .content-area {
     padding: 22px 3.65vw;
-    background-color: $blue-drak;
+
     p {
       font-weight: bold;
       color: $white;
@@ -529,6 +535,7 @@ footer {
       text-align: left;
       font-size: 72px;
       margin-bottom: 96px;
+      display: inline-block;
     }
     .nav-bar {
       display: flex;
@@ -805,6 +812,7 @@ footer {
         margin-left: 0rem;
         line-height: 60px;
         text-transform: uppercase;
+        display: inline-block;
       }
     }
     .text-area {

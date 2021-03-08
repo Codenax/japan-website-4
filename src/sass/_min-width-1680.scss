@@ -658,7 +658,7 @@
   //---popup----///@at-root
   .cokiss-popup {
     display: none;
-    position: absolute;
+    position:fixed;
     left: 50%;
     bottom: 23px;
     transform: translateX(-50%);
@@ -1405,7 +1405,7 @@
       a:hover {
         .card-hover-news {
           img {
-            transform: scale(1.01) !important;
+            transform: scale(1.2) !important;
             opacity: 1;
             transition: all 0.2s !important;
           }
