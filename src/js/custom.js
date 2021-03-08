@@ -31,37 +31,7 @@ function showPopup(){
 $('.close-b').click(function () {
   $('.cokiss-popup').removeClass("show-popup");
 }); 
-// $(function(){
-//   var ua = vpWidth =1680;
-//   if(window.innerWidth < vpWidth) {
-//       $("meta[name='viewport']").attr('content', 'width=1680');
-//   } else {
-//       $("meta[name='viewport']").attr('content', 'width=device-width,initial-scale=1');
-//   }
-// });
 
-// function usesViewport() {
-//     var meta=$('meta[name=viewport]');
-//     var content=meta.attr('content');
-//     if (!meta.length) {
-//         meta=$('<meta name="viewport" content="width=device-width, initial-scale=1" />').appendTo('head');
-//         console.log(meta.parent());
-//     }
-//     $('meta[name=viewport]').attr('content','width=device-width, initial-scale=1');
-//     var width1=$(window).width();
-//     $('meta[name=viewport]').attr('content','width=device-width, initial-scale=0.1');
-//     var width2=$(window).width();
-//     if (content) {
-//         $('meta[name=viewport]').attr('content',content);
-//     } else {
-//         meta.remove();
-//     }
-//     var result=width1!=width2;
-//     return result;
-// }
-// $(function() {
-//     alert(usesViewport()?'Uses viewport':'Doesn\'t use viewport');
-// });
 
 
 $('.close-btn').click(function () {
@@ -169,3 +139,31 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+
+
+
+
+// -----////////---animation
+
+AOS.init({
+  duration: 1500,
+  once: true,
+  easing: false,
+});
+
+// -----////////---animation
+
+$(function(){
+  $(window).scroll(function (){
+    $(".wipein").each(function(){
+      console.log($(this));
+      var imgPos = $(this).offset().top;   
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $(this).addClass("show");
+      }
+    });
+  });
+});

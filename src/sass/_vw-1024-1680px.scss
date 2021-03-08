@@ -582,15 +582,17 @@
     padding: 0 0;
     height: auto;
     position: relative;
+    padding-top: 8.77vw;
     .content-area-p-none {
       h1 {
-        padding-top: 120px;
+      
         color: $white;
         text-align: left;
         margin-bottom: 5.11vw;
-        margin-left: 3.65vw;
+        margin-left: 3.65vw; 
         margin-right: auto;
-        display: block;
+        display: inline-block;
+        color: $white !important;
       }
     }
     .content-area-news {
@@ -809,11 +811,12 @@
     .content-area {
       padding: 9.5vw 3.65vw;
       h1 {
-        color: $white;
+        color: $white !important;
         margin-bottom: 4.75vw;
+        
       }
       .led {
-        display: block;
+        display: inline-block;
       }
       .key {
         display: none;
@@ -1264,8 +1267,7 @@
 
   .cokiss-popup {
     display: none;
-    position: absolute;
-    bottom: 1.68vw;
+    position: fixed;
     z-index: 100;
     .content-area {
       .body-area {

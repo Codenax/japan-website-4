@@ -14,7 +14,7 @@
     top: 0;
     z-index: 0;
     width: 100%;
-
+ 
     img {
       width: 100%;
       height: auto;
@@ -309,7 +309,8 @@
         display: none;
       }
       .key {
-        display: block;
+        display:inline-block;
+        
       }
       .card-row {
         margin-left: auto;
@@ -775,6 +776,10 @@ display: none;
     position: relative;
     .content-area-p-none{
       padding-top: 50px;
+      h1{
+        display: inline-block;
+        color: $white !important;
+      }
     }
     .over-ally-shap{
       position: relative;
@@ -834,6 +839,7 @@ display: none;
     bottom: -250px;
     z-index: 100;
     transform: translateX(-50%);
+    width: 100%;
    .content-area{
   
   

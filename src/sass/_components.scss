@@ -345,11 +345,14 @@ header {
 // --------mobail-menu------///
 
 // --------mobail-menu------///
+
 .mobile-menu {
   background-color: $red-2;
   z-index: 3;
   width: 100vw;
   height: 100vh;
+  overscroll-behavior: contain;
+  overflow: auto;
 
   .header {
     padding: 3.28vw 3.68vw;
@@ -360,12 +363,20 @@ header {
     );
     width: 100%;
     z-index: 100;
+    .content-area{
+      max-width: 95vw; 
+    }
+    overscroll-behavior: contain;
+
   }
 
   // top: 0;
   // left: 0;
   // position: fixed;
   .content-area {
+    overscroll-behavior: contain;
+    overflow: auto;
+
     .navbar-main {
       padding: 0;
       width: 100%;
@@ -373,6 +384,8 @@ header {
       margin-right: auto;
       display: flex;
       justify-content: space-between;
+      overscroll-behavior: contain;
+
       .logo {
         left: 0;
 
@@ -391,6 +404,7 @@ header {
         justify-content: space-between;
         width: 11.33vw;
         align-items: baseline;
+        overscroll-behavior: contain;
 
         .navigration-icon {
           position: relative;
@@ -476,6 +490,12 @@ header {
     margin-right: auto;
     margin-top: 4.96vw;
     margin-bottom: auto;
+;
+
+    .col-lg-6{
+      overscroll-behavior: contain;
+      overflow: auto;
+    }
     a {
       display: inline-block;
     }
@@ -599,10 +619,11 @@ header {
 //---popup----///@at-root
 .cokiss-popup{
   display:none; 
-  position: absolute;
+  position: fixed; 
   left: 50%;
   bottom: 23px;
   transform: translateX(-50%);
+  width: 100%;
  .content-area{
    z-index: 100;
   
@@ -674,4 +695,54 @@ header {
 .show-popup{
   display: block !important;
   transition: .2s;
+}
+
+
+
+
+.wipein {
+  position: relative;
+  color: transparent;
+  &:after {
+    display: block;
+    content: "";
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+  }
+  &.show {
+    animation: wipecolor .8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+    &:after {
+      animation: wipebar .8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+    }
+  }
+}
+@keyframes wipebar {
+  0% {
+    left: 0;
+    right: 100%;
+  }
+  50% {
+    left: 0;
+    right: 0;
+  }
+  100% {
+    left: 100%;
+    right: 0;
+  }
+}
+@keyframes wipecolor {
+  0% {
+    color: transparent;
+  }
+  50% {
+    color: transparent;
+  }
+  51% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
 }
