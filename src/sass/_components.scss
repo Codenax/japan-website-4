@@ -351,8 +351,7 @@ header {
   z-index: 3;
   width: 100vw;
   height: 100vh;
-  overscroll-behavior: contain;
-  overflow: auto;
+
 
   .header {
     padding: 3.28vw 3.68vw;
@@ -366,7 +365,6 @@ header {
     .content-area{
       max-width: 95vw; 
     }
-    overscroll-behavior: contain;
 
   }
 
@@ -374,8 +372,6 @@ header {
   // left: 0;
   // position: fixed;
   .content-area {
-    overscroll-behavior: contain;
-    overflow: auto;
 
     .navbar-main {
       padding: 0;
@@ -384,7 +380,6 @@ header {
       margin-right: auto;
       display: flex;
       justify-content: space-between;
-      overscroll-behavior: contain;
 
       .logo {
         left: 0;
@@ -404,7 +399,6 @@ header {
         justify-content: space-between;
         width: 11.33vw;
         align-items: baseline;
-        overscroll-behavior: contain;
 
         .navigration-icon {
           position: relative;
@@ -490,12 +484,7 @@ header {
     margin-right: auto;
     margin-top: 4.96vw;
     margin-bottom: auto;
-;
 
-    .col-lg-6{
-      overscroll-behavior: contain;
-      overflow: auto;
-    }
     a {
       display: inline-block;
     }

@@ -28,7 +28,26 @@
 <body>
   <!-- header section -->
   <header>
-    <div class="container">
+    <div class="content-area">
+      <nav class="navbar-main">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo/main-logo.png" alt="">
+          </a>
+        </div>
+        <div class="navbar-nav-right d-flex">
+          <div id="navigration-icon" onClick='showDialog()' class="navigration-icon">
+            <img src="assets/images/icon/menu.png" alt="">
+          </div>
+          <a href="#" class="language active">EN</a>
+          <a href="#" class="language ">JP</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="header">
       <div class="content-area">
         <nav class="navbar-main">
           <div class="logo">
@@ -37,18 +56,57 @@
             </a>
           </div>
           <div class="navbar-nav-right d-flex">
-            <div class="navigration-icon btn-menu">
-              <img src="assets/images/icon/menu.png" alt="">
+            <div id="navigration-icon" onClick='closeDialog()' class="navigration-icon  btn-menu">
+              <img src="assets/images/icon/x.png" alt="">
             </div>
             <a href="#" class="language active">EN</a>
             <a href="#" class="language ">JP</a>
           </div>
         </nav>
-
       </div>
-
     </div>
-  </header>
+
+
+    <div class="pc_mega_menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="leftside-area">
+              <a href="index.html#top" onClick='closeDialog()'>
+                <h2 class="top">TOP</h2>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-business">
+                <p>OUR BUSINESS BRANDS</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#our-network">
+                <p>OUR NETWORK</p>
+              </a>
+              <br>
+              <a onClick='closeDialog()' href="index.html#leadership">
+                <p>KEY PEOPLE</p>
+              </a>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <a onClick='closeDialog()' href="index.html#news-section">
+              <h2 class="news-h">NEWS</h2>
+            </a>
+            <div class="contact-m">
+              <h2 class="new_contact">CONTACT</h2> 
+              <a onClick='closeDialog()' href="index.html#contact">
+                <p class="new_email">info@adk-globalnetwork.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- maga-menu-end -->
   <!-- header section end-->
 
   <div class="mobile-menu">

@@ -517,9 +517,6 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   z-index: 3;
   width: 100vw;
   height: 100vh;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
-  overflow: auto;
 }
 
 .mobile-menu .header {
@@ -529,18 +526,10 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   background-image: linear-gradient(to bottom, rgba(53, 53, 53, 0.452), rgba(252, 252, 252, 0));
   width: 100%;
   z-index: 100;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
 }
 
 .mobile-menu .header .content-area {
   max-width: 95vw;
-}
-
-.mobile-menu .content-area {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
-  overflow: auto;
 }
 
 .mobile-menu .content-area .navbar-main {
@@ -556,8 +545,6 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
 }
 
 .mobile-menu .content-area .navbar-main .logo {
@@ -590,8 +577,6 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   -webkit-align-items: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon {
@@ -703,12 +688,6 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   margin-right: auto;
   margin-top: 4.96vw;
   margin-bottom: auto;
-}
-
-.mobile-menu .pc_mega_menu .col-lg-6 {
-  -ms-scroll-chaining: none;
-      overscroll-behavior: contain;
-  overflow: auto;
 }
 
 .mobile-menu .pc_mega_menu a {

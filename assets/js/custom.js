@@ -27,22 +27,22 @@ function showPopup() {
 
 $('.close-b').click(function () {
   $('.cokiss-popup').removeClass("show-popup");
-});
-$('.close-btn').click(function () {
-  $('.mobile-menu').removeClass("show-mobile-menu");
-});
-$('.navigration-icon').click(function () {
-  $(this).toggleClass("click");
-  $('.mobile-menu').toggleClass("show-mobile-menu");
-});
-$(".default_option").click(function () {
-  $(this).parent().toggleClass("active");
-});
-$(".select_ul li").click(function () {
-  var currentele = $(this).html();
-  $(".default_option li").html(currentele);
-  $(this).parents(".select_wrap").removeClass("active");
-});
+}); // $('.close-btn').click(function () {
+//   $('.mobile-menu').removeClass("show-mobile-menu");
+// }); 
+// $('.navigration-icon').click(function () {
+//   $(this).toggleClass("click");
+//   $('.mobile-menu').toggleClass("show-mobile-menu");
+// });
+// $(".default_option").click(function(){
+//   $(this).parent().toggleClass("active");
+// })
+// $(".select_ul li").click(function(){
+//   var currentele = $(this).html();
+//   $(".default_option li").html(currentele);
+//   $(this).parents(".select_wrap").removeClass("active");
+// })
+
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 
@@ -161,4 +161,25 @@ $(function () {
       }
     });
   });
+}); ///----scoll---of---////
+
+var showDialog = function showDialog() {
+  document.getElementById('mobile-menu').classList.add('show-mobile-menu');
+  var scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  var body = document.body;
+  body.style.height = '100vh';
+  body.style.overflowY = 'hidden';
+};
+
+var closeDialog = function closeDialog() {
+  var body = document.body;
+  body.style.position = '';
+  body.style.top = '';
+  body.style.height = '';
+  body.style.overflowY = '';
+  document.getElementById('mobile-menu').classList.remove('show-mobile-menu');
+};
+
+window.addEventListener('scroll', function () {
+  document.documentElement.style.setProperty('--scroll-y', "".concat(window.scrollY, "px"));
 });
