@@ -46,6 +46,7 @@
     </div>
   </header>
 
+  <!-- mobile-menu -->
   <div id="mobile-menu" class="mobile-menu">
     <div class="header">
       <div class="content-area">
@@ -106,7 +107,7 @@
       </div>
     </div>
   </div>
-<!-- maga-menu-end -->
+
   <!-- header section end-->
 
 
@@ -222,7 +223,7 @@
 
  
   </section>
-  <div class="cokiss-popup">
+  <div id="cokiss-popup" class="cokiss-popup">
     <div class="content-area">
       <div class="body-area">
         <a class="close-button close-b"><img src="assets/images/icon/close.png" alt=""></a>
@@ -1179,9 +1180,27 @@
     })
 
 
-    $('.close-btn').click(function () {
-      $('.mobile-menu').removeClass("show-mobile-menu");
+  const showDialog = () => {
+      document.getElementById('mobile-menu').classList.add('show-mobile-menu')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.height = '100vh';
+      body.style.overflowY = 'hidden';
+    };
+    const closeDialog = () => {
+      const body = document.body;
+
+      body.style.position = '';
+      body.style.top = '';
+      body.style.height = '';
+      body.style.overflowY = '';
+
+      document.getElementById('mobile-menu').classList.remove('show-mobile-menu');
+    }
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
+
  
 
 
