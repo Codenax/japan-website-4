@@ -866,6 +866,7 @@
     .content-area {
       h1 {
         color: $text-color;
+        margin-bottom: 1vw;
       }
       a {
         margin-top: 2.92vw;
@@ -874,9 +875,13 @@
         color: $text-color;
         font-size: 2.19vw;
         font-weight: bold;
+    
       }
       a.website-link {
         font-size: 1.096vw;
+      }
+      p{
+        margin-top: 1vw;
       }
  
    
@@ -941,8 +946,10 @@
     .content-area {
       h1 {
         text-align: left;
+        margin-left: 1.5vw;
         font-size: 5.26vw;
         margin-bottom: 7.01vw;
+       
       }
       .nav-bar {
         display: flex;
@@ -1125,6 +1132,8 @@
     }
     .news-card-area {
       margin-top: 4.72vw;
+      padding-left: 0;
+    //  margin-left: -12px;
       .card-area {
         cursor: pointer;
         margin-bottom: 3.65vw;

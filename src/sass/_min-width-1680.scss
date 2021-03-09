@@ -1133,6 +1133,7 @@
     .content-area {
       h1 {
         color: $text-color;
+        margin-bottom: 30px;
       }
       a {
         margin-top: 40px;
@@ -1153,6 +1154,7 @@
       }
       p {
         color: #656565;
+        margin-top: 30px;
       }
       a.website-link::before {
         content: none;
@@ -1219,9 +1221,11 @@
     padding-top: 200px;
     .content-area {
       h1 {
+        margin-left: 22px;
         text-align: left;
         font-size: 72px;
         margin-bottom: 96px;
+       
       }
       .nav-bar {
         display: flex;

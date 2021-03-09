@@ -3540,6 +3540,7 @@ footer .content-area p {
   }
   .contact .content-area h1 {
     color: #222222;
+    margin-bottom: 30px;
   }
   .contact .content-area a {
     margin-top: 40px;
@@ -3562,6 +3563,7 @@ footer .content-area p {
   }
   .contact .content-area p {
     color: #656565;
+    margin-top: 30px;
   }
   .contact .content-area a.website-link::before {
     content: none;
@@ -3623,6 +3625,7 @@ footer .content-area p {
     padding-top: 200px;
   }
   .news-page .content-area h1 {
+    margin-left: 22px;
     text-align: left;
     font-size: 72px;
     margin-bottom: 96px;
@@ -7000,6 +7003,7 @@ footer .content-area p {
   }
   .contact .content-area h1 {
     color: #222222;
+    margin-bottom: 1vw;
   }
   .contact .content-area a {
     margin-top: 2.92vw;
@@ -7011,6 +7015,9 @@ footer .content-area p {
   }
   .contact .content-area a.website-link {
     font-size: 1.096vw;
+  }
+  .contact .content-area p {
+    margin-top: 1vw;
   }
   .contact .content-area a.website-link {
     color: #656565;
@@ -7068,6 +7075,7 @@ footer .content-area p {
   }
   .news-page .content-area h1 {
     text-align: left;
+    margin-left: 1.5vw;
     font-size: 5.26vw;
     margin-bottom: 7.01vw;
   }
@@ -7284,6 +7292,7 @@ footer .content-area p {
   }
   .news-page .news-card-area {
     margin-top: 4.72vw;
+    padding-left: 0;
   }
   .news-page .news-card-area .card-area {
     cursor: pointer;

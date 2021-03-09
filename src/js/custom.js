@@ -4,14 +4,14 @@
 
 
 
-// window.addEventListener("load",function(){
+window.addEventListener("load",function(){
 
-//  setTimeout(function(){
-//   $('.cokiss-popup').addClass("show-popup");
-//  },2000)
+ setTimeout(function(){
+  $('.select-items div:first-child').addClass("same-as-selected");
+ })
 
-// })
-
+}) 
+ 
 
 // $('.close-b').click(function () {
 //   $('.cokiss-popup').removeClass("show-popup");
