@@ -21,7 +21,7 @@
 
 .bg-red-shap {
   position: fixed;
- 
+
   right: 0;
   top: 0;
   z-index: 4;
@@ -197,6 +197,15 @@ header {
       margin-right: 0;
       margin-bottom: 100px;
       z-index: 1;
+      .active {
+        .round-1::before, 
+        .round-1::after,
+        .round-3::after,
+        .round-4::after,
+        .round-5::after {
+          display: block;
+        }
+      }
       li {
         box-sizing: content-box;
         flex: 0 1 auto;
@@ -230,7 +239,6 @@ header {
           position: absolute;
           z-index: 5;
           left: 40%;
-
           opacity: 1;
           bottom: 23px;
           transition: all 0.3s;
@@ -246,7 +254,7 @@ header {
           height: 80px;
           position: relative;
           border-radius: 0;
-          border: none;
+
           border-radius: 8rem;
         }
       }
@@ -269,22 +277,22 @@ header {
             transition: opacity 0.3s;
           }
         }
-        .text-border:after {
-          content: "";
-          position: absolute;
-          width: 80px;
-          height: 80px;
-          left: 0;
-          top: 0;
-          border-color: transparent;
-          border: solid 2px #525252ce;
-          border-right-color: $red-2;
-          z-index: 8;
-          transform: rotate(-45deg);
-          border-radius: 8rem;
-          line-height: 8rem;
-          animation: spin 4s;
-        }
+        // .text-border:after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 80px;
+        //   height: 80px;
+        //   left: 0;
+        //   top: 0;
+        //   border-color: transparent;
+        //   border: solid 2px #525252ce;
+        //   border-right-color: $red-2;
+        //   z-index: 8;
+        //   transform: rotate(-45deg);
+        //   border-radius: 8rem;
+        //   line-height: 8rem;
+        //   animation: spin 4s;
+        // }
       }
     }
 
@@ -352,7 +360,6 @@ header {
   width: 100vw;
   height: 100vh;
 
-
   .header {
     padding: 3.28vw 3.68vw;
     background-image: linear-gradient(
@@ -362,17 +369,15 @@ header {
     );
     width: 100%;
     z-index: 100;
-    .content-area{
-      max-width: 95vw; 
+    .content-area {
+      max-width: 95vw;
     }
-
   }
 
   // top: 0;
   // left: 0;
   // position: fixed;
   .content-area {
-
     .navbar-main {
       padding: 0;
       width: 100%;
@@ -537,7 +542,7 @@ header {
       margin-top: 7.3vw !important;
       text-decoration: none;
     }
-    .new_contact::after{
+    .new_contact::after {
       content: none;
     }
     .new_contact:hover {
@@ -548,7 +553,7 @@ header {
       font-size: 2.19vw;
       margin-bottom: 0;
       color: #fff;
-   
+
       z-index: 5;
       position: relative;
     }
@@ -603,91 +608,84 @@ header {
   cursor: pointer;
 }
 
-
-
 //---popup----///@at-root
-.cokiss-popup{
-  display:none; 
-  position: fixed; 
+.cokiss-popup {
+  display: none;
+  position: fixed;
   left: 50%;
   bottom: 23px;
   transform: translateX(-50%);
   width: 100%;
- .content-area{
-   z-index: 100;
-  
-   .body-area{
-    
-     display: flex;
-     background-color: #41454a;
-     padding: 28px 55px;
-     padding-right: 25px;
-     position: relative;
-     justify-content: space-between;
-     align-items: center;
-     a.close-button{
-       position: absolute;
-       top: -40px;
-       right: 0;
-       width: 40px;
-       height: 40px;
-     }
-     .pra{
-       width: 1000px;
-       p{
-         line-height: 3rem;
-         font-size: 13px;
-         color: $white;
-       }
-     }
-     .butoon-area{
-       width: 240px;
-       display: flex;
-       a{
-         display: inline-block;
-         width: 100px;
-         text-align: center;
-         position: relative;
-         margin-left: 10px;
-         font-family: $bebas-pro-bold;
-         font-size: 19px;
-         color: white;
-         
-       }
-       a::before{
-         content: '';
-         background-color: $border-color;
-         width: 100%;
-         height: 2px;
-         position: absolute;
-         left: 0;
-         bottom: -15px;
-       }
-       a::after{
-        content: '';
-        background-color: $white;
-        width:0%;
-        height: 2px;
+  .content-area {
+    z-index: 100;
+
+    .body-area {
+      display: flex;
+      background-color: #41454a;
+      padding: 28px 55px;
+      padding-right: 25px;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      a.close-button {
         position: absolute;
-        left: 0;
-        bottom: -15px;
-        transition: all .2s;
+        top: -40px;
+        right: 0;
+        width: 40px;
+        height: 40px;
       }
-      a:hover::after{
-        width: 100%;
-        transition: all .2s;
+      .pra {
+        width: 1000px;
+        p {
+          line-height: 3rem;
+          font-size: 13px;
+          color: $white;
+        }
       }
-     }
-   }
- } 
+      .butoon-area {
+        width: 240px;
+        display: flex;
+        a {
+          display: inline-block;
+          width: 100px;
+          text-align: center;
+          position: relative;
+          margin-left: 10px;
+          font-family: $bebas-pro-bold;
+          font-size: 19px;
+          color: white;
+        }
+        a::before {
+          content: "";
+          background-color: $border-color;
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+        }
+        a::after {
+          content: "";
+          background-color: $white;
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: -15px;
+          transition: all 0.2s;
+        }
+        a:hover::after {
+          width: 100%;
+          transition: all 0.2s;
+        }
+      }
+    }
+  }
 }
-.show-popup{
+.show-popup {
   display: block !important;
-  transition: .2s;
+  transition: 0.2s;
 }
-
-
-
 
 .wipein {
   position: relative;
@@ -701,9 +699,9 @@ header {
     top: 0;
   }
   &.show {
-    animation: wipecolor .8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+    animation: wipecolor 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
     &:after {
-      animation: wipebar .8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+      animation: wipebar 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
     }
   }
 }
@@ -736,13 +734,11 @@ header {
   }
 }
 
-
-
 /////-------------cercal----------////
 
 // .round-svg{
-//   width: 80px; 
-//   height: 80px; 
+//   width: 80px;
+//   height: 80px;
 //   text-align: center;
 //   position: relative;
 //   //border: solid rgb(73, 73, 73) 2px;
@@ -758,7 +754,7 @@ header {
 //     height: 100%;
 //     fill: none;
 //    border-radius: 5rem;
-    
+
 //   }
 //   svg rect{
 //     stroke:#000 ;
@@ -776,8 +772,6 @@ header {
 
 //   }
 // }
-
-
 
 // .container-svg{
 //   padding-left: 50rem;
@@ -809,12 +803,12 @@ header {
 //         left: 0;
 //         position: absolute;
 //       //  transform: translate(5px,5px);
-//         stroke-dasharray: 992;    
+//         stroke-dasharray: 992;
 //        stroke-dashoffset: 992;
 //       // animation: animate 3s linear infinite;
 //     }
 //     }
-//   } 
+//   }
 // }
 // @keyframes animate {
 //   0%{
@@ -830,5 +824,161 @@ header {
 //   }
 // }
 
+// .container-svg{
+//   background-color: black;
+// }
+// .circle {
+//   margin-left: 30rem;
+//   button {
+//     border: 0;
+//     position: relative;
+//     font-size: inherit;
+//     vertical-align: middle;
+//     box-sizing: border-box;
+//     margin: 16px;
+//    padding: 16px 32px;
+//     font-size: 22px;
+//     background: none;
+//     color: #fff;
+//     box-shadow: inset 0 0 2px #fff;
+//     h2 {
+//       font-size: 22px;
+//       color: #fff !important;
+//     }
+//   }
+//   button::before,
+//   button::after {
+//     box-sizing: inherit;
+//     content: "";
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//   }
+//   .socials {
+//     width: 80px;
+//     height: 80px;
+//     padding: 0;
+
+//   }
+//   .socials:hover {
+//     color: #fff;
+//   }
+//   .socials:before,
+//   .socials:after {
+//     top: 0;
+//     left: 0;
+//   }
+//   .socials:before {
+//     border: 2px solid transparent;
+//   }
+//   .socials:hover::before {
+//     border-top-color: #fff;
+//     border-right-color: #fff;
+//     border-bottom-color: #fff;
+//     transition: border-top-color 0.05s linear,
+//     border-right-color 0.15s linear 0.1s,
+//     border-bottom-color 0.15s linear 0.2s;
+//   }
+//   .socials:after{
+//     border: 0px solid transparent;
+//   }
+//   .socials:hover:after{
+//     border-top:2px solid #fff;
+//     border-left-width: 2px;
+//     border-right-width: 2px;
+
+//     transform: rotate(270deg);
+//     transition: transform .4s linear 0s , border-left-width 0s linear .35s;
+
+//   }
+//   .round{
+//     border-radius: 50%;
+//     box-shadow: none;
+//   }
+//   .round::before,.round::after{
+//     border-radius: 100%;
+//   } 
+// }
 /////-------------cercal----------////
 
+.round-1::before {
+  width: 100%;
+  height: 100%;
+  border: solid 2px #525252ce;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 100%;
+  display: none;
+}
+.round-1::after,
+.round-3::after,
+.round-4::after,
+.round-5::after {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: transparent;
+  border: solid 2px transparent;
+  border-right: solid 2px red;
+  position: absolute;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform: rotate(-45deg);
+  z-index: 6;
+  // position: absolute;
+}
+
+@keyframes anim-3 {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes anim-4 {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes anim-5 {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(225deg);
+  }
+}
+
+.round-1::after {
+  z-index: 2;
+}
+
+.round-3::after {
+  z-index: 3;
+  border-right: solid 2px red;
+  animation: anim-3 3s;
+}
+.round-4::after {
+  z-index: 4;
+  border-right: solid 2px red;
+  animation: anim-4 3s;
+}
+.round-5::after {
+  z-index: 5;
+  border-right: solid 2px red;
+  animation: anim-5 3s;
+}
