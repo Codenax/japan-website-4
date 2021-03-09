@@ -1,25 +1,11 @@
 "use strict";
 
-var cokissPupup = document.getElementById('cokiss-popup');
-var close = document.querySelector("close-button");
+// const cokissPupup= document.getElementBy('cokiss-popup')
 window.addEventListener("load", function () {
-  //  showPopup();
   setTimeout(function () {
-    cokissPupup.classList.add("show-popup");
+    $('.cokiss-popup').addClass("show-popup");
   }, 2000);
-}); // function showPopup(){
-//       const timeLimit = 5 // seconds;
-//       let i=0;
-//       const timer = setInterval(function(){
-//        i++;
-//        if(i == timeLimit){
-//         clearInterval(timer);
-//         cokissPupup.classList.remove("show-popup");
-//        } 
-//        console.log(i)
-//       },2000);
-// }
-
+});
 $('.close-b').click(function () {
   $('.cokiss-popup').removeClass("show-popup");
 });
@@ -141,33 +127,29 @@ $(function () {
       }
     });
   });
-});
-var canvas = document.getElementById('box');
-var ctx = canvas.getConttext('2d');
-var radius = 75;
-var endPrcentenc = 40;
-var CurPer = 0;
-var circ = Math.PI * 2;
-var quart = Math.PI / 2;
-ctx.lineWidth = 10;
-ctx.strokeStyle = 'blue';
-ctx.shaowOffsetX = 0;
-ctx.shaowOffsetY = 0;
-ctx.shaowBlur = 1;
-ctx.shaowColor = "#656565";
-
-function draw(currentPerc) {
-  ctx.ClearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
-  ctx.arc('250', '250', radius, 0, CurPer * currentPerc - quart, false);
-  ctx.strokeStyle();
-  CurPer++;
-
-  if (CurPer < endPrcentenc) {
-    requestAnimationFrame(function () {
-      draw(CurPer / 100);
-    });
-  }
-}
-
-draw();
+}); // var canvas = document.getElementById('box');
+// var ctx = canvas.getContext('2d');
+// var radius = 75;
+// var endPrcentenc = 50;
+// var CurPer = 0;
+// var circ = Math.PI * 2;
+// var quart = Math.PI / 2;
+// ctx.lineWidth = 10;
+// ctx.strokeStyle = 'blue';
+// ctx.shaowOffsetX = 0;
+// ctx.shaowOffsetY = 0;
+// ctx.shaowBlur = 1;
+// ctx.shaowColor = "#656565";
+// function draw(currentPerc) {
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
+//   ctx.beginPath();
+//   ctx.arc('250', '250', radius, -quart,( CurPer * currentPerc)-quart, false);
+//   ctx.stroke();
+//   CurPer++;
+//   if (CurPer < endPrcentenc) {
+//     requestAnimationFrame(function () {
+//       draw(CurPer / 100);
+//     });
+//   }
+// }
+// draw();
