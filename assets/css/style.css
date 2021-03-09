@@ -157,6 +157,10 @@ header .content-area .navbar-main {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 header .content-area .navbar-main .logo {
@@ -580,10 +584,10 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon:hover::after {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  width: 0%;
+  -webkit-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon:hover img {
@@ -606,9 +610,9 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   bottom: -0.7vw;
   position: absolute;
   z-index: 8;
-  -webkit-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s;
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right a {
@@ -633,7 +637,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 .mobile-menu .content-area .navbar-main .navbar-nav-right a:after {
   content: "";
   width: 0;
-  height: 0.292vw;
+  height: 4px;
   background-color: #ffffff;
   position: absolute;
   z-index: 0;
@@ -642,15 +646,16 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right a:hover::after {
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .mobile-menu .content-area .navbar-main .navbar-nav-right a.active::after {
@@ -672,7 +677,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4.96vw;
+  margin-top: 9.6vw;
   margin-bottom: auto;
 }
 
@@ -1137,6 +1142,14 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
   border-right: solid 2px red;
   -webkit-animation: anim-5 3s;
           animation: anim-5 3s;
+}
+
+.d-show-d {
+  display: block !important;
+}
+
+.d-none-d {
+  display: none !important;
 }
 
 .news-section {
@@ -3818,6 +3831,9 @@ footer .content-area p {
   .news-page .year .select-items div.same-as-selected {
     color: #CA0B21;
   }
+  .news-page .year div.same-as-selected {
+    color: #CA0B21;
+  }
   .news-page .year .select-items div {
     color: #222222;
   }
@@ -4598,6 +4614,9 @@ footer .content-area p {
   .news-page .year .select-items div.same-as-selected {
     color: #CA0B21;
   }
+  .news-page .year div.same-as-selected {
+    color: #CA0B21;
+  }
   .news-page .year .select-items div {
     color: #222222;
   }
@@ -5097,6 +5116,9 @@ footer .content-area p {
   header {
     padding: 4.66vw 0;
   }
+  header .content-area .navbar-main {
+    margin-top: -.53vw;
+  }
   header .content-area .navbar-main .logo {
     left: 0;
   }
@@ -5116,6 +5138,9 @@ footer .content-area p {
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+  header .content-area .navbar-main .navbar-nav-right .navigration-icon {
+    margin-right: 4.26vw;
   }
   header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
     width: 9.2vw;
@@ -5137,13 +5162,16 @@ footer .content-area p {
   .mobile-menu .header .content-area .navbar-main .navbar-nav-right .navigration-icon img {
     width: 7.33vw;
   }
+  .mobile-menu .header .content-area .navbar-main .navbar-nav-right .navigration-icon::after {
+    bottom: -0.8vw;
+  }
   .mobile-menu .header .content-area .navbar-main .navbar-nav-right a {
     font-size: 3.99vw;
   }
   .mobile-menu .pc_mega_menu {
     padding-bottom: 0;
     width: 80vw;
-    margin-top: 20vw;
+    margin-top: 16vw;
     padding-left: 0;
     margin-left: auto;
     margin-right: auto;
@@ -5438,9 +5466,11 @@ footer .content-area p {
   }
   .news-page .content-area .nav-bar .search-news {
     padding-left: 0;
+    padding-right: 0;
   }
   .news-page .content-area .nav-bar .search-news .input-group {
     position: relative;
+    width: 42.66vw;
   }
   .news-page .content-area .nav-bar .search-news .input-group input::-webkit-input-placeholder {
     font-size: 3.99vw;
@@ -5524,7 +5554,7 @@ footer .content-area p {
   .news-page .year {
     position: relative;
     padding: 0px 0;
-    padding-left: 3.33vw;
+    padding-left: 2vw;
     /* Style the arrow inside the select element: */
     /* Point the arrow upwards when the select box is open (active): */
     /* style the items (options), including the selected item: */
@@ -5562,7 +5592,7 @@ footer .content-area p {
   }
   .news-page .year .select-selected::before {
     content: "";
-    width: 100%;
+    width: 42.665vw;
     height: 0.666vw;
     background-color: #CA0B21;
     position: absolute;
@@ -5594,7 +5624,7 @@ footer .content-area p {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 1.333vw;
+    right: 2.26vw;
     width: 1.999vw;
     height: auto;
     -webkit-transition: rotate 0.2s;
@@ -5637,6 +5667,9 @@ footer .content-area p {
   .news-page .year .select-items div.same-as-selected {
     color: #CA0B21;
   }
+  .news-page .year div.same-as-selected {
+    color: #CA0B21;
+  }
   .news-page .year .select-items div {
     color: #222222;
     top: -0.134vw;
@@ -5653,18 +5686,18 @@ footer .content-area p {
     display: flex;
   }
   .news-page .news-card-area .card-area .img-area {
-    width: 45%;
+    width: 35.465vw;
     height: auto;
     overflow: hidden;
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 6.66vw;
   }
   .news-page .news-card-area .card-area .img-area img {
     width: 100%;
     height: auto;
   }
   .news-page .news-card-area .card-area .text-area {
-    margin-top: 1.33vw;
+    margin-top: -1.06vw;
     padding: 0 0px;
     width: 50%;
   }
@@ -5674,7 +5707,7 @@ footer .content-area p {
     color: #656565;
   }
   .news-page .news-card-area .card-area .text-area p {
-    margin-top: 0px;
+    margin-top: 1.066vw;
     font-size: 3.19vw;
   }
   .news-single-page-section {
@@ -6065,6 +6098,12 @@ footer .content-area p {
     margin-top: 2vw;
     height: auto;
   }
+  .d-show-m {
+    display: block !important;
+  }
+  .d-none-m {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1680px) and (min-width: 992px) {
@@ -6434,10 +6473,10 @@ footer .content-area p {
     transition: all 0.2s;
   }
   .mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon:hover::after {
-    opacity: 0;
-    -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    width: 0%;
+    -webkit-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
   }
   .mobile-menu .content-area .navbar-main .navbar-nav-right .navigration-icon:hover img {
     opacity: 0.6;
@@ -6458,9 +6497,9 @@ footer .content-area p {
     bottom: -0.7vw;
     position: absolute;
     z-index: 8;
-    -webkit-transition: opacity 0.2s;
-    -o-transition: opacity 0.2s;
-    transition: opacity 0.2s;
+    -webkit-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s;
   }
   .mobile-menu .content-area .navbar-main .navbar-nav-right a {
     font-size: 1.24vw;
@@ -6511,9 +6550,9 @@ footer .content-area p {
   .mobile-menu .pc_mega_menu {
     max-width: 62.1vw;
     height: auto;
-    margin-left: auto;
+    margin-left: 23vw;
     margin-right: auto;
-    margin-top: 4.96vw;
+    margin-top: 9.5vw;
     margin-bottom: auto;
   }
   .mobile-menu .pc_mega_menu h2 {
@@ -7235,6 +7274,9 @@ footer .content-area p {
     display: none;
   }
   .news-page .year .select-items div.same-as-selected {
+    color: #CA0B21;
+  }
+  .news-page .year div.same-as-selected {
     color: #CA0B21;
   }
   .news-page .year .select-items div {

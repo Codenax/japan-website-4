@@ -61,6 +61,7 @@
     padding: 4.66vw 0;
     .content-area {
       .navbar-main {
+        margin-top: -.53vw;
         .logo {
           left: 0;
           img {
@@ -76,6 +77,7 @@
           align-items: baseline;
        
           .navigration-icon {
+            margin-right: 4.26vw;
             img {
               width: 9.2vw; 
             }
@@ -95,6 +97,7 @@
       
       .content-area {
         .navbar-main {
+   
           .logo {
             img {
               max-width: 37.33vw;
@@ -109,6 +112,10 @@
                 width: 7.33vw;
               }
             }
+            .navigration-icon::after {
+            
+              bottom: -0.8vw;
+            }
             a {
               font-size: 3.99vw;
             }
@@ -120,7 +127,7 @@
     .pc_mega_menu {
       padding-bottom: 0;
       width: 80vw;
-      margin-top: 20vw;
+      margin-top: 16vw;
       padding-left: 0;
       margin-left: auto;
       margin-right: auto;
@@ -442,8 +449,10 @@
         display: flex;
         .search-news {
           padding-left: 0;
+          padding-right: 0;
           .input-group {
             position: relative;
+            width: 42.66vw;
             input::placeholder {
               font-size: 3.99vw;
               font-family: $bebas-pro-bold;
@@ -497,7 +506,7 @@
     .year {
       position: relative;
       padding: 0px 0;
-      padding-left: 3.33vw;
+      padding-left: 2vw;
 
       .title {
         top: 2.399vw;
@@ -529,7 +538,7 @@
       }
       .select-selected::before {
         content: "";
-        width: 100%;
+        width: 42.665vw;
         height: 0.666vw;
         background-color: $red-2;
         position: absolute;
@@ -563,7 +572,7 @@
         content: url("../../assets/images/icon/caret-down-solid.svg");
         top: 50%;
         transform: translateY(-50%);
-        right: 1.333vw;
+        right: 2.26vw;
         width: 1.999vw;
         height: auto;
 
@@ -609,6 +618,9 @@
       .select-items div.same-as-selected {
         color: $red-2;
       }
+      div.same-as-selected{
+         color: $red-2;
+      }
       .select-items div {
         color: $text-color;
         top: -0.134vw;
@@ -621,11 +633,11 @@
         padding: 0 0px;
         display: flex;
         .img-area {
-          width: 45%;
+          width: 35.465vw;
           height: auto;
           overflow: hidden;
           margin-left: 0;
-          margin-right: auto;
+          margin-right: 6.66vw;
 
           img {
             width: 100%;
@@ -633,16 +645,17 @@
           }
         }
         .text-area {
-          margin-top: 1.33vw;
+          margin-top: -1.06vw;
           padding: 0 0px;
           width: 50%;
           .date {
             font-size: 2.93vw;
             font-family: $roboto-medium;
             color: $text-color-2;
+      
           }
           p {
-            margin-top: 0px;
+            margin-top: 1.066vw;
             font-size: 3.19vw;
           }
         }
@@ -1013,5 +1026,12 @@ header .content-area .navbar-main .logo img {
   width: 40.33vw;
   margin-top: 2vw;
   height: auto;
+}
+
+.d-show-m{
+  display: block !important;
+}
+.d-none-m{
+  display: none !important;
 }
 } 

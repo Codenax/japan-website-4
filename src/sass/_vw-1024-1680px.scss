@@ -347,8 +347,8 @@
             transition: all 0.2s;
           }
           .navigration-icon:hover::after {
-            opacity: 0;
-            transition: opacity 0.2s;
+            width: 0%;
+            transition: width 0.2s;
           }
           .navigration-icon:hover {
             img {
@@ -368,7 +368,7 @@
             bottom: -0.7vw;
             position: absolute;
             z-index: 8;
-            transition: opacity 0.2s;
+            transition: width 0.2s;
           }
           a {
             font-size: 1.24vw;
@@ -413,9 +413,9 @@
     .pc_mega_menu {
       max-width: 62.1vw;
       height: auto;
-      margin-left: auto;
+      margin-left: 23vw;
       margin-right: auto;
-      margin-top: 4.96vw;
+      margin-top: 9.5vw;
       margin-bottom: auto;
       h2 {
         font-size: 3.72vw;
@@ -1115,6 +1115,9 @@
 
       .select-items div.same-as-selected {
         color: $red-2;
+      }
+        div.same-as-selected{
+         color: $red-2;
       }
       .select-items div {
         color: $text-color;

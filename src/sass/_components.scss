@@ -68,6 +68,7 @@ header {
       margin-right: auto;
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
       .logo {
         left: 0;
         z-index: 19;
@@ -401,8 +402,8 @@ header {
           transition: all 0.2s;
         }
         .navigration-icon:hover::after {
-          opacity: 0;
-          transition: opacity 0.2s;
+          width: 0%;
+          transition: width 0.2s;
         }
         .navigration-icon:hover {
           img {
@@ -422,7 +423,7 @@ header {
           bottom: -0.7vw;
           position: absolute;
           z-index: 8;
-          transition: opacity 0.2s;
+          transition: width 0.2s;
         }
         a {
           font-size: 1.24vw;
@@ -440,17 +441,18 @@ header {
         a:after {
           content: "";
           width: 0;
-          height: 0.292vw;
+          height: 4px;
           background-color: $white;
           position: absolute;
           z-index: 0;
           left: 0;
           bottom: -0.146vw;
           transition: 1s;
-          transition: all 0.2s;
+          transition: all 0.3s;
         }
         a:hover::after {
-          transition: all 0.2s;
+          width: 100%;
+          transition: all 0.3s;
         }
         a.active::after {
           content: "";
@@ -472,7 +474,7 @@ header {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4.96vw;
+    margin-top: 9.6vw;
     margin-bottom: auto;
 
     a {
@@ -801,4 +803,12 @@ header {
   z-index: 5;
   border-right: solid 2px red;
   animation: anim-5 3s;
+}
+
+
+.d-show-d{
+  display: block !important;
+}
+.d-none-d{
+  display: none !important;
 }

@@ -596,7 +596,7 @@
         font-family: $bebas-pro-bold;
         font-size: 24px;
         box-shadow: $box-shadwo;
-        background-color: $white;
+        background-color: $white; 
       }
 
       /* Hide the items when the select box is closed: */
@@ -606,6 +606,9 @@
 
       .select-items div.same-as-selected {
         color: $red-2;
+      }
+         div.same-as-selected{
+         color: $red-2;
       }
       .select-items div {
         color: $text-color;

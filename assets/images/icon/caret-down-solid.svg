@@ -1,1 +1,11 @@
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15.34" height="13.594" viewBox="0 0 15.34 13.594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #222;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="arrwo" class="cls-1" d="M2213.85,394.453l6.66-11.539a1.021,1.021,0,0,0-.88-1.535H2206.3a1.026,1.026,0,0,0-.89,1.535l6.67,11.539A1.021,1.021,0,0,0,2213.85,394.453Z" transform="translate(-2205.28 -381.375)"/>
+</svg>

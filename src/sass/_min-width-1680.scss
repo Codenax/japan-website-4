@@ -1394,8 +1394,11 @@
       .select-items div.same-as-selected {
         color: $red-2;
       }
+         div.same-as-selected{ 
+         color: $red-2;
+      }
       .select-items div {
-        color: $text-color;
+        color: $text-color; 
       }
     }
 
