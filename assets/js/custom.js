@@ -1,14 +1,14 @@
 "use strict";
 
 // const cokissPupup= document.getElementBy('cokiss-popup')
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    $('.cokiss-popup').addClass("show-popup");
-  }, 2000);
-});
-$('.close-b').click(function () {
-  $('.cokiss-popup').removeClass("show-popup");
-});
+// window.addEventListener("load",function(){
+//  setTimeout(function(){
+//   $('.cokiss-popup').addClass("show-popup");
+//  },2000)
+// })
+// $('.close-b').click(function () {
+//   $('.cokiss-popup').removeClass("show-popup");
+// }); 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /* Look for any elements with the class "custom-select": */
 

@@ -118,7 +118,7 @@
       <div class="bg-red-shap">
         <img src="assets/images/bag-img/bg-red.png" alt="">
       </div>
-      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel" data-interval="true">
+      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel" >
         <div class="content-area">
           <ol class="carousel-indicators">
             <li data-target="#top-slider" data-slide-to="0" class="active">
@@ -1195,9 +1195,21 @@
   <script src="assets/js/custom.js"></script>
   <script>
     $('#top-slider').carousel({
-      interval: 300000
-    })
+      interval: 3000
+    });
 
+    window.addEventListener("load", function () {
+
+      setTimeout(function () {
+        $('.cokiss-popup').addClass("show-popup");
+      }, 2000)
+
+    });
+
+
+    $('.close-b').click(function () {
+      $('.cokiss-popup').removeClass("show-popup");
+    });
 
     const showDialog = () => {
       document.getElementById('mobile-menu').classList.add('show-mobile-menu')
