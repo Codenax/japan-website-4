@@ -505,8 +505,8 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 .mobile-menu {
   background-color: #CA0B21;
   z-index: 3;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .mobile-menu .header {
@@ -804,9 +804,9 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 
 .mobile-menu {
   position: fixed;
-  top: 0;
+  top: -100%;
   display: block;
-  left: -100vmax;
+  left: -100%;
   z-index: 99;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -814,6 +814,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 }
 
 .show-mobile-menu {
+  top: 0;
   left: 0;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -934,7 +935,7 @@ header .content-area .navbar-main .navbar-nav-right a.active:after {
 
 .wipein {
   position: relative;
-  color: transparent;
+  color: white;
 }
 
 .wipein:after {
@@ -2749,8 +2750,8 @@ footer .content-area p {
   .mobile-menu {
     background-color: #CA0B21;
     z-index: 3;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
   .mobile-menu .header {
     padding: 3.28vw 3.68vw;
@@ -3012,7 +3013,7 @@ footer .content-area p {
     position: fixed;
     top: 0;
     display: block;
-    left: -100vmax;
+    left: -100%;
     z-index: 99;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -3753,6 +3754,7 @@ footer .content-area p {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+    top: 7px;
   }
   .news-page .year .custom-select select {
     display: none;
@@ -3797,7 +3799,7 @@ footer .content-area p {
     -webkit-transition: rotate 0.2s;
     -o-transition: rotate 0.2s;
     transition: rotate 0.2s;
-    z-index: 7;
+    z-index: 3;
   }
   .news-page .year .select-arrow-active {
     font-size: 31px;
@@ -4046,8 +4048,8 @@ footer .content-area p {
     font-size: 30px;
   }
   .mobile-menu {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #CA0B21;
   }
   .mobile-menu .header {
@@ -4580,7 +4582,7 @@ footer .content-area p {
     -webkit-transition: rotate 0.2s;
     -o-transition: rotate 0.2s;
     transition: rotate 0.2s;
-    z-index: 7;
+    z-index: 3;
   }
   .news-page .year .select-arrow-active {
     font-size: 24px;
@@ -5885,7 +5887,7 @@ footer .content-area p {
             transform: translateY(-50%);
     left: -13.33vw;
     position: absolute;
-    z-index: 6;
+    z-index: 3;
     background-color: #ffffff;
   }
   .modal {
@@ -6344,12 +6346,13 @@ footer .content-area p {
     -webkit-justify-content: left !important;
         -ms-flex-pack: left !important;
             justify-content: left !important;
-    width: 100%;
+    width: 1vw;
     padding-left: 3.65vw;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: auto;
     margin-bottom: 7.3vw;
     z-index: 1;
+    text-align: left;
   }
   .top-section .top-slider .scroll-down {
     width: 20%;
@@ -6410,8 +6413,8 @@ footer .content-area p {
   .mobile-menu {
     background-color: #CA0B21;
     z-index: 3;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
   }
   .mobile-menu .header {
     padding: 3.28vw 3.68vw;
@@ -6608,9 +6611,9 @@ footer .content-area p {
   }
   .mobile-menu {
     position: fixed;
-    top: 0;
+    top: -100%;
+    left: -100%;
     display: block;
-    top: -100vmax;
     z-index: 99;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -6619,6 +6622,7 @@ footer .content-area p {
   }
   .show-mobile-menu {
     top: 0;
+    left: 0;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
@@ -6745,6 +6749,9 @@ footer .content-area p {
     display: inline-block;
     color: #ffffff !important;
   }
+  .our-business .content-area-p-none .show {
+    color: #ffffff;
+  }
   .our-business .content-area-news {
     margin-left: auto;
     margin-right: auto;
@@ -6839,9 +6846,9 @@ footer .content-area p {
     z-index: 99999999;
   }
   .our-business .content-area-news .news-slide .carousel-inner {
-    padding-top: 20.1vw;
+    padding-top: 42.1vh;
     padding-bottom: 0;
-    top: 16.81vw;
+    top: 0;
     position: initial;
   }
   .our-business .content-area-news .news-slide .carousel-inner .innner-content-area {
@@ -7027,7 +7034,7 @@ footer .content-area p {
   }
   .contact .content-area a.website-link:hover {
     color: #656565;
-    opacity: .6;
+    opacity: 0.6;
   }
   .contact .content-area p {
     color: #656565;
@@ -7090,65 +7097,62 @@ footer .content-area p {
     width: 27.777vw;
   }
   .news-page .content-area .nav-bar .search-news .input-group input::-webkit-input-placeholder {
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 1.461vw;
-    border: none;
     font-weight: bold;
     color: #222222;
+    line-height: initial;
+    padding-bottom: 2vh;
   }
   .news-page .content-area .nav-bar .search-news .input-group input::-moz-placeholder {
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 1.461vw;
-    border: none;
     font-weight: bold;
     color: #222222;
+    line-height: initial;
+    padding-bottom: 2vh;
   }
   .news-page .content-area .nav-bar .search-news .input-group input:-ms-input-placeholder {
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 1.461vw;
-    border: none;
     font-weight: bold;
     color: #222222;
+    line-height: initial;
+    padding-bottom: 2vh;
   }
   .news-page .content-area .nav-bar .search-news .input-group input::-ms-input-placeholder {
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 1.461vw;
-    border: none;
     font-weight: bold;
     color: #222222;
+    line-height: initial;
+    padding-bottom: 2vh;
   }
   .news-page .content-area .nav-bar .search-news .input-group input::placeholder {
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 1.461vw;
-    border: none;
     font-weight: bold;
     color: #222222;
+    line-height: initial;
+    padding-bottom: 2vh;
   }
   .news-page .content-area .nav-bar .search-news .input-group .form-control {
     border: none;
     background-color: transparent;
-    padding: 1.82vw 0.75rem;
+    padding: 3.8vh 0.75rem;
     padding-right: 0.29vw;
-    border-bottom: solid 0.365vw #CA0B21;
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     font-family: "Bebas Neue Pro";
-    line-height: 0.01461vw;
     font-weight: bold;
     color: #222222;
   }
   .news-page .content-area .nav-bar .search-news .input-group .form-control:focus {
     color: #222222;
     background-color: transparent;
-    border: none;
     outline: 0;
+    border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    border-bottom: solid 0.365vw #CA0B21;
   }
   .news-page .content-area .nav-bar .search-news .input-group .input-group-btn {
     position: absolute;
@@ -7169,6 +7173,19 @@ footer .content-area p {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
+  .news-page .content-area .nav-bar .search-news .input-group {
+    position: relative;
+  }
+  .news-page .content-area .nav-bar .search-news .input-group::after {
+    content: "";
+    width: 100%;
+    height: 0.365vw;
+    background-color: #CA0B21;
+    left: 0;
+    bottom: -.5vh;
+    z-index: 4;
+    position: absolute;
+  }
   .news-page .year {
     position: relative;
     padding: 0px 1.97vw;
@@ -7180,9 +7197,9 @@ footer .content-area p {
     /* Hide the items when the select box is closed: */
   }
   .news-page .year .title {
-    top: 0.657vw;
+    top: 1.4vh;
     position: absolute;
-    font-size: 1.75vw;
+    font-size: 4.3vh;
     left: 2.19vw;
   }
   .news-page .year .custom-select {
@@ -7190,8 +7207,9 @@ footer .content-area p {
     width: 100%;
     height: 0;
     padding: 0;
-    font-size: 1.46vw;
+    font-size: 4.3vh;
     font-weight: 400;
+    top: 2.4vh;
     color: #495057;
     vertical-align: middle;
     background: none;
@@ -7215,23 +7233,23 @@ footer .content-area p {
     background-color: #CA0B21;
     position: absolute;
     left: 0;
-    bottom: -0.73vw;
+    bottom: -2.8vh;
   }
   .news-page .year .select-items div,
   .news-page .year .select-selected {
     padding-left: 4.38vw;
-    line-height: 2.923vw;
+    line-height: 3.923vh;
     cursor: pointer;
     color: #CA0B21;
     position: relative;
     font-family: "Bebas Neue Pro";
-    font-size: 1.754vw;
+    font-size: 4.3vh;
     padding-left: 5.84vw;
-    top: -0.292vw;
+    top: -0.2923vw;
   }
   .news-page .year .select-items div {
     border-bottom: 1px solid #e6e6e6;
-    padding: 0.365vw;
+    padding: 2.365vh 0;
     padding-left: 1.096vw;
   }
   .news-page .year .select-selected::after {
@@ -7247,10 +7265,10 @@ footer .content-area p {
     -webkit-transition: rotate 0.2s;
     -o-transition: rotate 0.2s;
     transition: rotate 0.2s;
-    z-index: 7;
+    z-index: 3;
   }
   .news-page .year .select-arrow-active {
-    font-size: 1.754vw;
+    font-size: 4.3vh;
     color: #CA0B21;
     padding-left: 5.84vw;
     top: -0.2923vw;
@@ -7268,12 +7286,12 @@ footer .content-area p {
     position: absolute;
     background-color: transparent;
     color: #222222 !important;
-    top: 3.654vw;
+    top: 6.654vh;
     left: 0;
     right: 0;
     z-index: 77;
     font-family: "Bebas Neue Pro";
-    font-size: 1.754vw;
+    font-size: 4.3vh;
     -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.37);
             box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.37);
     background-color: #ffffff;

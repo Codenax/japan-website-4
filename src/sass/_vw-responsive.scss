@@ -821,7 +821,7 @@
         transform: translateY(-50%);
         left: -13.33vw;
         position: absolute;
-        z-index: 6;
+        z-index: 3;
         background-color: $white;
       }
     }
@@ -1019,7 +1019,7 @@
  
 header .content-area .navbar-main .logo img {
   width: 38.33vw;
-  height: auto;
+  height: auto;  
   margin-top: 1.8vw;
 }
 .mobile-menu .header .content-area .navbar-main .logo img {

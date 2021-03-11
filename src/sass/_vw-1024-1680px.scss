@@ -224,12 +224,13 @@
 
       .carousel-indicators {
         justify-content: left !important;
-        width: 100%;
+        width: 1vw;
         padding-left: 3.65vw;
         margin-left: 0;
-        margin-right: 0;
+        margin-right: auto;
         margin-bottom: 7.3vw;
         z-index: 1;
+        text-align: left;
       }
 
       .scroll-down {
@@ -292,8 +293,8 @@
   .mobile-menu {
     background-color: $red-2;
     z-index: 3;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     .header {
       padding: 3.28vw 3.68vw;
@@ -468,9 +469,10 @@
 
   .mobile-menu {
     position: fixed;
-    top: 0;
+    top: -100%;
+    left: -100%;
     display: block;
-    top: -100vmax;
+
     z-index: 99;
     transition: 0.4s;
     display: block;
@@ -478,6 +480,7 @@
 
   .show-mobile-menu {
     top: 0;
+    left: 0;
     transition: 0.4s;
   }
 
@@ -585,14 +588,16 @@
     padding-top: 8.77vw;
     .content-area-p-none {
       h1 {
-      
         color: $white;
         text-align: left;
         margin-bottom: 5.11vw;
-        margin-left: 3.65vw; 
+        margin-left: 3.65vw;
         margin-right: auto;
         display: inline-block;
         color: $white !important;
+      }
+      .show{
+        color: $white;
       }
     }
     .content-area-news {
@@ -684,9 +689,9 @@
           }
         }
         .carousel-inner {
-          padding-top: 20.1vw;
+          padding-top: 42.1vh;
           padding-bottom: 0;
-          top: 16.81vw;
+          top: 0;
 
           position: initial;
           .innner-content-area {
@@ -813,7 +818,6 @@
       h1 {
         color: $white !important;
         margin-bottom: 4.75vw;
-        
       }
       .led {
         display: inline-block;
@@ -875,25 +879,23 @@
         color: $text-color;
         font-size: 2.19vw;
         font-weight: bold;
-    
       }
       a.website-link {
         font-size: 1.096vw;
       }
-      p{
+      p {
         margin-top: 1vw;
       }
- 
-   
-      a.website-link{
-        color:#656565;
+
+      a.website-link {
+        color: #656565;
       }
-      a.website-link::before{
-      content: none; 
+      a.website-link::before {
+        content: none;
       }
-      a.website-link:hover{
-        color:#656565;
-      opacity: .6;
+      a.website-link:hover {
+        color: #656565;
+        opacity: 0.6;
       }
       p {
         color: #656565;
@@ -940,7 +942,6 @@
     // margin-top: -14.61vw;
   }
   .news-page {
-
     padding-top: 14.61vw;
     padding-bottom: 4vw;
     .content-area {
@@ -949,7 +950,6 @@
         margin-left: 1.5vw;
         font-size: 5.26vw;
         margin-bottom: 7.01vw;
-       
       }
       .nav-bar {
         display: flex;
@@ -958,33 +958,32 @@
             position: relative;
             width: 27.777vw;
             input::placeholder {
-              font-size: 1.75vw;
+              font-size:4.3vh;
               font-family: $bebas-pro-bold;
-              line-height: 1.461vw;
-              border: none;
               font-weight: bold;
               color: $text-color;
+              line-height:initial;
+           padding-bottom: 2vh;
+              
             }
             .form-control {
               border: none;
               background-color: transparent;
-              padding: 1.82vw 0.75rem;
+              padding: 3.8vh 0.75rem;
               padding-right: 0.29vw;
-              border-bottom: solid 0.365vw $red-2;
-              font-size: 1.75vw;
+              font-size:4.3vh;
               font-family: $bebas-pro-bold;
-              line-height: 0.01461vw;
+            
               font-weight: bold;
               color: $text-color;
             }
-
+            
             .form-control:focus {
               color: $text-color;
               background-color: transparent;
-              border: none;
               outline: 0;
+              border: none;
               box-shadow: none;
-              border-bottom: solid 0.365vw $red-2;
             }
             .input-group-btn {
               position: absolute;
@@ -1005,6 +1004,19 @@
               box-shadow: none;
             }
           }
+          .input-group {
+            position: relative;
+          }
+          .input-group::after {
+            content: "";
+            width: 100%;
+            height: 0.365vw;
+            background-color: $red-2;
+            left: 0;
+            bottom: -.5vh;
+            z-index: 4;
+            position: absolute;
+          }
         }
       }
     }
@@ -1014,9 +1026,9 @@
       padding-left: 1.82vw;
 
       .title {
-        top: 0.657vw;
+        top: 1.4vh;
         position: absolute;
-        font-size: 1.75vw;
+        font-size:4.3vh;
         left: 2.19vw;
       }
       .custom-select {
@@ -1024,9 +1036,9 @@
         width: 100%;
         height: 0;
         padding: 0;
-        font-size: 1.46vw;
+        font-size:4.3vh;
         font-weight: 400;
-
+        top: 2.4vh;
         color: #495057;
         vertical-align: middle;
         background: none;
@@ -1048,12 +1060,12 @@
         background-color: $red-2;
         position: absolute;
         left: 0;
-        bottom: -0.73vw;
+        bottom: -2.8vh;
       }
       .select-items div,
       .select-selected {
         padding-left: 4.38vw;
-        line-height: 2.923vw;
+        line-height: 3.923vh;
         // border: 1px solid transparent;
         // border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
         cursor: pointer;
@@ -1061,14 +1073,15 @@
         color: $red-2;
         position: relative;
         font-family: $bebas-pro-bold;
-        font-size: 1.754vw;
+        font-size:4.3vh;
         padding-left: 5.84vw;
-        top: -0.292vw;
+        top: -0.2923vw;
+        
       }
       .select-items div {
         border-bottom: 1px solid #e6e6e6;
 
-        padding: 0.365vw;
+        padding: 2.365vh 0;
         padding-left: 1.096vw;
       }
       /* Style the arrow inside the select element: */
@@ -1083,10 +1096,10 @@
 
         transition: rotate 0.2s;
 
-        z-index: 7;
+        z-index: 3;
       }
       .select-arrow-active {
-        font-size: 1.754vw;
+        font-size:4.3vh;
         color: $red-2;
         padding-left: 5.84vw;
         top: -0.2923vw;
@@ -1105,12 +1118,12 @@
         position: absolute;
         background-color: transparent;
         color: $text-color !important;
-        top: 3.654vw;
+        top: 6.654vh;
         left: 0;
         right: 0;
         z-index: 77;
         font-family: $bebas-pro-bold;
-        font-size: 1.754vw;
+        font-size:4.3vh;
         box-shadow: $box-shadwo;
         background-color: $white;
       }
@@ -1123,8 +1136,8 @@
       .select-items div.same-as-selected {
         color: $red-2;
       }
-        div.same-as-selected{
-         color: $red-2;
+      div.same-as-selected {
+        color: $red-2;
       }
       .select-items div {
         color: $text-color;
@@ -1133,7 +1146,7 @@
     .news-card-area {
       margin-top: 4.72vw;
       padding-left: 0;
-    //  margin-left: -12px;
+      //  margin-left: -12px;
       .card-area {
         cursor: pointer;
         margin-bottom: 3.65vw;
@@ -1301,7 +1314,7 @@
           height: 2.923vw;
         }
         .pra {
-          width:73.099vw;
+          width: 73.099vw;
           p {
             line-height: 2.19vw;
             font-size: 0.95vw;

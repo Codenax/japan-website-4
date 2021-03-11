@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
 
 <head>
@@ -26,27 +26,28 @@
 </head>
 
 <body>
-  <!-- header section -->
-  <header>
-    <div class="content-area">
-      <nav class="navbar-main">
-        <div class="logo">
-          <a href="#">
-            <img src="assets/images/logo/main-logo.png" alt="">
-          </a>
+ <!-- header section -->
+ <header>
+  <div class="content-area">
+    <nav class="navbar-main">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/images/logo/main-logo.png" alt="">
+        </a>
+      </div>
+      <div class="navbar-nav-right d-flex">
+        <div id="navigration-icon" class="navigration-icon open-btn">
+          <img src="assets/images/icon/menu.png" alt="">
         </div>
-        <div class="navbar-nav-right d-flex">
-          <div id="navigration-icon" onClick='showDialog()' class="navigration-icon">
-            <img src="assets/images/icon/menu.png" alt="">
-          </div>
-          <a href="#" class="language active">EN</a>
-          <a href="#" class="language ">JP</a>
-        </div>
-      </nav>
-    </div>
-  </header>
- <!-- mobile-menu -->
- <div id="mobile-menu" class="mobile-menu">
+        <a href="#" class="language active">EN</a>
+        <a href="#" class="language ">JP</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- mobile-menu -->
+<div id="mobile-menu" class="mobile-menu">
   <div class="header">
     <div class="content-area">
       <nav class="navbar-main">
@@ -56,7 +57,7 @@
           </a>
         </div>
         <div class="navbar-nav-right d-flex">
-          <div id="navigration-icon" onClick='closeDialog()' class="navigration-icon  btn-menu">
+          <div id="navigration-icon" class="navigration-icon  btn-menu close-btn">
             <img src="assets/images/icon/x.png" alt="">
           </div>
           <a href="#" class="language active">EN</a>
@@ -72,19 +73,19 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="leftside-area">
-            <a href="index.html#top" onClick='closeDialog()'>
+            <a href="index.html#top" class="close-btn">
               <h2 class="top">TOP</h2>
             </a>
             <br>
-            <a onClick='closeDialog()' href="index.html#our-business">
+            <a class="close-btn" href="index.html#our-business">
               <p>OUR BUSINESS BRANDS</p>
             </a>
             <br>
-            <a onClick='closeDialog()' href="index.html#our-network">
+            <a class="close-btn" href="index.html#our-network">
               <p>OUR NETWORK</p>
             </a>
             <br>
-            <a onClick='closeDialog()' href="index.html#leadership">
+            <a class="close-btn" href="index.html#leadership">
               <p>KEY PEOPLE</p>
             </a>
 
@@ -92,12 +93,12 @@
         </div>
         <div class="col-lg-6">
 
-          <a onClick='closeDialog()' href="index.html#news-section">
+          <a class="close-btn" href="index.html#news-section">
             <h2 class="news-h">NEWS</h2>
           </a>
           <div class="contact-m">
-            <h2 class="new_contact">CONTACT</h2> 
-            <a onClick='closeDialog()' href="index.html#contact">
+            <h2 class="new_contact">CONTACT</h2>
+            <a class="close-btn" href="index.html#contact">
               <p class="new_email">info@adk-globalnetwork.com</p>
             </a>
           </div>
@@ -106,8 +107,8 @@
     </div>
   </div>
 </div>
-<!-- mobile-menu -->
-  <!-- header section end-->
+
+<!-- header section end-->
 
 
   <!-- top-section start-->
@@ -256,26 +257,24 @@
  <script type="text/javascript" src="assets/js/custom.js"></script>
  <script type="text/javascript">
 
-const showDialog = () => {
-      document.getElementById('mobile-menu').classList.add('show-mobile-menu')
+$('.open-btn').click(function () {
+      $('.mobile-menu').toggleClass("show-mobile-menu");
       const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
       const body = document.body;
-      body.style.height = '100vh';
+      body.style.height = "100%"
       body.style.overflowY = 'hidden';
-    };
-    const closeDialog = () => {
+    });
+
+    $('.close-btn').click(function () {
       const body = document.body;
 
       body.style.position = '';
       body.style.top = '';
       body.style.height = '';
       body.style.overflowY = '';
-
-      document.getElementById('mobile-menu').classList.remove('show-mobile-menu');
-    }
-    window.addEventListener('scroll', () => {
-      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+      $('.mobile-menu').toggleClass("show-mobile-menu");
     });
+
 
 </script>
 

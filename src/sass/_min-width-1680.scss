@@ -409,8 +409,8 @@
   .mobile-menu {
     background-color: $red-2;
     z-index: 3;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     .header {
       padding: 3.28vw 3.68vw;
@@ -640,7 +640,7 @@
     position: fixed;
     top: 0;
     display: block;
-    left: -100vmax;
+    left: -100%;
     z-index: 99;
     transition: 0.4s;
   }
@@ -1239,6 +1239,7 @@
               border: none;
               font-weight: bold;
               color: $text-color;
+             
             }
             .form-control {
               border: none;
@@ -1310,6 +1311,7 @@
         position: relative;
         font-family: Arial;
         appearance: none;
+        top: 7px;
       }
       .custom-select {
         select {
@@ -1358,7 +1360,7 @@
 
         transition: rotate 0.2s;
 
-        z-index: 7;
+        z-index: 3;
       }
       .select-arrow-active {
         font-size: 31px;

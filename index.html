@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
 
 <head>
@@ -6,6 +6,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Free Web tutorials" />
   <meta name="keywords" content="HTML, CSS, JavaScript" />
@@ -36,7 +37,7 @@
           </a>
         </div>
         <div class="navbar-nav-right d-flex">
-          <div id="navigration-icon" onClick='showDialog()' class="navigration-icon">
+          <div id="navigration-icon" class="navigration-icon open-btn">
             <img src="assets/images/icon/menu.png" alt="">
           </div>
           <a href="#" class="language active">EN</a>
@@ -57,7 +58,7 @@
             </a>
           </div>
           <div class="navbar-nav-right d-flex">
-            <div id="navigration-icon" onClick='closeDialog()' class="navigration-icon  btn-menu">
+            <div id="navigration-icon" class="navigration-icon  btn-menu close-btn">
               <img src="assets/images/icon/x.png" alt="">
             </div>
             <a href="#" class="language active">EN</a>
@@ -73,19 +74,19 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="leftside-area">
-              <a href="index.html#top" onClick='closeDialog()'>
+              <a href="index.html#top" class="close-btn">
                 <h2 class="top">TOP</h2>
               </a>
               <br>
-              <a onClick='closeDialog()' href="index.html#our-business">
+              <a class="close-btn" href="index.html#our-business">
                 <p>OUR BUSINESS BRANDS</p>
               </a>
               <br>
-              <a onClick='closeDialog()' href="index.html#our-network">
+              <a class="close-btn" href="index.html#our-network">
                 <p>OUR NETWORK</p>
               </a>
               <br>
-              <a onClick='closeDialog()' href="index.html#leadership">
+              <a class="close-btn" href="index.html#leadership">
                 <p>KEY PEOPLE</p>
               </a>
 
@@ -93,12 +94,12 @@
           </div>
           <div class="col-lg-6">
 
-            <a onClick='closeDialog()' href="index.html#news-section">
+            <a class="close-btn" href="index.html#news-section">
               <h2 class="news-h">NEWS</h2>
             </a>
             <div class="contact-m">
               <h2 class="new_contact">CONTACT</h2>
-              <a onClick='closeDialog()' href="index.html#contact">
+              <a class="close-btn" href="index.html#contact">
                 <p class="new_email">info@adk-globalnetwork.com</p>
               </a>
             </div>
@@ -116,10 +117,10 @@
   <section id="top" class="top-section">
     <div class="content-area-p-none">
       <div class="bg-red-shap">
-        <img class="d-show-d d-none-m"  src="assets/images/bag-img/bg-red.png" alt="">
+        <img class="d-show-d d-none-m" src="assets/images/bag-img/bg-red.png" alt="">
         <img class="d-none-d d-show-m" src="assets/images/bag-img/bg-red-m.png" alt="">
       </div>
-      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel" >
+      <div id="top-slider" class="top-slider carousel slide" data-ride="carousel">
         <div class="content-area">
           <ol class="carousel-indicators">
             <li data-target="#top-slider" data-slide-to="0" class="active">
@@ -171,7 +172,7 @@
             <div class="content-area">
               <div class="text-area">
                 <div class="content-inner">
-                  <h3>Who we are</h3>
+                  <!-- <h3>Who we are</h3> -->
                   <h2>We are THE CHALLENGER NETWORK</h2>
                   <h6>Independent units & diverse skills power our network. <br>
                     We are agile professionals committed to client success. <br>
@@ -1189,15 +1190,20 @@
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
 
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <script src="assets/js/selectivizr-min.js"></script>
+
   <script src="assets/bootstrap/js/bootstrap.js"></script>
   <!-- scroll animation -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- custom.js  -->
   <script src="assets/js/custom.js"></script>
   <script>
     $('#top-slider').carousel({
-      interval: 3000,
-      pause: "false"
+      interval: 10000,
+      // pause: "false"
     });
 
     window.addEventListener("load", function () {
@@ -1213,26 +1219,24 @@
       $('.cokiss-popup').removeClass("show-popup");
     });
 
-    const showDialog = () => {
-      document.getElementById('mobile-menu').classList.add('show-mobile-menu')
+    $('.open-btn').click(function () {
+      $('.mobile-menu').toggleClass("show-mobile-menu");
       const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
       const body = document.body;
-      body.style.height = '100vh';
+      body.style.height = "100%"
       body.style.overflowY = 'hidden';
-    };
-    const closeDialog = () => {
+    });
+
+    $('.close-btn').click(function () {
       const body = document.body;
 
       body.style.position = '';
       body.style.top = '';
       body.style.height = '';
       body.style.overflowY = '';
-
-      document.getElementById('mobile-menu').classList.remove('show-mobile-menu');
-    }
-    window.addEventListener('scroll', () => {
-      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+      $('.mobile-menu').toggleClass("show-mobile-menu");
     });
+
 
   </script>
 </body>
